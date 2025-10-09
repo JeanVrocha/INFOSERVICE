@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+ 
+:root {
+    --padding-container: 1000x 0;
+    --color-title: #001A49; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+   /*overflow: hidden;*/
+   padding: var(--padding-container);
+}
+
+.hero{
+width: 100%;
+height: 100vh;
+min-height: 600px;
+max-height: 800px;
+position: relative;
+display: grid;
+grid-template-rows: 100px 1fr;
+color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../IMAGENES/personas.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+/* Nav */
+
+.nav {
+    --padding-container: 0;
+   
+}
+
+.nav__title{
+  font-weight: 300;
+}
+
+/* Reinicia márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #fff; /* Fondo blanco o cambia a tu preferencia */
+  padding: 15px 50px;
+  position: fixed; /* Hace que el menú quede fijo arriba */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Contenedor del menú */
+.menu ul {
+  list-style: none; /* Quita los puntos */
+  display: flex; /* Coloca los elementos en línea */
+  justify-content: flex-end; /* Los manda a la derecha */
+  gap: 30px; /* Espacio entre los enlaces */
+}
+
+/* Enlaces del menú */
+.menu a {
+  text-decoration: none;
+  color: #4B0082; /* Morado elegante */
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.menu a:hover {
+  color: #6a0dad; /* Morado más claro al pasar el mouse */
+}
+
+/* Espaciado para evitar que el contenido quede oculto bajo el menú */
+body {
+  padding-top: 80px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+
+  /* 🔹 Fondo con imagen y degradado */
+  background-image: 
+    linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%),
+    url('../IMAGENES/personas.jpg'); /* Cambia la ruta según tu carpeta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* 🔹 Forma en pico */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  z-index: 1;
+}
+
+/* Contenido centrado */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero__content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero__content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Botón estilo sólido */
+.btn-hamburguesa {
+  display: inline-block;
+  background-color: #4B0082; /* Morado sólido */
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-hamburguesa:hover {
+  background-color: #6A0DAD;
+  transform: scale(1.05);
+}
+
+/* Opcional: efecto hamburguesa animada */
+.btn-hamburguesa::before,
+.btn-hamburguesa::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  width: 20px;
+  height: 2px;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.btn-hamburguesa::before {
+  top: 10px;
+}
+
+.btn-hamburguesa::after {
+  bottom: 10px;
+}
+
+/* Quita las rayas si no quieres efecto hamburguesa literal */
+.btn-hamburguesa:hover::before {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.btn-hamburguesa:hover::after {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+/* === ESTILOS ACTUALES === */
+/* (tu código existente aquí) */
+
+
+/* === NUEVOS ESTILOS RESPONSIVOS === */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    clip-path: none;
+    padding: 60px 20px;
+  }
+
+  .hero__content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero__content p {
+    font-size: 1rem;
+  }
+
+  .btn-hamburguesa {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
