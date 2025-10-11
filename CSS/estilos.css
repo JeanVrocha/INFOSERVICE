@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
  
 :root {
-    --padding-container: 1000x 0;
+    --padding-container: 1000px 0;
     --color-title: #001A49; 
 }
 
@@ -220,3 +220,40 @@ body {
   }
 }
 
+/* === Footer === */
+.footer {
+  --padding-container: 0;
+  background: #111;
+  color: #eee;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+.footer__links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.footer__links a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer__links a:hover {
+  color: #6A0DAD;
+}
+
+@media (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
