@@ -6,6 +6,12 @@
     --color-title: #001A49; 
 }
 
+/* Desktop: empujar el menú a la esquina superior derecha */
+@media (min-width: 992px) {
+  .menu { margin-left: auto; }
+  .menu ul { justify-content: flex-end; }
+}
+
 /* Ajustes de espaciado en secciones en móviles */
 @media (max-width: 480px) {
   .about .container { padding: 0 12px; }
@@ -237,21 +243,22 @@ body {
   }
   .hero {
     height: auto;
+    min-height: calc(100dvh - 64px); /* alto visible descontando header fijo */
     clip-path: none;
-    padding: 56px 16px 40px;
+    padding: 72px 16px 48px;
   }
 
   .hero__content h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .hero__content p {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .btn-hamburguesa {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 12px 22px;
+    font-size: 1rem;
   }
 }
 
