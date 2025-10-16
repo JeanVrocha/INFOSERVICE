@@ -96,5 +96,10 @@
       sections.forEach(sec => obs.observe(sec));
     })();
   </script>
-</body>
+  <script src="./JS/splash-cursor.js"></script>
+  <script>
+    // Initialize splash cursor overlay (performance-tuned for wide compatibility)
+    try { window.initSplashCursor && window.initSplashCursor({ TRANSPARENT: true, DYE_RESOLUTION: 720, COLOR_UPDATE_SPEED: 8, SPLAT_FORCE: 5500 }); } catch(e) {}
+  </script>
+  </body>
 </html>
