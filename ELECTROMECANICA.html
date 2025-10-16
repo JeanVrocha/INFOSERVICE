@@ -7,22 +7,94 @@
   <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/normalize.css?v=4" />
   <link rel="stylesheet" href="./css/estilos.css?v=4" />
-  <style>
-    .page-wrap { min-height: 100vh; display: grid; place-items: center; padding: 24px; text-align: center; }
-    .box { max-width: 800px; background: #ffffff; padding: 28px; border-radius: 16px; box-shadow: 0 12px 30px rgba(0,0,0,0.08); border: 1px solid rgba(75,0,130,0.08); }
-    .box h1 { color: #4B0082; margin-bottom: 10px; }
-    .box p { color: #4b4b63; }
-    .btn { display: inline-block; margin-top: 16px; background: #4B0082; color: #fff; padding: 10px 16px; border-radius: 10px; text-decoration: none; font-weight: 700; }
-    .btn:hover { background: #6A0DAD; }
-  </style>
+  <link rel="stylesheet" href="./css/estilo2.css?v=1" />
 </head>
 <body>
-  <div class="page-wrap">
-    <div class="box">
-      <h1>Área de Electromecánica</h1>
-      <p>Has ingresado correctamente. Explora los contenidos y recursos de electromecánica.</p>
-      <a class="btn" href="index.html">Volver al inicio</a>
-    </div>
+  <header>
+    <nav class="nav container">
+      <div class="div__logo">
+        <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+        <h2 class="nav__title">INFOSERVICE.</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" class="btn-inicio">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="nav__menu">
+        <img src="./IMAGENES/menu.svg" alt="nav__img">
+      </div>
+    </nav>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Navegación lateral">
+      <div class="side-title">Categorías</div>
+      <ul class="side-nav">
+        <li class="side-item"><a class="side-link" href="#sec-dispositivos"><span class="side-bullet"></span><span>DISPOSITIVOS ELECTROMECÁNICOS FUNDAMENTALES</span><span class="chev">›</span></a></li>
+        <li class="side-item"><a class="side-link" href="#sec-maquinas"><span class="side-bullet"></span><span>MAQUINAS/HERRAMIENTAS Y EQUIPOS DE PRODUCCIÓN</span><span class="chev">›</span></a></li>
+        <li class="side-item"><a class="side-link" href="#sec-metrologia"><span class="side-bullet"></span><span>EQUIPOS DE MEDICIÓN Y CONTROL (METROLOGÍA E INSTRUMENTACIÓN)</span><span class="chev">›</span></a></li>
+        <li class="side-item"><a class="side-link" href="#sec-instalacion"><span class="side-bullet"></span><span>EQUIPOS DE INSTALACIÓN INDUSTRIALES</span><span class="chev">›</span></a></li>
+        <li class="side-item"><a class="side-link" href="#sec-mantenimiento"><span class="side-bullet"></span><span>HERRAMIENTAS DE MANTENIMIENTO</span><span class="chev">›</span></a></li>
+      </ul>
+    </aside>
+    <main class="content">
+      <div class="box section" id="sec-dispositivos">
+        <h2>Dispositivos Electromecánicos Fundamentales</h2>
+        <p class="muted">Contenido introductorio a los dispositivos clave. Puedes indicarme textos o recursos para completar esta sección.</p>
+      </div>
+      <div class="box section" id="sec-maquinas">
+        <h2>Máquinas/Herramientas y Equipos de Producción</h2>
+        <p class="muted">Resumen de máquinas y herramientas críticas en producción. Agrega el contenido que desees.</p>
+      </div>
+      <div class="box section" id="sec-metrologia">
+        <h2>Equipos de Medición y Control (Metrología e Instrumentación)</h2>
+        <p class="muted">Instrumentación y medición para asegurar calidad y seguridad.</p>
+      </div>
+      <div class="box section" id="sec-instalacion">
+        <h2>Equipos de Instalación Industriales</h2>
+        <p class="muted">Herramientas y equipos utilizados en instalaciones industriales.</p>
+      </div>
+      <div class="box section" id="sec-mantenimiento">
+        <h2>Herramientas de Mantenimiento</h2>
+        <p class="muted">Conjunto de herramientas y prácticas para el mantenimiento.</p>
+      </div>
+      <div class="box section">
+        <a class="btn" href="index.html">Volver al inicio</a>
+      </div>
+    </main>
   </div>
+  <script>
+    // Smooth scroll and active link handling
+    (function(){
+      const links = Array.from(document.querySelectorAll('.side-link'));
+      const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+      // Smooth scroll
+      links.forEach(a => a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        const target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          setActive(a);
+        }
+      }));
+      function setActive(activeLink){
+        links.forEach(l => l.classList.toggle('active', l === activeLink));
+      }
+      // Active on scroll
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const link = links.find(l => l.getAttribute('href') === '#' + entry.target.id);
+            if (link) setActive(link);
+          }
+        });
+      }, { rootMargin: '-40% 0px -50% 0px', threshold: [0, 1] });
+      sections.forEach(sec => obs.observe(sec));
+    })();
+  </script>
 </body>
 </html>

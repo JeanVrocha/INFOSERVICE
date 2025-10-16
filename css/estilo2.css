@@ -1,0 +1,43 @@
+/* ELECTROMECANICA page specific styles */
+
+/* Header logo alignment */
+header .div__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .div__logo .logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+/* Base components reused in this page */
+.page-wrap { min-height: 100vh; display: grid; place-items: center; padding: 24px; text-align: center; }
+.box { max-width: 800px; background: #ffffff; padding: 28px; border-radius: 16px; box-shadow: 0 12px 30px rgba(0,0,0,0.08); border: 1px solid rgba(75,0,130,0.08); }
+.box h1 { color: #4B0082; margin-bottom: 10px; }
+.box p { color: #4b4b63; }
+.btn { display: inline-block; margin-top: 16px; background: #4B0082; color: #fff; padding: 10px 16px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+.btn:hover { background: #6A0DAD; }
+
+/* Layout for sidebar + content */
+.layout { display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 64px); gap: 20px; padding: 20px; }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+
+/* Sidebar styles */
+.sidebar { position: sticky; top: 12px; align-self: start; background: #ffffff; border: 1px solid rgba(75,0,130,0.10); border-radius: 14px; padding: 14px; box-shadow: 0 8px 22px rgba(0,0,0,0.06); }
+.side-title { margin: 6px 8px 12px; font-size: .95rem; color: #6A0DAD; font-weight: 800; letter-spacing: .5px; }
+.side-nav { list-style: none; padding: 0; margin: 0; }
+.side-item { margin: 6px 0; }
+.side-link { display: grid; grid-template-columns: 8px 1fr auto; align-items: center; gap: 12px; padding: 12px 12px; border-radius: 12px; text-decoration: none; color: #2b2540; background: linear-gradient(180deg, #ffffff, #fbf9ff); border: 1px solid #eee7f7; transition: transform .06s ease, box-shadow .2s ease, background .2s ease; }
+.side-link:hover { background: linear-gradient(180deg, #f7f3ff, #ffffff); box-shadow: 0 10px 24px rgba(106,13,173,0.10); transform: translateX(1px); }
+.side-bullet { width: 8px; height: 8px; border-radius: 50%; background: #bfa6e6; }
+.side-link .chev { color: #8a6fb9; font-weight: 700; }
+.side-link.active, .side-link:focus-visible { outline: none; border-color: #d2b9ff; background: linear-gradient(180deg, #f0e8ff, #ffffff); box-shadow: 0 12px 26px rgba(75,0,130,0.16); }
+.side-link.active .side-bullet { background: #6A0DAD; }
+
+/* Main content */
+.content { padding: 8px; }
+.section { scroll-margin-top: 90px; margin-bottom: 24px; text-align: left; }
+.section h2 { color: #4B0082; margin-bottom: 8px; font-size: 1.2rem; }
+.muted { color: #4b4b63; font-size: .95rem; }
