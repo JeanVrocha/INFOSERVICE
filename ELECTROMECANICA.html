@@ -44,6 +44,45 @@
       <div class="box section" id="sec-dispositivos">
         <h2>Dispositivos Electromecánicos Fundamentales</h2>
         <p class="muted">Contenido introductorio a los dispositivos clave. Puedes indicarme textos o recursos para completar esta sección.</p>
+        <div class="em-slider" data-slider="dispositivos">
+          <button class="em-arrow em-prev" aria-label="Anterior">
+            <img src="./IMAGENES/izquierda.svg" alt="Anterior">
+          </button>
+          <div class="em-viewport">
+            <div class="em-track">
+              <article class="em-card" data-key="motor-ca" tabindex="0">
+                <div class="em-card-media">
+                  <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/PORTADA1.png" alt="Motor de Corriente Alterna">
+                </div>
+                <div class="em-card-meta">
+                  <h3>MOTOR DE CORRIENTE ALTERNA</h3>
+                  <button class="em-btn" type="button">Iniciar</button>
+                </div>
+              </article>
+              <article class="em-card" data-key="motor-ca-2" tabindex="0">
+                <div class="em-card-media">
+                  <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/PORTADA2.png" alt="Motor de Corriente Alterna - Portada 2">
+                </div>
+                <div class="em-card-meta">
+                  <h3>MOTOR DE CORRIENTE CONTINUA</h3>
+                  <button class="em-btn" type="button">Iniciar</button>
+                </div>
+              </article>
+              <article class="em-card" data-key="motor-ca-3" tabindex="0">
+                <div class="em-card-media">
+                  <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/PORTADA3.png" alt="Motor de Corriente Alterna - Portada 3">
+                </div>
+                <div class="em-card-meta">
+                  <h3>GENERADOR ELECTRICO</h3>
+                  <button class="em-btn" type="button">Iniciar</button>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="em-arrow em-next" aria-label="Siguiente">
+            <img src="./IMAGENES/derecha.svg" alt="Siguiente">
+          </button>
+        </div>
       </div>
       <div class="box section" id="sec-maquinas">
         <h2>Máquinas/Herramientas y Equipos de Producción</h2>
@@ -100,6 +139,61 @@
   <script>
     // Initialize splash cursor overlay (performance-tuned for wide compatibility)
     try { window.initSplashCursor && window.initSplashCursor({ TRANSPARENT: true, DYE_RESOLUTION: 720, COLOR_UPDATE_SPEED: 8, SPLAT_FORCE: 5500 }); } catch(e) {}
+  </script>
+  <script>
+    // Slider básico para "Dispositivos Electromecánicos Fundamentales"
+    (function(){
+      const sliders = document.querySelectorAll('.em-slider');
+      sliders.forEach(initSlider);
+
+      function initSlider(root){
+        const track = root.querySelector('.em-track');
+        const viewport = root.querySelector('.em-viewport');
+        const prev = root.querySelector('.em-prev');
+        const next = root.querySelector('.em-next');
+        const cards = Array.from(root.querySelectorAll('.em-card'));
+        let index = 0;
+
+        function visibleCount(){
+          const w = viewport.getBoundingClientRect().width;
+          const first = cards[0];
+          if (!first) return 1;
+          const cw = first.getBoundingClientRect().width;
+          const gap = 16; // debe coincidir con CSS
+          return Math.max(1, Math.floor((w + gap) / (cw + gap)));
+        }
+
+        function update(){
+          const first = cards[0];
+          const gap = 16;
+          const cw = first ? first.getBoundingClientRect().width : 0;
+          track.style.transform = `translateX(${-index * (cw + gap)}px)`;
+          prev.disabled = index <= 0;
+          const maxIndex = Math.max(0, cards.length - visibleCount());
+          next.disabled = index >= maxIndex;
+        }
+
+        prev.addEventListener('click', ()=>{ index = Math.max(0, index - 1); update(); });
+        next.addEventListener('click', ()=>{ index = Math.min(cards.length - 1, index + 1); update(); });
+        window.addEventListener('resize', update);
+
+        // Click para cargar detalle (placeholder): emitir evento global para integrar luego
+        cards.forEach(card => {
+          const open = ()=>{
+            const key = card.dataset.key;
+            window.dispatchEvent(new CustomEvent('em:cardClick', { detail: { key } }));
+          };
+          card.addEventListener('click', open);
+          card.addEventListener('keydown', (e)=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); open(); }});
+          const btn = card.querySelector('.em-btn');
+          if (btn) {
+            btn.addEventListener('click', (e)=>{ e.stopPropagation(); open(); });
+          }
+        });
+
+        update();
+      }
+    })();
   </script>
   </body>
 </html>
