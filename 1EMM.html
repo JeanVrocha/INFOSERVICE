@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/normalize.css?v=4" />
   <link rel="stylesheet" href="./css/estilos.css?v=4" />
   <link rel="stylesheet" href="./css/estilo2.css?v=1" />
+  <link rel="stylesheet" href="./css/1EMM.css" />
   <style>
     .main-content {
       padding: 2rem;
@@ -53,21 +54,130 @@
   </header>
 
   <div class="main-content">
+    <!-- Sección ELEMENTOS DE MANIOBRA MANUAL -->
     <div class="content-box">
-      <h1>ELEMENTOS DE MANIOBRA MANUAL</h1>
-      <div class="content">
-        <!-- Aquí puedes agregar el contenido detallado sobre los elementos de maniobra manual -->
-        <p>Contenido detallado sobre los elementos de maniobra manual aparecerá aquí.</p>
-        
-        <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
+      <h2>ELEMENTOS DE MANIOBRA MANUAL</h2>
+      
+      <!-- Contenido de Pulsador Eléctrico -->
+      <div class="elemento-container">
+        <div class="elemento-texto">
+          <h3>¿Qué es un pulsador?</h3>
+          <ul class="elemento-lista">
+            <li>Un pulsador eléctrico es un dispositivo que controla el flujo de corriente en un circuito mediante una simple presión.</li>
+            <li>Se utiliza ampliamente en hogares, industrias y sistemas electrónicos modernos, siendo uno de los interruptores más comunes.</li>
+            <li>Su mecanismo básico consiste en cerrar o abrir el circuito cuando se presiona, permitiendo o interrumpiendo el paso de la corriente.</li>
+          </ul>
+        </div>
+        <div class="elemento-imagen">
+          <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/pulsadores1.png" alt="Pulsador eléctrico" class="imagen-destacada">
+        </div>
       </div>
+
+      <!-- Tipos de Pulsadores -->
+      <div class="elemento-container">
+        <div class="elemento-texto">
+          <h3>Tipos principales de pulsadores</h3>
+          <ul class="elemento-lista">
+            <li><strong>Momentáneos:</strong> Solo permiten el paso de corriente mientras se mantiene presionado. Ejemplo: timbres.</li>
+            <li><strong>Con enclavamiento:</strong> Mantienen la posición hasta que se vuelven a pulsar, como interruptores de luz.</li>
+            <li><strong>Iluminados:</strong> Incorporan una luz LED o neón para indicar estado o facilitar la visibilidad.</li>
+          </ul>
+        </div>
+        <div class="elemento-imagen">
+          <!-- Espacio para imagen o video relacionado con los tipos de pulsadores -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección ELEMENTOS DE MANDOS Y AUXILIARES -->
+    <div class="content-box">
+      <h2>ELEMENTOS DE MANDOS Y AUXILIARES</h2>
+      <div class="em-slider" data-slider="mandos-auxiliares">
+        <div class="em-viewport">
+          <div class="em-track">
+            <!-- Ejemplo de tarjeta - Reemplazar con contenido real -->
+            <article class="em-card" tabindex="0">
+              <div class="em-card-media">
+                <img src="./IMAGENES/placeholder.jpg" alt="Elemento de mando o auxiliar">
+              </div>
+              <div class="em-card-meta">
+                <h3>NOMBRE DEL ELEMENTO</h3>
+                <button class="em-btn mostrar-mas" type="button">Mostrar más</button>
+                <div class="card-content">
+                  <p>Información detallada del elemento aparecerá aquí.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección ELEMENTOS DE SEÑALIZACIÓN -->
+    <div class="content-box">
+      <h2>ELEMENTOS DE SEÑALIZACIÓN</h2>
+      <div class="em-slider" data-slider="senalizacion">
+        <div class="em-viewport">
+          <div class="em-track">
+            <!-- Ejemplo de tarjeta - Reemplazar con contenido real -->
+            <article class="em-card" tabindex="0">
+              <div class="em-card-media">
+                <img src="./IMAGENES/placeholder.jpg" alt="Elemento de señalización">
+              </div>
+              <div class="em-card-meta">
+                <h3>NOMBRE DEL ELEMENTO</h3>
+                <button class="em-btn mostrar-mas" type="button">Mostrar más</button>
+                <div class="card-content">
+                  <p>Información detallada del elemento aparecerá aquí.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-box text-center">
+      <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
     </div>
   </div>
 
   <script>
-    // Aquí puedes agregar cualquier funcionalidad JavaScript necesaria
+    // Función para el botón "Mostrar más"
     document.addEventListener('DOMContentLoaded', function() {
-      // Código de inicialización si es necesario
+      // Agregar evento de clic a todos los botones "Mostrar más"
+      const botonesMostrar = document.querySelectorAll('.mostrar-mas');
+      
+      botonesMostrar.forEach(boton => {
+        boton.addEventListener('click', function() {
+          // Encontrar el contenido asociado al botón
+          const contenido = this.nextElementSibling;
+          
+          // Alternar la clase 'content-visible' para mostrar/ocultar el contenido
+          contenido.classList.toggle('content-visible');
+          
+          // Cambiar el texto del botón según el estado
+          if (contenido.classList.contains('content-visible')) {
+            this.textContent = 'Mostrar menos';
+          } else {
+            this.textContent = 'Mostrar más';
+          }
+        });
+      });
+      
+      // Cerrar el contenido cuando se hace clic fuera de él
+      document.addEventListener('click', function(event) {
+        if (!event.target.closest('.em-card')) {
+          const contenidosAbiertos = document.querySelectorAll('.card-content.content-visible');
+          contenidosAbiertos.forEach(contenido => {
+            contenido.classList.remove('content-visible');
+            const boton = contenido.previousElementSibling;
+            if (boton && boton.classList.contains('em-btn')) {
+              boton.textContent = 'Mostrar más';
+            }
+          });
+        }
+      });
     });
   </script>
 </body>
