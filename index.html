@@ -20,8 +20,8 @@
             <nav class="menu">
                 <ul>
                     <li><a href="#" class="btn-inicio">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#" class="btn-acerca-de">Acerca de</a></li>
+                    <li><a href="mailto:web.infoservice25@gmail.com">Contacto</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </nav>
@@ -59,13 +59,13 @@
             <p>&copy; 2025 INFOSERVICE. Todos los derechos reservados.</p>
             <ul class="footer__links">
                 <li>
-                    <a href="mailto:contacto@infoservice.com">
+                    <a href="mailto:web.infoservice25@gmail.com">
                         <img src="./IMAGENES/correo.svg" alt="Correo" class="icon" />
-                        contacto@infoservice.com
+                        web.infoservice25@gmail.com
                     </a>
                 </li>
                 <li>
-                    <a href="https://facebook.com/infoservice" target="_blank" rel="noopener">
+                    <a href="https://www.facebook.com/profile.php?id=61583924313233&rdid=ABkcu9FbOk7YbPRB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BcEsqCAto%2F#" target="_blank" rel="noopener">
                         <img src="./IMAGENES/facebook.svg" alt="Facebook" class="icon" />
                         Facebook
                     </a>
@@ -85,6 +85,36 @@
             </ul>
         </div>
     </footer>
+
+    <div id="modal-acerca-de" class="modal hidden">
+        <div class="modal__overlay"></div>
+        <div class="modal__content modal__acerca-de">
+            <div class="electric-border" data-speed="1.2" data-chaos="0.8" style="--electric-border-color:#8b5cf6; --eb-border-width:2px; border-radius:16px;">
+                <svg class="eb-svg" aria-hidden="true"></svg>
+                <div class="eb-layers">
+                    <div class="eb-background-glow"></div>
+                    <div class="eb-glow-2"></div>
+                    <div class="eb-glow-1"></div>
+                    <div class="eb-stroke"></div>
+                </div>
+                <div class="eb-content">
+                    <h3 class="modal__title">Acerca de INFOSERVICE</h3>
+                    <div class="acerca-de-content">
+                        <p>Si eres un joven y estas buscando ingresar al extenso mundo de la ingeniería, estas visitando la página web correcta. Los temas presentados en esta web serán una guía de las bases que necesitas dominar en el ámbito industrial para poder familiarizarte con tu entorno en desarrollo, este será tu primer paso para aprender a comprender sobre los equipos comúnmente utilizados en los sistemas electromecánicos que se implementan en las distintas industrias que nos rodean.</p>
+                        <p>La página web presentada a continuación, también pretende realizar una demostración ilustrativa de los equipos eléctricos comúnmente utilizados en el área de la ingeniería electromecánica, para ello será necesario recaudar la información de fuentes confiables, que permita a los estudiantes adquirir las competencias necesarias para comprender y conocer más a fondo la estructura de los equipos facilitando su instalación y mantenimiento.</p>
+                        <div class="video-container">
+                            <video autoplay muted loop playsinline>
+                                <source src="./IMAGENES/EQUIPOS/presentacion.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                    </div>
+                    <button type="button" class="back__btn close-acerca-de">Cerrar</button>
+                </div>
+            </div>
+            <button type="button" class="modal__close close-acerca-de" aria-label="Cerrar">×</button>
+        </div>
+    </div>
 
     <div id="modal-rol" class="modal hidden">
         <div class="modal__overlay"></div>
@@ -127,6 +157,7 @@
       const openers = [];
       const btnInicio = document.querySelector('.btn-inicio');
       const btnComienza = document.querySelector('.btn-hamburguesa');
+      const btnAcercaDe = document.querySelector('.btn-acerca-de');
       if (btnInicio) openers.push(btnInicio);
       if (btnComienza) openers.push(btnComienza);
 
@@ -153,6 +184,29 @@
       overlay.addEventListener('click', closeModal);
       closeBtn.addEventListener('click', closeModal);
       document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+      // Modal Acerca de functionality
+      const modalAcercaDe = document.getElementById('modal-acerca-de');
+      const overlayAcercaDe = modalAcercaDe.querySelector('.modal__overlay');
+      const closeBtnAcercaDe = modalAcercaDe.querySelectorAll('.close-acerca-de');
+      
+      function openModalAcercaDe(){
+        modalAcercaDe.classList.remove('hidden');
+      }
+      function closeModalAcercaDe(){
+        modalAcercaDe.classList.add('hidden');
+      }
+      
+      if (btnAcercaDe) {
+        btnAcercaDe.addEventListener('click', function(e){ 
+          e.preventDefault(); 
+          openModalAcercaDe(); 
+        });
+      }
+      
+      overlayAcercaDe.addEventListener('click', closeModalAcercaDe);
+      closeBtnAcercaDe.forEach(btn => btn.addEventListener('click', closeModalAcercaDe));
+      document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !modalAcercaDe.classList.contains('hidden')) closeModalAcercaDe(); });
 
       roleButtons.forEach(btn => btn.addEventListener('click', function(){
         selectedRole = this.getAttribute('data-role') || '';

@@ -567,8 +567,57 @@ body {
   background: #f3f3f6;
   color: #2b2040;
   font-size: 22px;
-  line-height: 1;
-  cursor: pointer;
+}
+
+/* Acerca de modal styles */
+.modal__acerca-de {
+  width: min(92%, 700px);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.acerca-de-content p {
+  color: rgba(233,227,255,0.9);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+.video-container {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 9/16;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Mobile adjustments for Acerca de modal */
+@media (max-width: 480px) {
+  .modal__acerca-de { 
+    width: min(96%, 480px); 
+    padding: 18px; 
+    border-radius: 14px; 
+    max-height: 90vh;
+  }
+  .acerca-de-content p { 
+    font-size: 0.9rem; 
+    line-height: 1.5;
+  }
+  .video-container {
+    margin-top: 16px;
+    max-width: 250px;
+  }
 }
 
 @media (max-width: 520px) {
