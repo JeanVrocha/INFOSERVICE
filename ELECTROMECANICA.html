@@ -127,21 +127,12 @@
           </button>
           <div class="em-viewport">
             <div class="em-track">
-              <article class="em-card" data-key="motor-ca" tabindex="0">
+              <article class="em-card" data-key="motores-electricos" tabindex="0">
                 <div class="em-card-media">
-                  <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/PORTADA1.png" alt="Motor de Corriente Alterna">
+                  <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/PORTADA2.png" alt="Motores Eléctricos">
                 </div>
                 <div class="em-card-meta">
-                  <h3>MOTOR DE CORRIENTE ALTERNA</h3>
-                  <button class="em-btn" type="button">Iniciar</button>
-                </div>
-              </article>
-              <article class="em-card" data-key="motor-ca-2" tabindex="0">
-                <div class="em-card-media">
-                  <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/PORTADA2.png" alt="Motor de Corriente Alterna - Portada 2">
-                </div>
-                <div class="em-card-meta">
-                  <h3>MOTOR DE CORRIENTE CONTINUA</h3>
+                  <h3>MOTORES ELECTRICOS</h3>
                   <button class="em-btn" type="button">Iniciar</button>
                 </div>
               </article>
@@ -295,6 +286,62 @@
       if (btnManiobraManual) {
         btnManiobraManual.addEventListener('click', function() {
           window.open('1EMM.html', '1EMM', 'width=800,height=600,scrollbars=yes,resizable=yes');
+        });
+      }
+
+      // Add click event for Mandos Auxiliares button
+      const btnMandosAuxiliares = document.querySelector('article[data-key="mandos-auxiliares"] .em-btn');
+      if (btnMandosAuxiliares) {
+        btnMandosAuxiliares.addEventListener('click', function() {
+          window.open('2EMA.html', '2EMA', 'width=800,height=600,scrollbars=yes,resizable=yes');
+        });
+      }
+
+      // Add click event for Señalización button
+      const btnSenalizacion = document.querySelector('article[data-key="senalizacion"] .em-btn');
+      if (btnSenalizacion) {
+        btnSenalizacion.addEventListener('click', function() {
+          window.open('3ES.html', '3ES', 'width=800,height=600,scrollbars=yes,resizable=yes');
+        });
+      }
+
+      // Add click event for Protección button
+      const btnProteccion = document.querySelector('article[data-key="proteccion"] .em-btn');
+      if (btnProteccion) {
+        btnProteccion.addEventListener('click', function() {
+          window.open('4EP.html', '4EP', 'width=800,height=600,scrollbars=yes,resizable=yes');
+        });
+      }
+
+      // Add click event for Conmutación/Potencia button
+      const btnConmutacion = document.querySelector('article[data-key="conmutacion"] .em-btn');
+      if (btnConmutacion) {
+        btnConmutacion.addEventListener('click', function() {
+          window.open('5ECP.html', '5ECP', 'width=800,height=600,scrollbars=yes,resizable=yes');
+        });
+      }
+
+      // Add click event for Motores Eléctricos button
+      const btnMotoresElectricos = document.querySelector('article[data-key="motores-electricos"] .em-btn');
+      if (btnMotoresElectricos) {
+        btnMotoresElectricos.addEventListener('click', function() {
+          window.open('6ME.html', '6ME', 'width=800,height=600,scrollbars=yes,resizable=yes');
+        });
+      }
+
+      // Add click event for Generador Eléctrico button
+      const btnGeneradorElectrico = document.querySelector('article[data-key="motor-ca-3"] .em-btn');
+      if (btnGeneradorElectrico) {
+        btnGeneradorElectrico.addEventListener('click', function() {
+          window.open('7GE.html', '7GE', 'width=800,height=600,scrollbars=yes,resizable=yes');
+        });
+      }
+
+      // Add click event for Transformadores button
+      const btnTransformadores = document.querySelector('article[data-key="transformadores"] .em-btn');
+      if (btnTransformadores) {
+        btnTransformadores.addEventListener('click', function() {
+          window.open('8T.html', '8T', 'width=800,height=600,scrollbars=yes,resizable=yes');
         });
       }
     });

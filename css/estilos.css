@@ -144,7 +144,6 @@ body {
     url('../IMAGENES/personas.jpg'); /* Cambia la ruta según tu carpeta */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 
   /* 🔹 Forma en pico */
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
@@ -617,6 +616,100 @@ body {
   .video-container {
     margin-top: 16px;
     max-width: 250px;
+  }
+}
+
+/* Blog link styles */
+.blog-link {
+  display: inline-block;
+  color: #8b5cf6;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 12px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.blog-link:hover {
+  color: #7c3aed;
+  transform: translateX(4px);
+}
+
+/* Entrevista modal styles */
+.modal__entrevista {
+  width: min(92%, 800px);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.entrevista-content {
+  color: rgba(233,227,255,0.9);
+}
+
+.entrevista-section {
+  margin-bottom: 24px;
+}
+
+.entrevista-section-title {
+  color: #E9E3FF;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+}
+
+.entrevista-datos p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.entrevista-datos strong {
+  color: #E9E3FF;
+  font-weight: 600;
+}
+
+.pregunta-item {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #8b5cf6;
+}
+
+.pregunta-item p:first-child {
+  color: #E9E3FF;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.pregunta-item p:last-child {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.nota-final {
+  margin-top: 24px;
+  padding: 12px;
+  background: rgba(139, 92, 246, 0.15);
+  border-radius: 8px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Mobile adjustments for Entrevista modal */
+@media (max-width: 480px) {
+  .modal__entrevista { 
+    width: min(96%, 480px); 
+    padding: 18px; 
+    border-radius: 14px; 
+    max-height: 90vh;
+  }
+  .entrevista-section-title { 
+    font-size: 1rem; 
+  }
+  .pregunta-item {
+    padding: 12px;
+    margin-bottom: 16px;
   }
 }
 

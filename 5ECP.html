@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5ECP - Elementos de Conmutación/Potencia</title>
+    <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/normalize.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilos.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilo2.css?v=1">
+    <link rel="stylesheet" href="./CSS/5ECP.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .btn-back {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn-back:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <div class="div__logo">
+                <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+                <h2 class="nav__title">INFOSERVICE.</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="menu__links">Inicio</a></li>
+                    <li><a href="ELECTROMECANICA.html" class="menu__links">Electromecánica</a></li>
+                </ul>
+            </nav>
+            <div class="nav__menu">
+                <img src="./IMAGENES/menu.svg" alt="nav__img">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <!-- Modern Navigation Menu -->
+            <div class="magic-nav-container">
+                <div class="magic-nav-grid">
+                    <a href="#contactores" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 1</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">🔌 CONTACTORES</h2>
+                            <p class="magic-nav-card__description">Dispositivos de conmutación de potencia</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#reles" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 2</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">⚡ RELES</h2>
+                            <p class="magic-nav-card__description">Elementos de control electromagnético</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#arrancadores" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 3</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">🚀 ARRANCADORES</h2>
+                            <p class="magic-nav-card__description">Control de arranque de motores</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#solenoides" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 4</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">🧲 SOLENOIDES</h2>
+                            <p class="magic-nav-card__description">Actuadores electromagnéticos lineales</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#valvulas-control" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 5</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">🔄 VÁLVULAS DE CONTROL</h2>
+                            <p class="magic-nav-card__description">Electro-neumáticas/hidráulicas</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sección CONTACTORES -->
+            <div id="contactores" class="content-box">
+                <h2>🔌 CONTACTORES</h2>
+                
+                <!-- Introducción a Contactores -->
+                <div class="info-section">
+                    <h3>Contactores: Dispositivos de Conmutación de Potencia</h3>
+                    <p>Los contactores son dispositivos electromecánicos diseñados para establecer o interrumpir circuitos eléctricos de potencia mediante el accionamiento de un electroimán. Son fundamentales en el control de motores eléctricos, sistemas de iluminación y otras cargas de alta potencia, proporcionando un control remoto seguro y confiable.</p>
+                </div>
+
+                <!-- Tipos de Contactores -->
+                <div class="info-section">
+                    <h3>1. Tipos Principales de Contactores</h3>
+                    <p>Los contactores se clasifican según su construcción y aplicación:</p>
+                    
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">🔌</div>
+                            <h4>Contactores de Potencia</h4>
+                            <p>Diseñados para manejar altas corrientes en aplicaciones industriales, con robustos contactos principales y bobinas de control.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Control de motores industriales, sistemas de potencia</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">⚡</div>
+                            <h4>Contactores Auxiliares</h4>
+                            <p>Contactores de baja capacidad para circuitos de control y señalización, con múltiples contactos auxiliares.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Circuitos de control, lógica de automatización</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🏠</div>
+                            <h4>Contactores Compactos</h4>
+                            <p>Diseño optimizado para espacio reducido, ideal para aplicaciones residenciales y comerciales.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Control de HVAC, bombas residenciales</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔧</div>
+                            <h4>Contactores Reversibles</h4>
+                            <p>Permiten la inversión del sentido de giro de motores trifásicos mediante conmutación mecánica.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Puertas industriales, elevadores, transportadores</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Características Técnicas -->
+                <div class="info-section">
+                    <h3>2. Características Técnicas</h3>
+                    <p>Los contactores deben cumplir con especificaciones técnicas precisas:</p>
+                    
+                    <div class="table-container">
+                        <table class="classification-table">
+                            <thead>
+                                <tr>
+                                    <th>Parámetro</th>
+                                    <th>Rango Típico</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Corriente Nominal</strong></td>
+                                    <td>6A - 1000A</td>
+                                    <td>Corriente continua que pueden conducir</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tensión de Control</strong></td>
+                                    <td>12V - 415V AC/DC</td>
+                                    <td>Tensión de alimentación de la bobina</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Poder de Corte</strong></td>
+                                    <td>6kA - 100kA</td>
+                                    <td>Capacidad de interrupción de cortocircuito</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Vida Eléctrica</strong></td>
+                                    <td>1M - 10M operaciones</td>
+                                    <td>Operaciones a corriente nominal</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Vida Mecánica</strong></td>
+                                    <td>10M - 30M operaciones</td>
+                                    <td>Operaciones sin carga eléctrica</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Construcción y Componentes -->
+                <div class="info-section">
+                    <h3>3. Construcción y Componentes Principales</h3>
+                    <p>Un contactor está compuesto por varios elementos esenciales:</p>
+                    
+                    <div class="elemento-container">
+                        <div class="elemento-texto">
+                            <ul class="elemento-lista">
+                                <li><strong>Electroimán (Bobina):</strong> Genera el campo magnético para accionar los contactos.</li>
+                                <li><strong>Núcleo Magnético:</strong> Canaliza el flujo magnético, fijo y móvil.</li>
+                                <li><strong>Contactos Principales:</strong> Conductores de potencia, normalmente abiertos.</li>
+                                <li><strong>Contactos Auxiliares:</strong> Para circuitos de control y señalización.</li>
+                                <li><strong>Cámara de Apagado:</strong> Extingue el arco eléctrico al abrir.</li>
+                                <li><strong>Sistema de Sujeción:</strong> Resortes que mantienen la posición de reposo.</li>
+                                <li><strong>Carcasa:</strong> Protección aislante y soporte mecánico.</li>
+                            </ul>
+                        </div>
+                        <div class="elemento-imagen">
+                            <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE POTENCIA/contactores1.png" alt="Componentes de contactores" class="imagen-destacada">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección RELES -->
+            <div id="reles" class="content-box">
+                <h2>⚡ RELES</h2>
+                
+                <!-- Introducción a Reles -->
+                <div class="info-section">
+                    <h3>Reles: Elementos de Control Electromagnético</h3>
+                    <p>Los relés son dispositivos electromecánicos que utilizan un electroimán para abrir o cerrar un conjunto de contactos eléctricos. Funcionan como interruptores controlados eléctricamente, permitiendo que una señal de baja potencia controle circuitos de mayor potencia, proporcionando aislamiento galvánico y amplificación de señales.</p>
+                </div>
+
+                <!-- Tipos de Reles -->
+                <div class="info-section">
+                    <h3>1. Clasificación de Reles</h3>
+                    <p>Los relés se clasifican según su tecnología y aplicación:</p>
+                    
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">⚡</div>
+                            <h4>Reles Electromecánicos</h4>
+                            <p>Utilizan electroimanes para mover contactos mecánicos. Son los más tradicionales y versátiles.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Control industrial, automatización</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔌</div>
+                            <h4>Reles de Estado Sólido</h4>
+                            <p>Utilizan semiconductores (triacs, tiristores) sin partes móviles, con respuesta ultrarrápida.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Control de alta velocidad, equipos sensibles</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">⏰</div>
+                            <h4>Reles de Tiempo</h4>
+                            <p>Incorporan retardo temporizado en la activación o desactivación, configurable según necesidad.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Secuenciado, temporización de procesos</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔒</div>
+                            <h4>Reles de Enclavamiento</h4>
+                            <p>Mantienen su estado después de eliminar la señal de control, mediante enclavamiento mecánico o magnético.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Memoria de estado, sistemas de seguridad</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Configuraciones de Contactos -->
+                <div class="info-section">
+                    <h3>2. Configuraciones de Contactos</h3>
+                    <p>Los relés disponen de diferentes configuraciones de contactos según la aplicación:</p>
+                    
+                    <div class="classification-grid">
+                        <div class="classification-item">
+                            <h4>SPST (1 Polo 1 Tirada)</h4>
+                            <p>Un solo contacto que abre o cierra un circuito. Es la configuración más simple.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>SPDT (1 Polo 2 Tiradas)</h4>
+                            <p>Un contacto común que conmuta entre dos posiciones (NA y NC).</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>DPST (2 Polos 1 Tirada)</h4>
+                            <p>Dos contactos que operan simultáneamente, ideal para control bidireccional.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>DPDT (2 Polos 2 Tiradas)</h4>
+                            <p>Dos contactos comunes que conmutan cada uno entre dos posiciones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parámetros Técnicos -->
+                <div class="info-section">
+                    <h3>3. Parámetros Técnicos Específicos</h3>
+                    <p>Los relés se especifican mediante parámetros técnicos clave:</p>
+                    
+                    <div class="parameters-grid">
+                        <div class="parameter-card">
+                            <div class="parameter-icon">⚡</div>
+                            <h4>Tensión de Bobina</h4>
+                            <p>Desde 5V DC hasta 230V AC, determina la activación del relé.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🔌</div>
+                            <h4>Corriente de Contacto</h4>
+                            <p>Desde 0.5A hasta 30A, capacidad de conducción de los contactos.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">⏱️</div>
+                            <h4>Tiempo de Respuesta</h4>
+                            <p>5-50ms para electromecánicos, <1ms para estado sólido.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🔒</div>
+                            <h4>Aislamiento Galvánico</h4>
+                            <p>2.5kV - 5kV entre bobina y contactos, garantiza separación eléctrica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección ARRANCADORES -->
+            <div id="arrancadores" class="content-box">
+                <h2>🚀 ARRANCADORES</h2>
+                
+                <!-- Introducción a Arrancadores -->
+                <div class="info-section">
+                    <h3>Arrancadores: Control de Arranque de Motores</h3>
+                    <p>Los arrancadores son dispositivos diseñados para controlar el proceso de arranque y parada de motores eléctricos, protegiéndolos contra corrientes excesivas durante el arranque y proporcionando métodos de control suave para reducir el estrés mecánico y eléctrico en el motor y la red de alimentación.</p>
+                </div>
+
+                <!-- Tipos de Arrancadores -->
+                <div class="info-section">
+                    <h3>1. Tipos Principales de Arrancadores</h3>
+                    <p>Los arrancadores se clasifican según el método de arranque implementado:</p>
+                    
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">🚀</div>
+                            <h4>Arrancador Directo</h4>
+                            <p>Conecta el motor directamente a la red a plena tensión. Es el método más simple y económico.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Motores pequeños (<5HP), bombas, ventiladores</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">⭐</div>
+                            <h4>Arrancador Estrella-Triángulo</h4>
+                            <p>Arranca en estrella (reducida) y cambia a triángulo (plena tensión). Reduce corriente al 33%.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Motores medianos, compresores, transportadores</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔧</div>
+                            <h4>Arrancador por Autotransformador</h4>
+                            <p>Utiliza un autotransformador para reducir la tensión durante el arranque.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Motores grandes, bombas de alta potencia</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">⚡</div>
+                            <h4>Arrancador Suave (Soft Starter)</h4>
+                            <p>Control electrónico que incrementa gradualmente la tensión, permitando arranque suave.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Equipos sensibles, HVAC, maquinaria pesada</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Componentes del Arrancador -->
+                <div class="info-section">
+                    <h3>2. Componentes Principales</h3>
+                    <p>Un arrancador típico incluye los siguientes componentes:</p>
+                    
+                    <div class="elemento-container">
+                        <div class="elemento-texto">
+                            <ul class="elemento-lista">
+                                <li><strong>Contactor Principal:</strong> Conmuta la potencia al motor.</li>
+                                <li><strong>Relé Térmico:</strong> Protección contra sobrecargas.</li>
+                                <li><strong>Transformador de Control:</strong> Alimenta circuitos de control.</li>
+                                <li><strong>Botonera de Mando:</strong> Arranque/parada manual.</li>
+                                <li><strong>Señalización:</strong> Luces piloto de estado.</li>
+                                <li><strong>Protecciones:</strong> Fusibles, interruptor magnético.</li>
+                                <li><strong>Temporizadores:</strong> Para arranques secuenciales.</li>
+                            </ul>
+                        </div>
+                        <div class="elemento-imagen">
+                            <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE POTENCIA/arrancadores1.png" alt="Componentes de arrancadores" class="imagen-destacada">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selección y Aplicación -->
+                <div class="info-section">
+                    <h3>3. Criterios de Selección</h3>
+                    <p>La selección del arrancador adecuado depende de varios factores:</p>
+                    
+                    <div class="table-container">
+                        <table class="classification-table">
+                            <thead>
+                                <tr>
+                                    <th>Factor</th>
+                                    <th>Consideración</th>
+                                    <th>Recomendación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Potencia del Motor</strong></td>
+                                    <td>HP o kW del motor</td>
+                                    <td>Directo < 5HP, Estrella-Triángulo 5-50HP</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tipo de Carga</strong></td>
+                                    <td>Par de arranque requerido</td>
+                                    <td>Alto par: directo, Bajo par: suave</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Red Eléctrica</strong></td>
+                                    <td>Capacidad de la red</td>
+                                    <td>Red débil: arranque reducido</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Frecuencia de Operación</strong></td>
+                                    <td>Ciclos de arranque/hora</td>
+                                    <td>Alta frecuencia: arrancador suave</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección SOLENOIDES -->
+            <div id="solenoides" class="content-box">
+                <h2>🧲 SOLENOIDES</h2>
+                
+                <!-- Introducción a Solenoides -->
+                <div class="info-section">
+                    <h3>Solenoides: Actuadores Electromagnéticos Lineales</h3>
+                    <p>Los solenoides son dispositivos electromecánicos que convierten energía eléctrica en movimiento lineal mediante el principio del electromagnetismo. Consisten en una bobina de alambre que genera un campo magnético cuando se energiza, atrayendo un núcleo ferromagnético móvil y produciendo un desplazamiento lineal controlado.</p>
+                </div>
+
+                <!-- Tipos de Solenoides -->
+                <div class="info-section">
+                    <h3>1. Clasificación de Solenoides</h3>
+                    <p>Los solenoides se clasifican según su construcción y aplicación:</p>
+                    
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">🧲</div>
+                            <h4>Solenoides Lineales</h4>
+                            <p>Producen movimiento lineal directo del núcleo. Los más comunes en aplicaciones industriales.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Válvulas, cerraduras, mecanismos de posicionamiento</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔄</div>
+                            <h4>Solenoides Rotativos</h4>
+                            <p>Generan movimiento rotatorio mediante levas o mecanismos de conversión.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Selectores, interruptores rotativos, posicionamiento angular</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">⚡</div>
+                            <h4>Solenoides de Corriente Alterna</h4>
+                            <p>Operan con AC, incluyen anillo de sombreado para evitar vibraciones.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Válvulas de AC, contactores, sistemas industriales</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔋</div>
+                            <h4>Solenoides de Corriente Continua</h4>
+                            <p>Operan con DC, respuesta más rápida y silenciosa, sin vibraciones.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Válvulas de control, sistemas de precisión, electrónica</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Características Técnicas -->
+                <div class="info-section">
+                    <h3>2. Parámetros Técnicos</h3>
+                    <p>Los solenoides se especifican mediante los siguientes parámetros:</p>
+                    
+                    <div class="parameters-grid">
+                        <div class="parameter-card">
+                            <div class="parameter-icon">⚡</div>
+                            <h4>Tensión de Operación</h4>
+                            <p>6V - 480V AC/DC según aplicación y tamaño.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">💪</div>
+                            <h4>Fuerza de Arrastre</h4>
+                            <p>0.5N - 500N, depende del tamaño y construcción.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">📏</div>
+                            <h4>Carrera del Núcleo</h4>
+                            <p>2mm - 100mm, determina el desplazamiento lineal.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">⏱️</div>
+                            <h4>Tiempo de Respuesta</h4>
+                            <p>10-200ms, más rápido en DC que en AC.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aplicaciones Industriales -->
+                <div class="info-section">
+                    <h3>3. Aplicaciones Industriales</h3>
+                    <p>Los solenoides son utilizados en numerosas aplicaciones:</p>
+                    
+                    <div class="classification-grid">
+                        <div class="classification-item">
+                            <h4>Control de Fluidos</h4>
+                            <p>Actuación de válvulas neumáticas, hidráulicas y de proceso industrial.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>Posicionamiento</h4>
+                            <p>Mecanismos de bloqueo, cerraduras eléctricas, sistemas de seguridad.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>Automatización</h4>
+                            <p>Selectores automáticos, cambiadores de herramientas, sistemas de alimentación.</p>
+                        </div>
+                    </div>
+
+                    <!-- Nota Importante -->
+                    <div class="important-note">
+                        <div class="note-icon">🔧</div>
+                        <div class="note-content">
+                            <h4>Nota de Mantenimiento</h4>
+                            <p>Los solenoides requieren mantenimiento periódico para asegurar su funcionamiento óptimo. Es importante limpiar el núcleo móvil, verificar las conexiones eléctricas y lubricar las partes móviles según las especificaciones del fabricante para prolongar su vida útil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección VALVULAS DE CONTROL -->
+            <div id="valvulas-control" class="content-box">
+                <h2>🔄 VÁLVULAS DE CONTROL ELECTRO-NEUMÁTICAS/HIDRÁULICAS</h2>
+                
+                <!-- Introducción a Válvulas de Control -->
+                <div class="info-section">
+                    <h3>Válvulas de Control: Interfaz Eléctrica-Fluídica</h3>
+                    <p>Las válvulas de control electro-neumáticas e hidráulicas son dispositivos que combinan actuadoreselectromagnéticos (solenoides) con válvulas de control de flujo de aire o aceite. Permiten el control remoto y automatizado de sistemas neumáticos e hidráulicos mediante señales eléctricas, siendo fundamentales en la automatización industrial.</p>
+                </div>
+
+                <!-- Tipos de Válvulas -->
+                <div class="info-section">
+                    <h3>1. Clasificación por Tipo de Fluido</h3>
+                    <p>Las válvulas se clasifican según el fluido que controlan:</p>
+                    
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">💨</div>
+                            <h4>Válvulas Neumáticas</h4>
+                            <p>Controlan el flujo de aire comprimido. Operan típicamente a 2-8 bar con respuesta rápida.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Actuadores lineales, robots, manipuladores</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🛢️</div>
+                            <h4>Válvulas Hidráulicas</h4>
+                            <p>Controlan el flujo de aceite hidráulico. Operan a 70-700 bar con alta fuerza.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Prensa, maquinaria pesada, sistemas de potencia</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">⚡</div>
+                            <h4>Válvulas Proporcionales</h4>
+                            <p>Permiten control continuo del flujo mediante señales eléctricas proporcionales.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Control de velocidad, posicionamiento preciso</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔄</div>
+                            <h4>Válvulas Servo</h4>
+                            <p>Control de alta precisión con realimentación, para aplicaciones críticas.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Control de movimiento, sistemas de posicionamiento</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Configuraciones de Vías -->
+                <div class="info-section">
+                    <h3>2. Configuraciones de Vías</h3>
+                    <p>Las válvulas se clasifican según el número de vías y posiciones:</p>
+                    
+                    <div class="table-container">
+                        <table class="classification-table">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Vías/Posiciones</th>
+                                    <th>Función Principal</th>
+                                    <th>Aplicación Típica</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>2/2</strong></td>
+                                    <td>2 vías, 2 posiciones</td>
+                                    <td>Encendido/Apagado simple</td>
+                                    <td>Control de flujo unidireccional</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3/2</strong></td>
+                                    <td>3 vías, 2 posiciones</td>
+                                    <td>Control de actuador de simple efecto</td>
+                                    <td>Cilindros de simple efecto</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>4/2</strong></td>
+                                    <td>4 vías, 2 posiciones</td>
+                                    <td>Control bidireccional básico</td>
+                                    <td>Cilindros de doble efecto</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>5/2</strong></td>
+                                    <td>5 vías, 2 posiciones</td>
+                                    <td>Control bidireccional con escape</td>
+                                    <td>Control preciso de cilindros</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>5/3</strong></td>
+                                    <td>5 vías, 3 posiciones</td>
+                                    <td>Control con posición central</td>
+                                    <td>Posicionamiento intermedio</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Tipos de Actuación -->
+                <div class="info-section">
+                    <h3>3. Tipos de Actuación Eléctrica</h3>
+                    <p>Las válvulas pueden ser accionadas por diferentes métodos eléctricos:</p>
+                    
+                    <div class="classification-grid">
+                        <div class="classification-item">
+                            <h4>Acción Directa</h4>
+                            <p>El solenoide mueve directamente el obturador. Simple, rápido, pero limitado en fuerza.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>Acción Indirecta (Servo-asistida)</h4>
+                            <p>El solenoide controla una válvula piloto que utiliza la presión del fluido.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>Doble Solenoide</h4>
+                            <p>Dos solenoides para control bidireccional, mantiene posición sin energía.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Características Técnicas -->
+                <div class="info-section">
+                    <h3>4. Especificaciones Técnicas</h3>
+                    <p>Las válvulas de control se especifican mediante:</p>
+                    
+                    <div class="elemento-container">
+                        <div class="elemento-texto">
+                            <ul class="elemento-lista">
+                                <li><strong>Tensión de Solenoide:</strong> 12V, 24V, 110V, 220V AC/DC.</li>
+                                <li><strong>Consumo de Potencia:</strong> 1-20W según tamaño y tipo.</li>
+                                <li><strong>Presión de Operación:</strong> 0.5-10 bar neumáticas, 70-700 bar hidráulicas.</li>
+                                <li><strong>Caudal Máximo:</strong> 100-5000 L/min según tamaño.</li>
+                                <li><strong>Tiempo de Respuesta:</strong> 10-100ms para neumáticas, 50-500ms hidráulicas.</li>
+                                <li><strong>Material:</strong> Aluminio, acero inoxidable, plástico técnico.</li>
+                                <li><strong>Grado de Protección:</strong> IP65 a IP69K para ambientes industriales.</li>
+                            </ul>
+                        </div>
+                        <div class="elemento-imagen">
+                            <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE POTENCIA/valvulas1.png" alt="Válvulas de control electro-neumáticas" class="imagen-destacada">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aplicaciones y Mantenimiento -->
+                <div class="info-section">
+                    <h3>5. Aplicaciones Industriales</h3>
+                    <p>Las válvulas de control son esenciales en:</p>
+                    
+                    <div class="parameters-grid">
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🏭</div>
+                            <h4>Automatización Industrial</h4>
+                            <p>Control de cilindros, robots, sistemas de ensamblaje.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🚗</div>
+                            <h4>Industria Automotriz</h4>
+                            <p>Líneas de producción, sistemas de pintura, montaje.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🍃</div>
+                            <h4>Procesos Químicos</h4>
+                            <p>Control de flujo, dosificación, sistemas de seguridad.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🏗️</div>
+                            <h4>Maquinaria Pesada</h4>
+                            <p>Control hidráulico, excavadoras, grúas, prensas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Nota Importante -->
+                    <div class="important-note">
+                        <div class="note-icon">⚠️</div>
+                        <div class="note-content">
+                            <h4>Consideraciones de Seguridad</h4>
+                            <p>Es fundamental instalar válvulas con las protecciones adecuadas según el ambiente de operación. En atmósferas explosivas se deben utilizar válvulas con certificación ATEX, y siempre mantener un programa de mantenimiento preventivo para asegurar la fiabilidad del sistema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box text-center">
+                <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const botonesMostrarMas = document.querySelectorAll('.mostrar-mas');
+        
+        botonesMostrarMas.forEach(boton => {
+          boton.addEventListener('click', function() {
+            const contenido = this.nextElementSibling;
+            
+            if (contenido && contenido.classList.contains('card-content')) {
+              contenido.classList.toggle('content-visible');
+              
+              if (contenido.classList.contains('content-visible')) {
+                this.textContent = 'Mostrar menos';
+              } else {
+                this.textContent = 'Mostrar más';
+              }
+            }
+          });
+        });
+        
+        // Cerrar el contenido cuando se hace clic fuera de él
+        document.addEventListener('click', function(event) {
+          if (!event.target.closest('.em-card')) {
+            const contenidosAbiertos = document.querySelectorAll('.card-content.content-visible');
+            contenidosAbiertos.forEach(contenido => {
+              contenido.classList.remove('content-visible');
+              const boton = contenido.previousElementSibling;
+              if (boton && boton.classList.contains('em-btn')) {
+                boton.textContent = 'Mostrar más';
+              }
+            });
+          }
+        });
+      });
+    </script>
+    
+    <!-- Magic Navigation Script -->
+    <script src="./JS/magic-nav.js"></script>
+</body>
+</html>

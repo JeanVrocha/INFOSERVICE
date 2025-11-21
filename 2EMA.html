@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2EMA - Elementos de Mandos Auxiliares</title>
+    <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/normalize.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilos.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilo2.css?v=1">
+    <link rel="stylesheet" href="./CSS/1EMA.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .btn-back {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn-back:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <div class="div__logo">
+                <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+                <h2 class="nav__title">INFOSERVICE.</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="menu__links">Inicio</a></li>
+                    <li><a href="ELECTROMECANICA.html" class="menu__links">Electromecánica</a></li>
+                </ul>
+            </nav>
+            <div class="nav__menu">
+                <img src="./IMAGENES/menu.svg" alt="nav__img">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <!-- Modern Navigation Menu -->
+            <div class="magic-nav-container">
+                <div class="magic-nav-grid">
+                    <a href="#sensores" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 1</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">📡 SENSORES</h2>
+                            <p class="magic-nav-card__description">Dispositivos de detección y medición</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#contactos-auxiliares" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 2</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">🔌 CONTACTOS AUXILIARES</h2>
+                            <p class="magic-nav-card__description">Elementos de control y conexión</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+                </div>
+            </div>
+        <!-- Sección SENSORES -->
+        <div id="sensores" class="content-box">
+            <h2>📡 SENSORES</h2>
+            
+            <!-- Introducción a Sensores -->
+            <div class="info-section">
+                <h3>Sensores: Dispositivos de Detección Automática</h3>
+                <p>Los sensores son dispositivos electromecánicos o electrónicos diseñados para detectar la presencia o ausencia de objetos, medir variables físicas o convertir fenómenos del mundo real en señales eléctricas que puedan ser procesadas por sistemas de control automatizados.</p>
+            </div>
+
+            <!-- Tipos de Sensores -->
+            <div class="info-section">
+                <h3>1. Tipos Principales de Sensores</h3>
+                <p>En los sistemas de control electromecánico, los sensores más comunes incluyen:</p>
+                
+                <div class="types-grid">
+                    <div class="type-card">
+                        <div class="type-icon">🎯</div>
+                        <h4>Sensores de Proximidad</h4>
+                        <p>Detectan la presencia de objetos metálicos sin contacto físico, utilizando campos electromagnéticos.</p>
+                        <div class="example-tag"><strong>Aplicación:</strong> Control de posición, detección de piezas</div>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">💡</div>
+                        <h4>Sensores Fotoeléctricos</h4>
+                        <p>Utilizan un haz de luz para detectar objetos mediante la interrupción o reflexión del haz luminoso.</p>
+                        <div class="example-tag"><strong>Aplicación:</strong> Contadores, sistemas de seguridad</div>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">🌡️</div>
+                        <h4>Sensores de Temperatura</h4>
+                        <p>Monitorean la temperatura y convierten las variaciones térmicas en señales eléctricas.</p>
+                        <div class="example-tag"><strong>Aplicación:</strong> Control climático, protección de equipos</div>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">💧</div>
+                        <h4>Sensores de Nivel</h4>
+                        <p>Detectan el nivel de líquidos o sólidos en recipientes mediante diferentes principios físicos.</p>
+                        <div class="example-tag"><strong>Aplicación:</strong> Tanques de almacenamiento, procesos industriales</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Principio de Funcionamiento -->
+            <div class="info-section">
+                <h3>2. Principio de Funcionamiento</h3>
+                <p>Los sensores operan según diferentes principios físicos según su tipo:</p>
+                
+                <div class="elemento-container">
+                    <div class="elemento-texto">
+                        <ul class="elemento-lista">
+                            <li><strong>Inducción electromagnética:</strong> Sensores de proximidad que generan campos magnéticos.</li>
+                            <li><strong>Photoelectricidad:</strong> Emisión y detección de haces de luz infrarroja o visible.</li>
+                            <li><strong>Capacitancia:</strong> Detección de cambios en el campo eléctrico.</li>
+                            <li><strong>Ultrasónico:</strong> Emisión de ondas sonoras de alta frecuencia.</li>
+                            <li><strong>Efecto Hall:</strong> Detección de campos magnéticos.</li>
+                        </ul>
+                    </div>
+                    <div class="elemento-imagen">
+                        <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/sensores1.png" alt="Tipos de sensores industriales" class="imagen-destacada">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aplicaciones en Sistemas de Control -->
+            <div class="info-section">
+                <h3>3. Aplicaciones en Sistemas de Control</h3>
+                <p>Los sensores son fundamentales en la automatización industrial:</p>
+                
+                <div class="classification-grid">
+                    <div class="classification-item">
+                        <h4>Control de Procesos</h4>
+                        <p>Monitoreo continuo de variables como temperatura, presión, caudal y nivel para mantener los procesos dentro de los parámetros deseados.</p>
+                    </div>
+                    
+                    <div class="classification-item">
+                        <h4>Sistemas de Seguridad</h4>
+                        <p>Detección de presencia humana, barreras de seguridad y paradas de emergencia basadas en sensores.</p>
+                    </div>
+                    
+                    <div class="classification-item">
+                        <h4>Control de Calidad</h4>
+                        <p>Inspección dimensional, detección de defectos y verificación de características de productos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección CONTACTOS AUXILIARES -->
+        <div id="contactos-auxiliares" class="content-box">
+            <h2>🔌 CONTACTOS AUXILIARES</h2>
+            
+            <!-- Introducción a Contactos Auxiliares -->
+            <div class="info-section">
+                <h3>Contactos Auxiliares: Elementos de Control y Señalización</h3>
+                <p>Los contactos auxiliares son dispositivos electromecánicos que permiten el control de circuitos de baja potencia, principalmente utilizados para señalización, control y monitoreo del estado de equipos eléctricos de mayor potencia.</p>
+            </div>
+
+            <!-- Tipos de Contactos Auxiliares -->
+            <div class="info-section">
+                <h3>1. Tipos de Contactos Auxiliares</h3>
+                <p>Los contactos auxiliares se clasifican según su configuración y función:</p>
+                
+                <div class="table-container">
+                    <table class="classification-table">
+                        <thead>
+                            <tr>
+                                <th>Tipo de Contacto</th>
+                                <th>Configuración</th>
+                                <th>Aplicación Principal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Contacto NA (Normalmente Abierto)</strong></td>
+                                <td>Abierto en reposo, cierra cuando se activa</td>
+                                <td>Señalización de encendido, inicio de procesos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Contacto NC (Normalmente Cerrado)</strong></td>
+                                <td>Cerrado en reposo, abre cuando se activa</td>
+                                <td>Señalización de falla, paradas de emergencia</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Contacto NA/NC (Conmutable)</strong></td>
+                                <td>Un polo cambia entre dos posiciones</td>
+                                <td>Selección de modos, control bidireccional</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Características Técnicas -->
+            <div class="info-section">
+                <h3>2. Características Técnicas</h3>
+                <p>Los contactos auxiliares deben cumplir con especificaciones técnicas precisas:</p>
+                
+                <div class="parameters-grid">
+                    <div class="parameter-card">
+                        <div class="parameter-icon">⚡</div>
+                        <h4>Capacidad de Corriente</h4>
+                        <p>Generalmente entre 5A y 10A para cargas de baja potencia.</p>
+                    </div>
+                    
+                    <div class="parameter-card">
+                        <div class="parameter-icon">🔌</div>
+                        <h4>Tensión Nominal</h4>
+                        <p>Desde 24V hasta 250V en corriente alterna o continua.</p>
+                    </div>
+                    
+                    <div class="parameter-card">
+                        <div class="parameter-icon">🔄</div>
+                        <h4>Vida Útil Mecánica</h4>
+                        <p>Generalmente más de 10 millones de operaciones.</p>
+                    </div>
+                    
+                    <div class="parameter-card">
+                        <div class="parameter-icon">⏱️</div>
+                        <h4>Tiempo de Respuesta</h4>
+                        <p>Menos de 50ms para la mayoría de aplicaciones industriales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Montaje e Instalación -->
+            <div class="info-section">
+                <h3>3. Montaje e Instalación</h3>
+                <p>La correcta instalación de contactos auxiliares es crucial para su funcionamiento:</p>
+                
+                <div class="elemento-container">
+                    <div class="elemento-texto">
+                        <ul class="elemento-lista">
+                            <li><strong>Montaje en riel DIN:</strong> Instalación rápida en tableros eléctricos.</li>
+                            <li><strong>Montaje frontal:</strong> Accesorios para contactores y relés.</li>
+                            <li><strong>Conexión por tornillo:</strong> Terminales seguros para conductores.</li>
+                            <li><strong>Conexión por resorte:</strong> Conexión rápida sin herramientas.</li>
+                            <li><strong>Indicadores mecánicos:</strong> Visores del estado del contacto.</li>
+                        </ul>
+                    </div>
+                    <div class="elemento-imagen">
+                        <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/contactos1.png" alt="Contactos auxiliares industriales" class="imagen-destacada">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Normativas y Estándares -->
+            <div class="info-section">
+                <h3>4. Normativas y Estándares</h3>
+                <p>Los contactos auxiliares deben cumplir con normativas internacionales:</p>
+                
+                <div class="classification-grid">
+                    <div class="classification-item">
+                        <h4>IEC 60947</h4>
+                        <p>Normativa internacional para aparatos de baja tensión, establece requisitos de seguridad y funcionamiento.</p>
+                    </div>
+                    
+                    <div class="classification-item">
+                        <h4>UL 508</h4>
+                        <p>Estándar estadounidense para controladores industriales, requisitos de seguridad y rendimiento.</p>
+                    </div>
+                </div>
+
+                <!-- Nota Importante -->
+                <div class="important-note">
+                    <div class="note-icon">📚</div>
+                    <div class="note-content">
+                        <h4>Nota Importante</h4>
+                        <p>Es fundamental seleccionar correctamente los contactos auxiliares según la aplicación específica, considerando factores como la carga a controlar, el ambiente de operación y los requisitos de seguridad. Una selección inadecuada puede comprometer la fiabilidad del sistema.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box text-center">
+            <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
+        </div>
+        </div>
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const botonesMostrarMas = document.querySelectorAll('.mostrar-mas');
+        
+        botonesMostrarMas.forEach(boton => {
+          boton.addEventListener('click', function() {
+            const contenido = this.nextElementSibling;
+            
+            if (contenido && contenido.classList.contains('card-content')) {
+              contenido.classList.toggle('content-visible');
+              
+              if (contenido.classList.contains('content-visible')) {
+                this.textContent = 'Mostrar menos';
+              } else {
+                this.textContent = 'Mostrar más';
+              }
+            }
+          });
+        });
+        
+        // Cerrar el contenido cuando se hace clic fuera de él
+        document.addEventListener('click', function(event) {
+          if (!event.target.closest('.em-card')) {
+            const contenidosAbiertos = document.querySelectorAll('.card-content.content-visible');
+            contenidosAbiertos.forEach(contenido => {
+              contenido.classList.remove('content-visible');
+              const boton = contenido.previousElementSibling;
+              if (boton && boton.classList.contains('em-btn')) {
+                boton.textContent = 'Mostrar más';
+              }
+            });
+          }
+        });
+      });
+    </script>
+    
+    <!-- Magic Navigation Script -->
+    <script src="./JS/magic-nav.js"></script>
+</body>
+</html>

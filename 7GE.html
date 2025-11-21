@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7GE - Generadores Eléctricos</title>
+    <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/normalize.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilos.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilo2.css?v=1">
+    <link rel="stylesheet" href="./CSS/7GE.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .btn-back {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn-back:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <div class="div__logo">
+                <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+                <h2 class="nav__title">INFOSERVICE.</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="menu__links">Inicio</a></li>
+                    <li><a href="ELECTROMECANICA.html" class="menu__links">Electromecánica</a></li>
+                </ul>
+            </nav>
+            <div class="nav__menu">
+                <img src="./IMAGENES/menu.svg" alt="nav__img">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <!-- Modern Navigation Menu -->
+            <div class="tech-nav-container">
+                <div class="tech-nav-grid">
+                    <a href="#generadores" class="tech-nav-card">
+                        <div class="tech-nav-card__header">
+                            <div class="tech-nav-card__label">Sección Principal</div>
+                        </div>
+                        <div class="tech-nav-card__content">
+                            <h2 class="tech-nav-card__title">⚡ GENERADORES ELECTRICOS</h2>
+                            <p class="tech-nav-card__description">Producción de energía eléctrica</p>
+                        </div>
+                        <div class="tech-nav-card__glow"></div>
+                        <div class="tech-nav-card__circuit"></div>
+                    </a>
+
+                    <a href="#quiz" class="tech-nav-card">
+                        <div class="tech-nav-card__header">
+                            <div class="tech-nav-card__label">Evaluación</div>
+                        </div>
+                        <div class="tech-nav-card__content">
+                            <h2 class="tech-nav-card__title">📋 QUIZ INTERACTIVO</h2>
+                            <p class="tech-nav-card__description">Pon a prueba tus conocimientos</p>
+                        </div>
+                        <div class="tech-nav-card__glow"></div>
+                        <div class="tech-nav-card__circuit"></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sección GENERADORES ELECTRICOS -->
+            <div id="generadores" class="tech-content-box">
+                <h2 class="tech-section-title">⚡ GENERADORES ELECTRICOS</h2>
+                
+                <!-- Introducción a Generadores -->
+                <div class="tech-intro-section">
+                    <div class="tech-intro-icon">⚡</div>
+                    <h3>Generadores Eléctricos: Conversión de Energía Mecánica a Eléctrica</h3>
+                    <p>Los generadores eléctricos son dispositivos electromecánicos fundamentales que convierten energía mecánica en energía eléctrica mediante el principio de inducción electromagnética. Son la base de la producción de energía eléctrica en todo el mundo, desde pequeñas aplicaciones portátiles hasta grandes centrales de generación que alimentan ciudades enteras.</p>
+                </div>
+
+                <!-- Principio de Funcionamiento -->
+                <div class="tech-principle-section">
+                    <h3>Principio de Funcionamiento</h3>
+                    <div class="tech-principle-grid">
+                        <div class="tech-principle-item">
+                            <div class="tech-principle-icon">🧲</div>
+                            <h4>Inducción Electromagnética</h4>
+                            <p>Basado en la ley de Faraday: cuando un conductor corta líneas de campo magnético, se induce una corriente eléctrica.</p>
+                        </div>
+                        <div class="tech-principle-item">
+                            <div class="tech-principle-icon">🔄</div>
+                            <h4>Rotación Relativa</h4>
+                            <p>El movimiento relativo entre el campo magnético y los conductores genera la fuerza electromotriz (FEM).</p>
+                        </div>
+                        <div class="tech-principle-item">
+                            <div class="tech-principle-icon">⚡</div>
+                            <h4>Corriente Inducida</h4>
+                            <p>La FEM inducida provoca el flujo de corriente eléctrica a través del circuito conectado al generador.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipos Principales de Generadores -->
+                <div class="tech-types-section">
+                    <h3>Tipos Principales de Generadores</h3>
+                    <div class="tech-types-grid">
+                        <div class="tech-type-card">
+                            <div class="tech-type-header">
+                                <div class="tech-type-icon">⚡</div>
+                                <h4>Generadores de Corriente Alterna (AC)</h4>
+                            </div>
+                            <div class="tech-type-content">
+                                <p>Producen corriente alterna y son los más utilizados en aplicaciones de potencia debido a su eficiencia y facilidad de distribución.</p>
+                                <div class="tech-specs">
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Frecuencia:</span>
+                                        <span class="tech-spec-value">50/60 Hz</span>
+                                    </div>
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Potencia:</span>
+                                        <span class="tech-spec-value">1 kW - 1000 MW</span>
+                                    </div>
+                                </div>
+                                <div class="tech-applications">
+                                    <span class="tech-app-tag">Centrales eléctricas</span>
+                                    <span class="tech-app-tag">Generadores industriales</span>
+                                    <span class="tech-app-tag">Sistemas de respaldo</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-type-card">
+                            <div class="tech-type-header">
+                                <div class="tech-type-icon">🔋</div>
+                                <h4>Generadores de Corriente Continua (DC)</h4>
+                            </div>
+                            <div class="tech-type-content">
+                                <p>Producen corriente continua mediante un conmutador. Menos comunes hoy en día pero aún utilizados en aplicaciones específicas.</p>
+                                <div class="tech-specs">
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Tensión:</span>
+                                        <span class="tech-spec-value">6V - 500V DC</span>
+                                    </div>
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Potencia:</span>
+                                        <span class="tech-spec-value">100W - 10MW</span>
+                                    </div>
+                                </div>
+                                <div class="tech-applications">
+                                    <span class="tech-app-tag">Carga de baterías</span>
+                                    <span class="tech-app-tag">Sistemas de tracción</span>
+                                    <span class="tech-app-tag">Electrolisis</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-type-card">
+                            <div class="tech-type-header">
+                                <div class="tech-type-icon">🏭</div>
+                                <h4>Generadores Síncronos</h4>
+                            </div>
+                            <div class="tech-type-content">
+                                <p>Operan a velocidad constante sincronizada con la frecuencia de la red. Son los más utilizados en grandes centrales de generación.</p>
+                                <div class="tech-specs">
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Velocidad:</span>
+                                        <span class="tech-spec-value">3000/3600 RPM</span>
+                                    </div>
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Eficiencia:</span>
+                                        <span class="tech-spec-value">95% - 98%</span>
+                                    </div>
+                                </div>
+                                <div class="tech-applications">
+                                    <span class="tech-app-tag">Centrales hidroeléctricas</span>
+                                    <span class="tech-app-tag">Plantas térmicas</span>
+                                    <span class="tech-app-tag">Turbinas eólicas</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-type-card">
+                            <div class="tech-type-header">
+                                <div class="tech-type-icon">🔄</div>
+                                <h4>Generadores de Inducción</h4>
+                            </div>
+                            <div class="tech-type-content">
+                                <p>Funcionan como motores de inducción operados en modo generador. Simples, robustos y económicos.</p>
+                                <div class="tech-specs">
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Deslizamiento:</span>
+                                        <span class="tech-spec-value">Negativo</span>
+                                    </div>
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Mantenimiento:</span>
+                                        <span class="tech-spec-value">Mínimo</span>
+                                    </div>
+                                </div>
+                                <div class="tech-applications">
+                                    <span class="tech-app-tag">Turbinas eólicas pequeñas</span>
+                                    <span class="tech-app-tag">Minihidráulicas</span>
+                                    <span class="tech-app-tag">Cogeneración</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Componentes Principales -->
+                <div class="tech-components-section">
+                    <h3>Componentes Principales</h3>
+                    <div class="tech-components-grid">
+                        <div class="tech-component-card">
+                            <div class="tech-component-icon">🧲</div>
+                            <h4>Rotor (Inducido)</h4>
+                            <p>Parte giratoria que contiene los devanados donde se induce la corriente. Puede ser de imanes permanentes o devanado.</p>
+                        </div>
+                        
+                        <div class="tech-component-card">
+                            <div class="tech-component-icon">🏭</div>
+                            <h4>Estator (Inductor)</h4>
+                            <p>Parte fija que genera el campo magnético. Contiene los devanados de campo o imanes permanentes.</p>
+                        </div>
+                        
+                        <div class="tech-component-card">
+                            <div class="tech-component-icon">🔄</div>
+                            <h4>Colector/Anillos Rozantes</h4>
+                            <p>En generadores DC, colector de delgas; en AC, anillos rozantes para la excitación del campo.</p>
+                        </div>
+                        
+                        <div class="tech-component-card">
+                            <div class="tech-component-icon">🛡️</div>
+                            <h4>Carcaza y Escudos</h4>
+                            <p>Estructura mecánica que protege los componentes eléctricos y soporta los rodamientos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imágenes de Generadores -->
+                <div class="tech-images-section">
+                    <h3>Galería de Generadores Eléctricos</h3>
+                    <div class="tech-images-grid">
+                        <div class="tech-image-card">
+                            <div class="tech-image-container">
+                                <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/generador1.jpg" alt="Generador Síncrono Grande" class="tech-image">
+                            </div>
+                            <div class="tech-image-info">
+                                <h4>Generador Síncrono Industrial</h4>
+                                <p>Generador de alta potencia utilizado en centrales eléctricas para producción de energía a gran escala.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-image-card">
+                            <div class="tech-image-container">
+                                <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/generador2.jpg" alt="Generador Portátil" class="tech-image">
+                            </div>
+                            <div class="tech-image-info">
+                                <h4>Generador Portátil</h4>
+                                <p>Generador de combustión interna para aplicaciones de respaldo y uso en lugares remotos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-image-card">
+                            <div class="tech-image-container">
+                                <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/generador3.jpg" alt="Generador de Imán Permanente" class="tech-image">
+                            </div>
+                            <div class="tech-image-info">
+                                <h4>Generador de Imán Permanente</h4>
+                                <p>Generador moderno con imanes permanentes, ideal para aplicaciones de energía renovable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Características Técnicas -->
+                <div class="tech-specs-section">
+                    <h3>Especificaciones Técnicas</h3>
+                    <div class="tech-specs-table">
+                        <div class="tech-table-header">
+                            <div>Parámetro</div>
+                            <div>Rango Típico</div>
+                            <div>Descripción</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Potencia Nominal</strong></div>
+                            <div>1kW - 2000MW</div>
+                            <div>Potencia eléctrica de salida</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Tensión Nominal</strong></div>
+                            <div>110V - 25kV</div>
+                            <div>Tensión de generación</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Frecuencia</strong></div>
+                            <div>50/60 Hz</div>
+                            <div>Frecuencia de la corriente AC</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Velocidad</strong></div>
+                            <div>150 - 3600 RPM</div>
+                            <div>Velocidad de rotación</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Rendimiento</strong></div>
+                            <div>85% - 98%</div>
+                            <div>Eficiencia de conversión</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Factor de Potencia</strong></div>
+                            <div>0.8 - 1.0</div>
+                            <div>Relación potencia activa/aparente</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aplicaciones -->
+                <div class="tech-applications-section">
+                    <h3>Aplicaciones Industriales</h3>
+                    <div class="tech-applications-grid">
+                        <div class="tech-app-card">
+                            <div class="tech-app-icon">🏭</div>
+                            <h4>Generación de Energía</h4>
+                            <p>Centrales eléctricas, plantas de energía, sistemas de generación distribuida.</p>
+                        </div>
+                        
+                        <div class="tech-app-card">
+                            <div class="tech-app-icon">🚗</div>
+                            <h4>Transporte</h4>
+                            <p>Vehículos híbridos, trenes eléctricos, sistemas de propulsión marina.</p>
+                        </div>
+                        
+                        <div class="tech-app-card">
+                            <div class="tech-app-icon">🏥</div>
+                            <h4>Sistemas de Emergencia</h4>
+                            <p>Hospitales, centros de datos, sistemas de respaldo críticos.</p>
+                        </div>
+                        
+                        <div class="tech-app-card">
+                            <div class="tech-app-icon">🏗️</div>
+                            <h4>Construcción</h4>
+                            <p>Generadores portátiles, maquinaria de construcción, equipos móviles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Interactivo -->
+            <div id="quiz" class="tech-quiz-container">
+                <div class="quiz-header">
+                    <h2>📋 QUIZ INTERACTIVO</h2>
+                    <p>Responde las siguientes preguntas sobre generadores eléctricos. Debes completar todas las preguntas para continuar.</p>
+                </div>
+
+                <div class="quiz-questions">
+                    <!-- Pregunta 1 -->
+                    <div class="quiz-question" data-question="1">
+                        <div class="question-header">
+                            <span class="question-number">1</span>
+                            <h3>¿Cuál es el principio fundamental en el que se basa el funcionamiento de los generadores eléctricos?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="a" class="quiz-option">
+                                <span class="option-text">Ley de Ohm</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="b" class="quiz-option">
+                                <span class="option-text">Ley de Faraday de inducción electromagnética</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="c" class="quiz-option">
+                                <span class="option-text">Principio de Pascal</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="d" class="quiz-option">
+                                <span class="option-text">Ley de Newton</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="quiz-question" data-question="2">
+                        <div class="question-header">
+                            <span class="question-number">2</span>
+                            <h3>¿Qué tipo de generador es el más utilizado en grandes centrales de generación eléctrica?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="a" class="quiz-option">
+                                <span class="option-text">Generador de corriente continua</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="b" class="quiz-option">
+                                <span class="option-text">Generador de inducción</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="c" class="quiz-option">
+                                <span class="option-text">Generador síncrono</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="d" class="quiz-option">
+                                <span class="option-text">Generador de imanes permanentes</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="quiz-question" data-question="3">
+                        <div class="question-header">
+                            <span class="question-number">3</span>
+                            <h3>¿Cuál es la frecuencia estándar de la corriente alterna generada en la mayoría de los países?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="a" class="quiz-option">
+                                <span class="option-text">25 Hz</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="b" class="quiz-option">
+                                <span class="option-text">50 Hz o 60 Hz</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="c" class="quiz-option">
+                                <span class="option-text">100 Hz</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="d" class="quiz-option">
+                                <span class="option-text">400 Hz</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="quiz-question" data-question="4">
+                        <div class="question-header">
+                            <span class="question-number">4</span>
+                            <h3>¿Qué componente del generador contiene los devanados donde se induce la corriente eléctrica?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="a" class="quiz-option">
+                                <span class="option-text">Estator</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="b" class="quiz-option">
+                                <span class="option-text">Rotor</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="c" class="quiz-option">
+                                <span class="option-text">Carcaza</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="d" class="quiz-option">
+                                <span class="option-text">Colector</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="quiz-question" data-question="5">
+                        <div class="question-header">
+                            <span class="question-number">5</span>
+                            <h3>¿Cuál es el rango de eficiencia típico de los grandes generadores eléctricos modernos?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="a" class="quiz-option">
+                                <span class="option-text">50% - 70%</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="b" class="quiz-option">
+                                <span class="option-text">70% - 85%</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="c" class="quiz-option">
+                                <span class="option-text">85% - 98%</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="d" class="quiz-option">
+                                <span class="option-text">98% - 100%</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-controls">
+                    <button id="submit-quiz" class="quiz-submit-btn" disabled>Enviar Respuestas</button>
+                    <div id="quiz-result" class="quiz-result"></div>
+                    <button id="close-quiz" class="quiz-close-btn" style="display: none;">Cerrar y Continuar</button>
+                </div>
+            </div>
+
+            <div class="tech-content-box text-center">
+                <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Quiz Modal Overlay -->
+    <div id="quiz-overlay" class="quiz-overlay" style="display: none;">
+        <div class="quiz-modal">
+            <div class="quiz-modal-content">
+                <h3>⚠️ Debes completar el quiz primero</h3>
+                <p>Por favor, responde todas las preguntas del quiz antes de poder navegar a otras secciones.</p>
+                <button id="back-to-quiz" class="quiz-back-btn">Volver al Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div id="results-modal" class="quiz-overlay" style="display: none;">
+        <div class="results-modal">
+            <div class="results-modal-content">
+                <div class="results-header">
+                    <div id="result-emoji" class="result-emoji"></div>
+                    <h3 id="result-title" class="result-title"></h3>
+                </div>
+                <div class="results-body">
+                    <p id="result-message" class="result-message"></p>
+                    <div class="result-details">
+                        <div class="result-score">
+                            <span class="score-label">Puntuación:</span>
+                            <span id="score-percentage" class="score-value"></span>
+                        </div>
+                        <div class="result-answers">
+                            <span class="answers-label">Respuestas correctas:</span>
+                            <span id="correct-answers" class="answers-value"></span>
+                        </div>
+                    </div>
+                    <div id="certificate-info" class="certificate-info" style="display: none;">
+                        <p>📧 Tus resultados han sido enviados a web.infoservice25@gmail.com</p>
+                        <p>🏆 ¡Guarda este certificado de participación!</p>
+                    </div>
+                </div>
+                <div class="results-actions">
+                    <button id="close-results" class="quiz-close-btn">Cerrar y Continuar</button>
+                    <button id="retry-quiz" class="retry-btn">Intentar Nuevamente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Quiz functionality
+        let quizCompleted = false;
+        const correctAnswers = {
+            q1: 'b', // Ley de Faraday
+            q2: 'c', // Generador síncrono
+            q3: 'b', // 50 Hz o 60 Hz
+            q4: 'b', // Rotor
+            q5: 'c'  // 85% - 98%
+        };
+
+        // Get user data from localStorage (assuming it's stored from login)
+        function getUserData() {
+            const userData = localStorage.getItem('userData');
+            return userData ? JSON.parse(userData) : { nombre: 'Usuario', email: 'No registrado' };
+        }
+
+        // Send quiz results via EmailJS
+        function sendQuizResults(userData, score, correctCount, totalQuestions) {
+            // EmailJS configuration - you'll need to set up EmailJS service
+            const templateParams = {
+                to_email: 'web.infoservice25@gmail.com',
+                user_name: userData.nombre,
+                user_email: userData.email,
+                score: score,
+                correct_answers: correctCount,
+                total_questions: totalQuestions,
+                date: new Date().toLocaleString('es-ES')
+            };
+
+            // Using EmailJS service (you need to configure this)
+            // For now, we'll simulate the email sending
+            console.log('Enviando resultados:', templateParams);
+            
+            // In a real implementation, you would use EmailJS like this:
+            // emailjs.send('service_id', 'template_id', templateParams)
+            //   .then(function(response) {
+            //       console.log('Email enviado successfully!', response.status, response.text);
+            //   }, function(error) {
+            //       console.log('Failed to send email...', error);
+            //   });
+
+            // Simulate email sending for demo
+            setTimeout(() => {
+                console.log('✅ Email enviado a web.infoservice25@gmail.com');
+            }, 1000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const quizOptions = document.querySelectorAll('.quiz-option');
+            const submitBtn = document.getElementById('submit-quiz');
+            const quizResult = document.getElementById('quiz-result');
+            const closeQuizBtn = document.getElementById('close-quiz');
+            const quizOverlay = document.getElementById('quiz-overlay');
+            const backToQuizBtn = document.getElementById('back-to-quiz');
+            const resultsModal = document.getElementById('results-modal');
+            const closeResultsBtn = document.getElementById('close-results');
+            const retryQuizBtn = document.getElementById('retry-quiz');
+            
+            // Check if all questions are answered
+            function checkQuizCompletion() {
+                const questions = document.querySelectorAll('.quiz-question');
+                let allAnswered = true;
+                
+                questions.forEach(question => {
+                    const answeredOptions = question.querySelectorAll('input[type="radio"]:checked');
+                    if (answeredOptions.length === 0) {
+                        allAnswered = false;
+                    }
+                });
+                
+                submitBtn.disabled = !allAnswered;
+            }
+            
+            // Add event listeners to options
+            quizOptions.forEach(option => {
+                option.addEventListener('change', checkQuizCompletion);
+            });
+            
+            // Submit quiz
+            submitBtn.addEventListener('click', function() {
+                const questions = document.querySelectorAll('.quiz-question');
+                let correctCount = 0;
+                
+                questions.forEach(question => {
+                    const questionNum = question.dataset.question;
+                    const selectedOption = question.querySelector(`input[name="q${questionNum}"]:checked`);
+                    
+                    if (selectedOption && selectedOption.value === correctAnswers[`q${questionNum}`]) {
+                        correctCount++;
+                        selectedOption.parentElement.classList.add('correct');
+                    } else if (selectedOption) {
+                        selectedOption.parentElement.classList.add('incorrect');
+                        // Show correct answer
+                        const correctOption = question.querySelector(`input[value="${correctAnswers[`q${questionNum}`]}"]`);
+                        if (correctOption) {
+                            correctOption.parentElement.classList.add('correct');
+                        }
+                    }
+                });
+                
+                const percentage = Math.round((correctCount / questions.length) * 100);
+                const userData = getUserData();
+                
+                // Send results via email
+                sendQuizResults(userData, percentage, correctCount, questions.length);
+                
+                // Show results modal
+                showResultsModal(userData.nombre, percentage, correctCount, questions.length);
+                
+                quizCompleted = true;
+                submitBtn.style.display = 'none';
+                closeQuizBtn.style.display = 'inline-block';
+                
+                // Disable all options after submission
+                quizOptions.forEach(option => {
+                    option.disabled = true;
+                });
+            });
+            
+            // Show results modal
+            function showResultsModal(userName, percentage, correctCount, totalQuestions) {
+                const resultEmoji = document.getElementById('result-emoji');
+                const resultTitle = document.getElementById('result-title');
+                const resultMessage = document.getElementById('result-message');
+                const scorePercentage = document.getElementById('score-percentage');
+                const correctAnswers = document.getElementById('correct-answers');
+                const certificateInfo = document.getElementById('certificate-info');
+                
+                // Set emoji and title based on score
+                if (percentage >= 60) {
+                    resultEmoji.textContent = '😊';
+                    resultTitle.textContent = '¡Felicidades, ' + userName + '!';
+                    resultMessage.textContent = '¡Has aprobado el quiz con éxito! Sigue así.';
+                    certificateInfo.style.display = 'block';
+                } else {
+                    resultEmoji.textContent = '😢';
+                    resultTitle.textContent = userName + ', necesitas mejorar';
+                    resultMessage.textContent = 'Te recomendamos revisar el contenido e intentarlo nuevamente.';
+                    certificateInfo.style.display = 'none';
+                }
+                
+                // Set score details
+                scorePercentage.textContent = percentage + '%';
+                correctAnswers.textContent = correctCount + ' de ' + totalQuestions;
+                
+                // Show modal
+                resultsModal.style.display = 'flex';
+            }
+            
+            // Close quiz and enable navigation
+            closeQuizBtn.addEventListener('click', function() {
+                quizCompleted = true;
+                quizOverlay.style.display = 'none';
+                // Scroll to top or show completion message
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            // Close results modal
+            closeResultsBtn.addEventListener('click', function() {
+                resultsModal.style.display = 'none';
+                quizCompleted = true;
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            // Retry quiz
+            retryQuizBtn.addEventListener('click', function() {
+                // Reset quiz
+                location.reload(); // Simple reload to reset everything
+            });
+            
+            // Back to quiz from modal
+            backToQuizBtn.addEventListener('click', function() {
+                quizOverlay.style.display = 'none';
+                document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            // Prevent navigation if quiz not completed
+            const navLinks = document.querySelectorAll('a:not([href="#generadores"]):not([href="#quiz"]):not(.btn-back)');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (!quizCompleted) {
+                        e.preventDefault();
+                        quizOverlay.style.display = 'flex';
+                    }
+                });
+            });
+            
+            // Prevent closing window if quiz not completed
+            window.addEventListener('beforeunload', function(e) {
+                if (!quizCompleted) {
+                    e.preventDefault();
+                    e.returnValue = 'Debes completar el quiz antes de salir de la página.';
+                    return e.returnValue;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "infoservice",
+  "version": "1.0.0",
+  "description": "INFOSERVICE website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server .",
+    "build": "echo 'No build process needed for static site'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

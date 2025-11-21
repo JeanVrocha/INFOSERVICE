@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3ES - Elementos de Señalización</title>
+    <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/normalize.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilos.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilo2.css?v=1">
+    <link rel="stylesheet" href="./CSS/3ES.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .btn-back {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn-back:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <div class="div__logo">
+                <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+                <h2 class="nav__title">INFOSERVICE.</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="menu__links">Inicio</a></li>
+                    <li><a href="ELECTROMECANICA.html" class="menu__links">Electromecánica</a></li>
+                </ul>
+            </nav>
+            <div class="nav__menu">
+                <img src="./IMAGENES/menu.svg" alt="nav__img">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <!-- Modern Navigation Menu -->
+            <div class="magic-nav-container">
+                <div class="magic-nav-grid">
+                    <a href="#luces-piloto" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección Principal</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">💡 LUCES PILOTO</h2>
+                            <p class="magic-nav-card__description">Elementos de señalización visual</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sección LUCES PILOTO -->
+            <div id="luces-piloto" class="content-box">
+                <h2>💡 LUCES PILOTO</h2>
+                
+                <!-- Introducción a Luces Piloto -->
+                <div class="info-section">
+                    <h3>Luces Piloto: Elementos de Señalización Visual</h3>
+                    <p>Las luces piloto son dispositivos de señalización visual que indican el estado operativo de equipos eléctricos y sistemas de control. Funcionan como indicadores visuales instantáneos que permiten a los operadores identificar rápidamente condiciones específicas como encendido, apagado, fallas, advertencias o estados de funcionamiento normal.</p>
+                </div>
+
+                <!-- Tipos de Luces Piloto -->
+                <div class="info-section">
+                    <h3>1. Tipos Principales de Luces Piloto</h3>
+                    <p>Las luces piloto se clasifican según su tecnología y aplicación:</p>
+                    
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">💡</div>
+                            <h4>Luces Incandescentes</h4>
+                            <p>Utilizan filamentos de tungsteno que se calientan al pasar corriente. Son las más tradicionales pero menos eficientes.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Paneles de control antiguos, indicadores básicos</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔦</div>
+                            <h4>Luces LED</h4>
+                            <p>Diodos emisores de luz con alta eficiencia energética, larga vida útil y disponibles en múltiples colores.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Sistemas modernos, control industrial, automatización</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">⚡</div>
+                            <h4>Luces de Neón</h4>
+                            <p>Funcionan con gas neón ionizado, produciendo una luz característica naranja-rojiza.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Indicadores de alta tensión, señalización de presencia de voltaje</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔆</div>
+                            <h4>Luces Halógenas</h4>
+                            <p>Variantes mejoradas de las incandescentes con gas halógeno para mayor eficiencia y vida útil.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Iluminación de precisión, indicadores de alta intensidad</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Código de Colores -->
+                <div class="info-section">
+                    <h3>2. Código de Colores Estándar</h3>
+                    <p>Los colores de las luces piloto siguen normas internacionales para estandarizar su significado:</p>
+                    
+                    <div class="table-container">
+                        <table class="classification-table">
+                            <thead>
+                                <tr>
+                                    <th>Color</th>
+                                    <th>Significado Principal</th>
+                                    <th>Aplicaciones Típicas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong style="color: #ff0000;">🔴 Rojo</strong></td>
+                                    <td>Peligro, emergencia, falla, parada</td>
+                                    <td>Sobrecarga, cortocircuito, parada de emergencia, falla crítica</td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="color: #ffff00;">🟡 Amarillo</strong></td>
+                                    <td>Advertencia, precaución, atención</td>
+                                    <td>Nivel bajo, temperatura alta, mantenimiento requerido</td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="color: #00ff00;">🟢 Verde</strong></td>
+                                    <td>Normal, seguro, operación correcta</td>
+                                    <td>Equipo funcionando, sistema OK, proceso normal</td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="color: #00ffff;">🔵 Azul</strong></td>
+                                    <td>Información, especial, comando</td>
+                                    <td>Modo automático, información específica, comandos activos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="color: #ffffff;">⚪ Blanco</strong></td>
+                                    <td>Neutro, presencia de tensión</td>
+                                    <td>Circuito energizado, presencia de voltaje, estado neutro</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Características Técnicas -->
+                <div class="info-section">
+                    <h3>3. Características Técnicas</h3>
+                    <p>Las luces piloto deben cumplir con especificaciones técnicas precisas:</p>
+                    
+                    <div class="elemento-container">
+                        <div class="elemento-texto">
+                            <ul class="elemento-lista">
+                                <li><strong>Tensión de operación:</strong> Desde 6V hasta 250V AC/DC según aplicación.</li>
+                                <li><strong>Consumo de potencia:</strong> LED: 0.5-2W, Incandescente: 2-10W.</li>
+                                <li><strong>Vida útil:</strong> LED: 50,000+ horas, Incandescente: 1,000-2,000 horas.</li>
+                                <li><strong>Temperatura de operación:</strong> Generalmente -25°C a +70°C.</li>
+                                <li><strong>Grado de protección:</strong> IP40 a IP67 según ambiente industrial.</li>
+                                <li><strong>Material del difusor:</strong> Policarbonato, PMMA o vidrio templado.</li>
+                            </ul>
+                        </div>
+                        <div class="elemento-imagen">
+                            <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/lucespiloto1.png" alt="Tipos de luces piloto industriales" class="imagen-destacada">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Montaje e Instalación -->
+                <div class="info-section">
+                    <h3>4. Montaje e Instalación</h3>
+                    <p>La correcta instalación de luces piloto es fundamental para su fiabilidad:</p>
+                    
+                    <div class="classification-grid">
+                        <div class="classification-item">
+                            <h4>Montaje Frontal</h4>
+                            <p>Instalación directa en paneles de control con orificios de 22mm o 30mm estándar. Incluye sistema de sujeción por tuerca o clip.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>Montaje en Riel DIN</h4>
+                            <p>Módulos diseñados para montaje rápido en rieles DIN de 35mm, ideales para tableros eléctricos compactos.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>Conexión Eléctrica</h4>
+                            <p>Terminales de tornillo, resorte o conector rápido para facilitar el cableado y mantenimiento.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aplicaciones Industriales -->
+                <div class="info-section">
+                    <h3>5. Aplicaciones Industriales</h3>
+                    <p>Las luces piloto son esenciales en numerosas aplicaciones industriales:</p>
+                    
+                    <div class="parameters-grid">
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🏭</div>
+                            <h4>Control de Procesos</h4>
+                            <p>Indicación de estados de bombas, motores, válvulas y equipos de proceso.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">⚠️</div>
+                            <h4>Sistemas de Seguridad</h4>
+                            <p>Señalización de alarmas, emergencias y condiciones de peligro inmediato.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🔧</div>
+                            <h4>Diagnóstico de Equipos</h4>
+                            <p>Indicación de fallas, mantenimiento requerido y estados operativos.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🎛️</div>
+                            <h4>Paneles de Operación</h4>
+                            <p>Interface visual para operadores en sistemas de control industrial.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Normativas y Estándares -->
+                <div class="info-section">
+                    <h3>6. Normativas y Estándares</h3>
+                    <p>Las luces piloto deben cumplir con normativas internacionales:</p>
+                    
+                    <div class="classification-grid">
+                        <div class="classification-item">
+                            <h4>IEC 60073</h4>
+                            <p>Estándar internacional para colores de indicadores luminosos en equipos industriales y paneles de control.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>IEC 60947-5-1</h4>
+                            <p>Requisitos para dispositivos de control y circuitos auxiliares, incluyendo indicadores luminosos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Nota Importante -->
+                    <div class="important-note">
+                        <div class="note-icon">📚</div>
+                        <div class="note-content">
+                            <h4>Nota Importante</h4>
+                            <p>La selección correcta del color y tipo de luz piloto es crucial para la seguridad y eficiencia operativa. Siempre se debe seguir el código de colores estandarizado y considerar factores como el ambiente de operación, distancia de visualización y requisitos específicos de la aplicación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box text-center">
+                <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const botonesMostrarMas = document.querySelectorAll('.mostrar-mas');
+        
+        botonesMostrarMas.forEach(boton => {
+          boton.addEventListener('click', function() {
+            const contenido = this.nextElementSibling;
+            
+            if (contenido && contenido.classList.contains('card-content')) {
+              contenido.classList.toggle('content-visible');
+              
+              if (contenido.classList.contains('content-visible')) {
+                this.textContent = 'Mostrar menos';
+              } else {
+                this.textContent = 'Mostrar más';
+              }
+            }
+          });
+        });
+        
+        // Cerrar el contenido cuando se hace clic fuera de él
+        document.addEventListener('click', function(event) {
+          if (!event.target.closest('.em-card')) {
+            const contenidosAbiertos = document.querySelectorAll('.card-content.content-visible');
+            contenidosAbiertos.forEach(contenido => {
+              contenido.classList.remove('content-visible');
+              const boton = contenido.previousElementSibling;
+              if (boton && boton.classList.contains('em-btn')) {
+                boton.textContent = 'Mostrar más';
+              }
+            });
+          }
+        });
+      });
+    </script>
+    
+    <!-- Magic Navigation Script -->
+    <script src="./JS/magic-nav.js"></script>
+</body>
+</html>

@@ -53,86 +53,523 @@
     </nav>
   </header>
 
+  <!-- Modern Navigation Menu -->
+  <div class="magic-nav-container">
+    <div class="magic-nav-grid">
+      <a href="#elementos-maniobra" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 1</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">🔧 Elementos de Maniobra</h2>
+          <p class="magic-nav-card__description">Pulsadores y dispositivos de control manual</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#selectores-conmutadores" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 2</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">🛠️ Selectores y Conmutadores</h2>
+          <p class="magic-nav-card__description">Tipos de switches y clasificación eléctrica</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#interruptores" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 3</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">⚡ Interruptores</h2>
+          <p class="magic-nav-card__description">Dispositivos de protección y control</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+    </div>
+  </div>
+
   <div class="main-content">
     <!-- Sección ELEMENTOS DE MANIOBRA MANUAL -->
-    <div class="content-box">
-      <h2>ELEMENTOS DE MANIOBRA MANUAL</h2>
+    <div id="elementos-maniobra" class="content-box">
+      <h2>🔧 ELEMENTOS DE MANIOBRA MANUAL</h2>
       
-      <!-- Contenido de Pulsador Eléctrico -->
-      <div class="elemento-container">
-        <div class="elemento-texto">
-          <h3>¿Qué es un pulsador?</h3>
-          <ul class="elemento-lista">
-            <li>Un pulsador eléctrico es un dispositivo que controla el flujo de corriente en un circuito mediante una simple presión.</li>
-            <li>Se utiliza ampliamente en hogares, industrias y sistemas electrónicos modernos, siendo uno de los interruptores más comunes.</li>
-            <li>Su mecanismo básico consiste en cerrar o abrir el circuito cuando se presiona, permitiendo o interrumpiendo el paso de la corriente.</li>
-          </ul>
-        </div>
-        <div class="elemento-imagen">
-          <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/pulsadores1.png" alt="Pulsador eléctrico" class="imagen-destacada">
+      <!-- Concepto ELEMENTOS DE MANIOBRA MANUAL -->
+      <div class="info-section">
+        <h3>Dispositivos de maniobra</h3>
+        <p>Los dispositivos de maniobra eléctrica, también conocidos como aparatos o equipos de conmutación (del inglés switchgear), son componentes esenciales en cualquier sistema eléctrico, su función técnica es la de establecer, interrumpir o modificar la continuidad de un circuito eléctrico. Estos equipos operan en condiciones normales de servicio, como la conexión y desconexión rutinaria de cargas (ej. selectores e interruptores), y son cruciales para la seguridad del sistema al permitir la interrupción de corrientes de fallo como sobrecargas o cortocircuitos. Estos dispositivos garantizan el control, la protección y el aislamiento de la instalación, facilitando las labores de mantenimiento y asegurando el correcto flujo de energía conforme a las normativas de seguridad como las dictadas por las normas IEC, a continuación, veremos unos de los componentes menos complejos en el arranque y paro de los sistemas de control:</p>
+      </div>
+
+      <!-- ¿Qué es un pulsador? -->
+      <div class="info-section">
+        <h3>¿Qué es un pulsador?</h3>
+        <div class="pulsador-grid">
+          <div class="pulsador-text">
+            <ul class="elemento-lista">
+              <li>Un pulsador eléctrico es un dispositivo que controla el flujo de corriente en un circuito mediante una simple presión.</li>
+              <li>Se utiliza ampliamente en hogares, industrias y sistemas electrónicos modernos, siendo uno de los interruptores más comunes.</li>
+              <li>Su mecanismo básico consiste en cerrar o abrir el circuito cuando se presiona, permitiendo o interrumpiendo el paso de la corriente.</li>
+            </ul>
+          </div>
+          <div class="pulsador-image">
+            <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/pulsadores1.png" alt="Pulsador eléctrico" class="imagen-destacada">
+          </div>
         </div>
       </div>
 
       <!-- Tipos de Pulsadores -->
-      <div class="elemento-container">
-        <div class="elemento-texto">
-          <h3>Tipos principales de pulsadores</h3>
-          <ul class="elemento-lista">
-            <li><strong>Momentáneos:</strong> Solo permiten el paso de corriente mientras se mantiene presionado. Ejemplo: timbres.</li>
-            <li><strong>Con enclavamiento:</strong> Mantienen la posición hasta que se vuelven a pulsar, como interruptores de luz.</li>
-            <li><strong>Iluminados:</strong> Incorporan una luz LED o neón para indicar estado o facilitar la visibilidad.</li>
-          </ul>
+      <div class="info-section">
+        <h3>Tipos principales de pulsadores</h3>
+        <div class="types-grid">
+          <div class="type-card">
+            <div class="type-icon">⚡</div>
+            <h4>Momentáneos</h4>
+            <p>Solo permiten el paso de corriente mientras se mantiene presionado.</p>
+            <div class="example-tag">Ejemplo: timbres</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">🔒</div>
+            <h4>Con enclavamiento</h4>
+            <p>Mantienen la posición hasta que se vuelven a pulsar.</p>
+            <div class="example-tag">Ejemplo: interruptores de luz</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">💡</div>
+            <h4>Iluminados</h4>
+            <p>Incorporan una luz LED o neón para indicar estado o facilitar la visibilidad.</p>
+            <div class="example-tag">Ejemplo: paneles de control</div>
+          </div>
         </div>
-        <div class="elemento-imagen">
-          <!-- Espacio para imagen o video relacionado con los tipos de pulsadores -->
+        
+        <div class="video-container">
+          <h4>Demostración de funcionamiento</h4>
+          <video width="480" height="270" controls>
+            <source src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/PULSADORESVID.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+          </video>
         </div>
       </div>
-    </div>
 
-    <!-- Sección ELEMENTOS DE MANDOS Y AUXILIARES -->
-    <div class="content-box">
-      <h2>ELEMENTOS DE MANDOS Y AUXILIARES</h2>
-      <div class="em-slider" data-slider="mandos-auxiliares">
-        <div class="em-viewport">
-          <div class="em-track">
-            <!-- Ejemplo de tarjeta - Reemplazar con contenido real -->
-            <article class="em-card" tabindex="0">
-              <div class="em-card-media">
-                <img src="./IMAGENES/placeholder.jpg" alt="Elemento de mando o auxiliar">
-              </div>
-              <div class="em-card-meta">
-                <h3>NOMBRE DEL ELEMENTO</h3>
-                <button class="em-btn mostrar-mas" type="button">Mostrar más</button>
-                <div class="card-content">
-                  <p>Información detallada del elemento aparecerá aquí.</p>
-                </div>
-              </div>
-            </article>
+      <!-- Funcionamiento de un pulsador -->
+      <div class="info-section">
+        <h3>Funcionamiento de un pulsador</h3>
+        <p>En la posición normal (cuando no se ejerce ninguna maniobra sobre el pulsador) se pueden apreciar los contactos del pulsador abierto como se aprecia al lado izquierdo de la imagen, por otro lado, al lado derecho de la imagen se aprecia que mientras se aplica una fuerza externa los contactos se cierran y se produce el paso de la energía. Al cesar dicha fuerza, el dispositivo retorna automáticamente a su posición de reposo predeterminada (normalmente abierto "NA" o normalmente cerrado "NC") gracias a la acción de un mecanismo de retorno.</p>
+        
+        <div class="functioning-image">
+          <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/pulsadores2.png" alt="Funcionamiento de pulsador" class="imagen-destacada">
+        </div>
+      </div>
+
+      <!-- Código de Colores -->
+      <div class="info-section">
+        <h3>🎨 Código de Colores en Dispositivos de Maniobra</h3>
+        <p>Es de mucha importancia conocer el código de colores en los dispositivos de maniobra eléctrica, como los pulsadores, el cual existe principalmente por razones de seguridad, rapidez de acción y estandarización en la interfaz hombre-máquina, siguiendo normativas internacionales como la IEC 60204.</p>
+        
+        <p>Este sistema de codificación visual permite al operador identificar de forma instantánea la función y el estado del dispositivo, lo cual es crítico en entornos industriales donde una acción incorrecta o demorada puede generar accidentes o daños a la maquinaria.</p>
+        
+        <h4>Tabla de Código de colores para los órganos de accionamiento de los pulsadores y sus significados (Norma IEC 60204-1)</h4>
+        
+        <div class="table-container">
+          <table class="color-table">
+            <thead>
+              <tr>
+                <th>Color</th>
+                <th>Significado</th>
+                <th>Explicación</th>
+                <th>Ejemplos de aplicación</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="red-row">
+                <td><span class="color-indicator red"></span> ROJO</td>
+                <td>Emergencia</td>
+                <td>Actúa en caso de condiciones peligrosas de emergencia</td>
+                <td>Parada de emergencia</td>
+              </tr>
+              <tr class="yellow-row">
+                <td><span class="color-indicator yellow"></span> AMARILLO</td>
+                <td>Anomalía</td>
+                <td>Actúa en caso de condiciones anormales</td>
+                <td>Intervención para suprimir condiciones anormales</td>
+              </tr>
+              <tr class="green-row">
+                <td><span class="color-indicator green"></span> VERDE</td>
+                <td>Normal (marcha)</td>
+                <td>Actúa para iniciar bajo condiciones normales</td>
+                <td>Puesta en marcha de equipos</td>
+              </tr>
+              <tr class="blue-row">
+                <td><span class="color-indicator blue"></span> AZUL</td>
+                <td>Obligatorio</td>
+                <td>Actúa en caso de condiciones que requieran una acción obligatoria</td>
+                <td>Función de rearme</td>
+              </tr>
+              <tr class="white-row">
+                <td><span class="color-indicator white"></span> BLANCO</td>
+                <td>Sin significación específica atribuida</td>
+                <td>Para un inicio general de las funciones excepto la parada de emergencia</td>
+                <td>Funciones generales</td>
+              </tr>
+              <tr class="gray-row">
+                <td><span class="color-indicator gray"></span> GRIS</td>
+                <td>Sin significación específica atribuida</td>
+                <td>Similar al blanco, para funciones no específicas</td>
+                <td>Funciones auxiliares</td>
+              </tr>
+              <tr class="black-row">
+                <td><span class="color-indicator black"></span> NEGRO</td>
+                <td>Sin significación específica atribuida</td>
+                <td>Similar al blanco, para funciones no específicas</td>
+                <td>Funciones auxiliares</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="color-reference-image">
+          <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/TABLAP.jpeg" alt="Tabla de referencia de colores" class="imagen-destacada">
+        </div>
+      </div>
+
+      <!-- Fallas Comunes -->
+      <div class="info-section">
+        <h3>⚠️ Fallas Comunes en Pulsadores Eléctricos</h3>
+        <p>Los pulsadores, aunque son dispositivos de maniobra sencillos, pueden presentar varias fallas que comprometen la operación del circuito de control. En este pequeño apartado se te mencionaran algunas de las fallas más comunes centradas en los contactos y el mecanismo de accionamiento.</p>
+        
+        <div class="failures-grid">
+          <div class="failure-card">
+            <div class="failure-icon">🔌</div>
+            <h4>Fallo en el circuito de control</h4>
+            <p>Uno de los más comunes es el fallo en el circuito de control, provocando que el equipo no arranque o no responde al ser pulsado. La causa de este problema suele ser acumulación de suciedad, óxido o corrosión entre los contactos ocasionado por la constante maniobra o humedad que rodea en el ambiente. Esto aumenta la resistencia de contacto, impidiendo que la corriente fluya correctamente incluso cuando el pulsador está accionado.</p>
+          </div>
+          
+          <div class="failure-card">
+            <div class="failure-icon">⚡</div>
+            <h4>Contactos soldados o pegados</h4>
+            <p>Si el circuito de control permanece activo incluso después de soltar el pulsador, la causa más probable de este problema es que los contactos se han soldado o pegado debido a un arco eléctrico generado por corrientes excesivas o por un desgaste severo.</p>
+          </div>
+          
+          <div class="failure-card">
+            <div class="failure-icon">🔄</div>
+            <h4>Falla del resorte de retorno</h4>
+            <p>Como vimos en el funcionamiento del pulsador una de las partes que le permiten ser un dispositivo que vuelva a su posición después de retirar el esfuerzo es un resorte, en algunos casos este no puede volver a su posición de reposo al soltarse o lo hace de forma lenta, provocando una falla de contacto cerrado debido a la perdida de su elasticidad o rompimiento debido a la fatiga por el uso constante.</p>
+          </div>
+          
+          <div class="failure-card">
+            <div class="failure-icon">💧</div>
+            <h4>Desgaste de sellos</h4>
+            <p>El desgaste de los sellos también suele ocasionar la entrada de polvo y líquidos acelerando la corrosión y dañando incluso otros equipos.</p>
+          </div>
+        </div>
+        
+        <div class="important-note">
+          <div class="note-icon">📚</div>
+          <div class="note-content">
+            <h4>Nota Importante</h4>
+            <p>Es importante que el alumno desde su formación universitaria comprenda y conozca cada una de las partes desde los componentes más complejos hasta lo más simple, permitiéndole anteponerse a posibles fallas llegando a ejecutar las buenas prácticas de manufactura a la hora de ejecutar los mantenimientos.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Sección ELEMENTOS DE SEÑALIZACIÓN -->
-    <div class="content-box">
-      <h2>ELEMENTOS DE SEÑALIZACIÓN</h2>
-      <div class="em-slider" data-slider="senalizacion">
-        <div class="em-viewport">
-          <div class="em-track">
-            <!-- Ejemplo de tarjeta - Reemplazar con contenido real -->
-            <article class="em-card" tabindex="0">
-              <div class="em-card-media">
-                <img src="./IMAGENES/placeholder.jpg" alt="Elemento de señalización">
-              </div>
-              <div class="em-card-meta">
-                <h3>NOMBRE DEL ELEMENTO</h3>
-                <button class="em-btn mostrar-mas" type="button">Mostrar más</button>
-                <div class="card-content">
-                  <p>Información detallada del elemento aparecerá aquí.</p>
-                </div>
-              </div>
-            </article>
+    <!-- Sección SELECTORES Y CONMUTADORES -->
+    <div id="selectores-conmutadores" class="content-box">
+      <h2>🛠️ SELECTORES Y CONMUTADORES</h2>
+      
+      <div class="elemento-texto">
+        <p>Un selector o conmutador es un dispositivo electromecánico que se utiliza para abrir o cerrar un circuito eléctrico o para dirigir el flujo de corriente a diferentes rutas dentro de un sistema. Su función principal es permitir al usuario o a un sistema automático elegir entre diferentes posiciones o modos de operación.</p>
+      </div>
+
+      <!-- Principio de Funcionamiento -->
+      <div class="info-section">
+        <h3>1. Principio de Funcionamiento</h3>
+        <p>El conmutador consta de uno o más contactos móviles (la parte que se mueve) y contactos fijos (la parte a la que se conecta). Al cambiar la posición del selector, el contacto móvil se conecta o desconecta de los contactos fijos, alterando el camino por donde fluye la electricidad.</p>
+      </div>
+
+      <!-- Clasificación Fundamental -->
+      <div class="info-section">
+        <h3>2. Clasificación Fundamental (Polos y Vías)</h3>
+        <p>Los selectores se clasifican por el número de polos y el número de vías (o tiros) que tienen.</p>
+        
+        <div class="classification-grid">
+          <div class="classification-item">
+            <h4>🔌 Polo (P)</h4>
+            <p>Indica cuántos circuitos separados puede controlar simultáneamente el interruptor.</p>
+            <ul>
+              <li><strong>SP (Single Pole):</strong> Controla un solo circuito.</li>
+              <li><strong>DP (Double Pole):</strong> Controla dos circuitos separados a la vez.</li>
+            </ul>
           </div>
+          
+          <div class="classification-item">
+            <h4>⚡ Vía o Tiro (T)</h4>
+            <p>Indica cuántas posiciones de conexión diferentes tiene cada polo.</p>
+            <ul>
+              <li><strong>ST (Single Throw):</strong> El circuito está encendido o apagado (dos posiciones).</li>
+              <li><strong>DT (Double Throw):</strong> El circuito se conecta a una de dos posiciones de salida diferentes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table class="classification-table">
+            <thead>
+              <tr>
+                <th>Acrónimo</th>
+                <th>Nombre en Inglés</th>
+                <th>Descripción</th>
+                <th>Uso Común</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>SPST</strong></td>
+                <td>Single Pole, Single Throw</td>
+                <td>El interruptor más simple: ON/OFF.</td>
+                <td>Interruptores de luz sencillos.</td>
+              </tr>
+              <tr>
+                <td><strong>SPDT</strong></td>
+                <td>Single Pole, Double Throw</td>
+                <td>Conecta un único polo a una de dos vías.</td>
+                <td>Conmutador para encender una luz desde dos lugares.</td>
+              </tr>
+              <tr>
+                <td><strong>DPST</strong></td>
+                <td>Double Pole, Single Throw</td>
+                <td>Dos circuitos ON/OFF operados por un solo mecanismo.</td>
+                <td>Interruptor principal de un electrodoméstico.</td>
+              </tr>
+              <tr>
+                <td><strong>DPDT</strong></td>
+                <td>Double Pole, Double Throw</td>
+                <td>Dos polos que se conectan a una de dos vías diferentes.</td>
+                <td>Inversión de polaridad en motores (adelante/atrás).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tipos Comunes de Selectores -->
+      <div class="info-section">
+        <h3>3. Tipos Comunes de Selectores y Conmutadores</h3>
+        <p>Existen múltiples tipos de selectores diseñados para diferentes aplicaciones y métodos de accionamiento:</p>
+        
+        <div class="switches-grid">
+          <!-- Interruptor de Palanca -->
+          <div class="switch-card">
+            <div class="switch-image">
+              <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/SELECTOR1.png" alt="Interruptor de Palanca">
+            </div>
+            <div class="switch-content">
+              <h4>🔘 Interruptor de Palanca (Toggle Switch)</h4>
+              <p>Se acciona mediante una palanca que se mueve hacia adelante y hacia atrás, o de lado a lado.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Control de encendido/apagado en paneles de control, electrónica.
+              </div>
+            </div>
+          </div>
+
+          <!-- Interruptor de Botón -->
+          <div class="switch-card">
+            <div class="switch-image">
+              <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/SELECTOR2.jpg" alt="Interruptor de Botón">
+            </div>
+            <div class="switch-content">
+              <h4>🔴 Interruptor de Botón (Push Button Switch)</h4>
+              <p>Se acciona presionando un botón. Pueden ser momentáneos (solo activos mientras se presionan, ej. timbre) o de enganche (mantienen su posición hasta que se presiona de nuevo, ej. encendido de PC).</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Arranque y parada de maquinaria, timbres.
+              </div>
+            </div>
+          </div>
+
+          <!-- Selector Rotatorio -->
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>🎛️ Selector Rotatorio (Rotary Switch)</h4>
+              <p>El usuario gira una perilla para seleccionar entre múltiples posiciones (3, 4, 6 o más). Cada posición conecta el polo central a una vía diferente.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Selección de banda en radios, selección de funciones en multímetros, control de velocidad de ventiladores.
+              </div>
+            </div>
+          </div>
+
+          <!-- Selector Deslizante -->
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>↔️ Selector Deslizante (Slide Switch)</h4>
+              <p>Se acciona deslizando un pequeño actuador a una de dos o más posiciones preestablecidas.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Interruptor de encendido/apagado en pequeños dispositivos electrónicos, selección de rango.
+              </div>
+            </div>
+          </div>
+
+          <!-- Final de Carrera -->
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>🎯 Final de Carrera (Limit Switch)</h4>
+              <p>Son interruptores activados por la presencia o movimiento de una pieza mecánica. Se utilizan para determinar si un objeto ha alcanzado su límite.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Sistemas de seguridad en puertas (ascensores), control de posición en maquinaria CNC.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parámetros Eléctricos Clave -->
+      <div class="info-section">
+        <h3>4. Parámetros Eléctricos Clave</h3>
+        <p>Al seleccionar un conmutador, es crucial considerar:</p>
+        
+        <div class="parameters-grid">
+          <div class="parameter-card">
+            <div class="parameter-icon">⚡</div>
+            <h4>Corriente Nominal (Amperaje)</h4>
+            <p>La máxima corriente que los contactos del interruptor pueden manejar de forma segura.</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">🔋</div>
+            <h4>Tensión Nominal (Voltaje)</h4>
+            <p>El máximo voltaje al que está diseñado para operar.</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">🔄</div>
+            <h4>Vida Útil</h4>
+            <p>El número de ciclos (conexión/desconexión) que se espera que el interruptor funcione correctamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección INTERRUPTOR -->
+    <div id="interruptores" class="content-box">
+      <h2>💡 INTERRUPTORES</h2>
+      
+      <!-- Introducción -->
+      <div class="info-section">
+        <h3>Interruptores: Elementos Básicos para Abrir o Cerrar Circuitos</h3>
+        <p>Un interruptor es un dispositivo electromecánico simple cuya función principal es permitir o interrumpir el flujo de corriente en un circuito eléctrico de forma manual o automática. En esencia, actúa como una llave de paso para la electricidad.</p>
+      </div>
+
+      <!-- Función Principal y Principio Básico -->
+      <div class="info-section">
+        <h3>1. Función Principal y Principio Básico</h3>
+        <p>El interruptor existe en dos estados fundamentales:</p>
+        
+        <div class="types-grid">
+          <div class="type-card">
+            <div class="type-icon">⭕</div>
+            <h4>Abierto (OFF)</h4>
+            <p>El circuito está roto y no hay paso de corriente. El dispositivo conectado está apagado.</p>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">🔴</div>
+            <h4>Cerrado (ON)</h4>
+            <p>El circuito está completo y la corriente fluye libremente. El dispositivo conectado está encendido.</p>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <h4>Principio de Operación</h4>
+          <p>Todo interruptor opera mediante el movimiento de un contacto móvil que toca (cierra el circuito) o se separa (abre el circuito) de un contacto fijo.</p>
+          
+          <div class="elemento-container">
+            <div class="elemento-texto">
+              <ul class="elemento-lista">
+                <li><strong>Contactos:</strong> Suelen ser de materiales conductores (como el cobre o aleaciones de plata) para minimizar la resistencia y evitar el sobrecalentamiento.</li>
+                <li><strong>Actuador:</strong> Es la parte que el usuario manipula (palanca, botón, tecla, etc.) para cambiar la posición de los contactos.</li>
+              </ul>
+            </div>
+            <div class="elemento-imagen">
+              <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/INTERRUPTOR1.jpg" alt="Componentes de un interruptor" class="imagen-destacada">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tipos de Interruptores -->
+      <div class="info-section">
+        <h3>2. Tipos de Interruptores más Comunes</h3>
+        <p>Aunque la función básica es simple, existen diversos tipos según su diseño y aplicación:</p>
+        
+        <div class="table-container">
+          <table class="classification-table">
+            <thead>
+              <tr>
+                <th>Tipo de Interruptor</th>
+                <th>Mecanismo</th>
+                <th>Aplicación Típica</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Interruptor de Tecla (Rocker Switch)</strong></td>
+                <td>Se acciona presionando un lado, lo que "balancea" la tecla.</td>
+                <td>Interruptores de luz domésticos y electrodomésticos.</td>
+              </tr>
+              <tr>
+                <td><strong>Interruptor de Botón (Push Button)</strong></td>
+                <td>Se activa al presionarlo. Puede ser: Momentáneo (vuelve a su posición al soltarlo, ej. timbre) o De Enganche (mantiene la posición ON/OFF).</td>
+                <td>Timbres, teclados, botones de encendido de PC.</td>
+              </tr>
+              <tr>
+                <td><strong>Interruptor de Palanca (Toggle Switch)</strong></td>
+                <td>Se activa moviendo una palanca entre posiciones fijas.</td>
+                <td>Paneles de control industriales, equipos electrónicos.</td>
+              </tr>
+              <tr>
+                <td><strong>Interruptor Deslizante (Slide Switch)</strong></td>
+                <td>Se mueve linealmente una pequeña pestaña para cambiar de posición.</td>
+                <td>Dispositivos pequeños (juguetes, radios) para ON/OFF o selección de rango.</td>
+              </tr>
+              <tr>
+                <td><strong>Interruptor Termomagnético (Disyuntor)</strong></td>
+                <td>Es un interruptor de protección automática. Se abre automáticamente al detectar un cortocircuito o sobrecarga, protegiendo el circuito.</td>
+                <td>Tableros eléctricos (la caja de fusibles principal).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Simbología y Nomenclatura -->
+      <div class="info-section">
+        <h3>3. Simbología y Nomenclatura Básica</h3>
+        <p>Los interruptores se definen por la cantidad de polos y vías (tiros) que controlan:</p>
+        
+        <div class="classification-grid">
+          <div class="classification-item">
+            <h4>SPST (Single Pole, Single Throw / Unipolar, Unitiro)</h4>
+            <p>Es el interruptor simple (ON/OFF) que solo controla un circuito. Es el tipo más básico.</p>
+          </div>
+          
+          <div class="classification-item">
+            <h4>SPDT (Single Pole, Double Throw / Unipolar, Bitiro)</h4>
+            <p>Un polo que conecta la corriente a una de dos vías posibles. Se usa comúnmente como conmutador o selector de tres vías (para encender una luz desde dos lugares diferentes).</p>
+          </div>
+        </div>
+
+        <!-- Video Demostrativo -->
+        <div class="video-container">
+          <h4>📹 Demostración de Funcionamiento de Interruptores</h4>
+          <div class="video-wrapper">
+            <video controls width="100%" poster="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/INTERRUPTOR1.jpg" class="video-horizontal">
+              <source src="./IMAGENES/EQUIPOS/DISPOSITIVOS DE CONTROL PILOTO/VIDINTERRUP.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de videos.
+            </video>
+          </div>
+          <p class="video-instruction">🔍 EXPANDE PARA VISUALIZAR MEJOR</p>
         </div>
       </div>
     </div>
@@ -180,5 +617,8 @@
       });
     });
   </script>
+  
+  <!-- Magic Navigation Script -->
+  <script src="./JS/magic-nav.js"></script>
 </body>
 </html>

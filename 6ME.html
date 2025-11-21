@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6ME - Motores Eléctricos</title>
+    <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/normalize.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilos.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilo2.css?v=1">
+    <link rel="stylesheet" href="./CSS/6ME.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .btn-back {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn-back:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <div class="div__logo">
+                <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+                <h2 class="nav__title">INFOSERVICE.</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="menu__links">Inicio</a></li>
+                    <li><a href="ELECTROMECANICA.html" class="menu__links">Electromecánica</a></li>
+                </ul>
+            </nav>
+            <div class="nav__menu">
+                <img src="./IMAGENES/menu.svg" alt="nav__img">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <!-- Modern Navigation Menu -->
+            <div class="magic-nav-container">
+                <div class="magic-nav-grid">
+                    <a href="#motores-ac" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 1</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">⚡ MOTORES DE CORRIENTE ALTERNA (AC)</h2>
+                            <p class="magic-nav-card__description">Motores de alimentación alterna</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#motores-dc" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 2</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">🔋 MOTORES DE CORRIENTE CONTINUA (DC)</h2>
+                            <p class="magic-nav-card__description">Motores de alimentación continua</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#servomotores-paso" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 3</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">🤖 SERVOMOTORES Y MOTORES PASO A PASO</h2>
+                            <p class="magic-nav-card__description">Robótica y control de precisión</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sección MOTORES DE CORRIENTE ALTERNA (AC) -->
+            <div id="motores-ac" class="content-box">
+                <h2>⚡ MOTORES DE CORRIENTE ALTERNA (AC)</h2>
+                
+                <!-- Introducción a Motores AC -->
+                <div class="info-section">
+                    <h3>Motores de Corriente Alterna: Potencia y Eficiencia Industrial</h3>
+                    <p>Los motores de corriente alterna son dispositivos electromecánicos que convierten energía eléctrica AC en energía mecánica de rotación. Son los motores más utilizados en aplicaciones industriales debido a su robustez, eficiencia y bajo mantenimiento. Operan mediante la interacción de campos magnéticos rotativos creados por corrientes alternas en el estator y el rotor.</p>
+                </div>
+
+                <!-- Tipos Principales de Motores AC -->
+                <div class="info-section">
+                    <h3>1. Tipos Principales de Motores AC</h3>
+                    <p>Los motores AC se clasifican según su construcción y principio de funcionamiento:</p>
+                    
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">⚡</div>
+                            <h4>Motores de Inducción (Jaula de Ardilla)</h4>
+                            <p>Los más comunes en la industria. Robustos, económicos y sin mantenimiento de escobillas. El rotor es inducido por el campo magnético del estator.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Bombas, ventiladores, compresores, transportadores</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔧</div>
+                            <h4>Motores Síncronos</h4>
+                            <p>Operan a velocidad constante sincronizada con la frecuencia de la red. Requieren excitación DC y ofrecen alto factor de potencia.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Generadores, grandes compresores, equipos de precisión</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🏭</div>
+                            <h4>Motores de Rotor Devanado</h4>
+                            <p>Permiten control de velocidad mediante resistencias variables en el rotor. Mayor par de arranque que los de jaula de ardilla.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Grúas, elevadores, aplicaciones de alto par de arranque</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🏠</div>
+                            <h4>Motores Universales</h4>
+                            <p>Pueden operar tanto con AC como DC. Alta velocidad y par, comúnmente usados en herramientas portátiles y electrodomésticos.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Herramientas eléctricas, licuadoras, aspiradoras</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Características Técnicas -->
+                <div class="info-section">
+                    <h3>2. Características Técnicas Fundamentales</h3>
+                    <p>Los motores AC se especifican mediante parámetros técnicos clave:</p>
+                    
+                    <div class="table-container">
+                        <table class="classification-table">
+                            <thead>
+                                <tr>
+                                    <th>Parámetro</th>
+                                    <th>Rango Típico</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Potencia Nominal</strong></td>
+                                    <td>0.1kW - 15MW</td>
+                                    <td>Potencia mecánica de salida del motor</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tensión Nominal</strong></td>
+                                    <td>110V - 13.8kV</td>
+                                    <td>Tensión de alimentación del estator</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Velocidad Síncrona</strong></td>
+                                    <td>3000 - 750 RPM (50Hz)</td>
+                                    <td>Velocidad teórica basada en polos y frecuencia</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Deslizamiento</strong></td>
+                                    <td>0.5% - 5%</td>
+                                    <td>Diferencia entre velocidad síncrona y real</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Rendimiento</strong></td>
+                                    <td>75% - 98%</td>
+                                    <td>Relación entre potencia mecánica y eléctrica</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Factor de Potencia</strong></td>
+                                    <td>0.7 - 0.95</td>
+                                    <td>Relación entre potencia real y aparente</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Control y Variación de Velocidad -->
+                <div class="info-section">
+                    <h3>3. Métodos de Control y Variación de Velocidad</h3>
+                    <p>Existen diferentes métodos para controlar la velocidad de los motores AC:</p>
+                    
+                    <div class="elemento-container">
+                        <div class="elemento-texto">
+                            <ul class="elemento-lista">
+                                <li><strong>Variadores de Frecuencia (VFD):</strong> Control preciso mediante variación de frecuencia y tensión.</li>
+                                <li><strong>Arrancadores Suaves:</strong> Reducen la corriente de arranque mediante control de tensión.</li>
+                                <li><strong>Control por Polos:</strong> Cambio en la configuración de bobinas para velocidades múltiples.</li>
+                                <li><strong>Control de Deslizamiento:</strong> Mediante resistencias en el rotor (motores de rotor devanado).</li>
+                                <li><strong>Control Vectorial:</strong> Control preciso de par y velocidad mediante procesamiento digital.</li>
+                            </ul>
+                        </div>
+                        <div class="elemento-imagen">
+                            <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/motorac1.png" alt="Variador de frecuencia para motor AC" class="imagen-destacada">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección MOTORES DE CORRIENTE CONTINUA (DC) -->
+            <div id="motores-dc" class="content-box">
+                <h2>🔋 MOTORES DE CORRIENTE CONTINUA (DC)</h2>
+                
+                <!-- Introducción a Motores DC -->
+                <div class="info-section">
+                    <h3>Motores de Corriente Continua: Control Preciso y Versatilidad</h3>
+                    <p>Los motores de corriente continua convierten energía eléctrica DC en energía mecánica de rotación. Su principal ventaja es el control preciso y continuo de la velocidad mediante la variación de la tensión de alimentación. Son ampliamente utilizados en aplicaciones que requieren control de velocidad, par ajustable y operación en ambos sentidos de giro.</p>
+                </div>
+
+                <!-- Tipos de Motores DC -->
+                <div class="info-section">
+                    <h3>1. Clasificación de Motores DC</h3>
+                    <p>Los motores DC se clasifican según la configuración de sus bobinas:</p>
+                    
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">🔋</div>
+                            <h4>Motores en Derivación (Shunt)</h4>
+                            <p>Bobina de campo en paralelo con la armadura. Velocidad relativamente constante, control de velocidad mediante tensión.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Herramientas industriales, ventiladores, bombas</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">⚡</div>
+                            <h4>Motores en Serie</h4>
+                            <p>Bobina de campo en serie con la armadura. Alto par de arranque, velocidad variable con la carga.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Arranque de motores de combustión, grúas, trenes</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔧</div>
+                            <h4>Motores Compuestos</h4>
+                            <p>Combinación de bobinas en serie y derivación. Características intermedias entre serie y derivación.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Prensas, maquinaria pesada, aplicaciones industriales</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🏭</div>
+                            <h4>Motores de Imanes Permanentes</h4>
+                            <p>Utilizan imanes permanentes en lugar de bobinas de campo. Alta eficiencia, compactos y sin consumo en campo.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Robótica, vehículos eléctricos, equipos portátiles</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Componentes Principales -->
+                <div class="info-section">
+                    <h3>2. Componentes Principales de un Motor DC</h3>
+                    <p>Un motor DC consta de los siguientes elementos esenciales:</p>
+                    
+                    <div class="classification-grid">
+                        <div class="classification-item">
+                            <h4>Estator (Campo)</h4>
+                            <p>Parte fija que genera el campo magnético. Puede ser bobinado o con imanes permanentes.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>Rotor (Armadura)</h4>
+                            <p>Parte giratoria que contiene las bobinas donde circula la corriente principal.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>Colector de Delgas</h4>
+                            <p>Conmutador mecánico que invierte la corriente en las bobinas del rotor.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>Escobillas</h4>
+                            <p>Contactos deslizantes que suministran corriente al colector desde la fuente externa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ventajas y Desventajas -->
+                <div class="info-section">
+                    <h3>3. Ventajas y Desventajas</h3>
+                    <p>Análisis comparativo de los motores DC:</p>
+                    
+                    <div class="parameters-grid">
+                        <div class="parameter-card">
+                            <div class="parameter-icon">✅</div>
+                            <h4>Ventajas</h4>
+                            <p>Control preciso de velocidad, alto par de arranque, operación bidireccional, respuesta rápida.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">⚠️</div>
+                            <h4>Desventajas</h4>
+                            <p>Mantenimiento de escobillas, desgaste del colector, mayor costo, limitaciones de potencia.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🔧</div>
+                            <h4>Mantenimiento</h4>
+                            <p>Requiere reemplazo periódico de escobillas y limpieza del colector.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">📊</div>
+                            <h4>Aplicaciones</h4>
+                            <p>Ideal para control de velocidad, posicionamiento y servomecanismos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección SERVOMOTORES Y MOTORES PASO A PASO -->
+            <div id="servomotores-paso" class="content-box">
+                <h2>🤖 SERVOMOTORES Y MOTORES PASO A PASO: UTILIZADOS EN ROBOTICA Y CONTROL DE PRECISION</h2>
+                
+                <!-- Introducción a Motores de Precisión -->
+                <div class="info-section">
+                    <h3>Motores de Precisión: Control Exacto para Automatización Avanzada</h3>
+                    <p>Los servomotores y motores paso a paso son dispositivos electromecánicos diseñados para aplicaciones que requieren control preciso de posición, velocidad y par. Son fundamentales en robótica, automatización industrial, sistemas de posicionamiento y equipos de alta precisión donde el control exacto del movimiento es crítico.</p>
+                </div>
+
+                <!-- Servomotores -->
+                <div class="info-section">
+                    <h3>1. Servomotores</h3>
+                    <p>Sistemas de control de posición cerrados que combinan un motor, sensor y controlador:</p>
+                    
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">🎯</div>
+                            <h4>Servomotores DC</h4>
+                            <p>Motor DC con encoder y control de lazo cerrado. Alta precisión, respuesta rápida y control de par.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Robótica industrial, CNC, posicionamiento lineal</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">⚡</div>
+                            <h4>Servomotores AC</h4>
+                            <p>Motor síncrono con control vectorial. Alta potencia, eficiencia y precisión para aplicaciones pesadas.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Maquinaria CNC grande, robótica pesada, automatización</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🔧</div>
+                            <h4>Servomotores Lineales</h4>
+                            <p>Convierten rotación en movimiento lineal directo. Eliminan mecanismos intermedios como tornillos.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Posicionamiento preciso, inyección de plásticos, prensas</div>
+                        </div>
+                        
+                        <div class="type-card">
+                            <div class="type-icon">🏭</div>
+                            <h4>Servomotores de Imanes Permanentes</h4>
+                            <p>Alta densidad de potencia y eficiencia. Ideales para aplicaciones dinámicas y de alta aceleración.</p>
+                            <div class="example-tag"><strong>Aplicación:</strong> Robots delta, pick-and-place, empaque</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motores Paso a Paso -->
+                <div class="info-section">
+                    <h3>2. Motores Paso a Paso (Stepper Motors)</h3>
+                    <p>Motores que se mueven en pasos discretos controlados digitalmente:</p>
+                    
+                    <div class="elemento-container">
+                        <div class="elemento-texto">
+                            <ul class="elemento-lista">
+                                <li><strong>Principio de Operación:</strong> Avanzan en ángulos fijos (pasos) mediante pulsos eléctricos secuenciales.</li>
+                                <li><strong>Precisión Posicional:</strong> Posicionamiento exacto sin necesidad de retroalimentación (lazo abierto).</li>
+                                <li><strong>Control Digital:</strong> Control directo mediante señales digitales de paso y dirección.</li>
+                                <li><strong>Par de Mantenimiento:</strong> Mantienen la posición cuando están energizados (par de retención).</li>
+                                <li><strong>Resolución:</strong> Típica de 1.8° (200 pasos/revolución) hasta 0.9° (400 pasos/revolución).</li>
+                            </ul>
+                        </div>
+                        <div class="elemento-imagen">
+                            <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/stepper1.png" alt="Motor paso a paso con controlador" class="imagen-destacada">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipos de Motores Paso a Paso -->
+                <div class="info-section">
+                    <h3>3. Tipos de Motores Paso a Paso</h3>
+                    <p>Clasificación según su construcción y principio de funcionamiento:</p>
+                    
+                    <div class="classification-grid">
+                        <div class="classification-item">
+                            <h4>de Reluctancia Variable (VR)</h4>
+                            <p>Rotor de hierro con dientes. Simple construcción, bajo par pero alta velocidad.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>de Imanes Permanentes (PM)</h4>
+                            <p>Rotor con imanes permanentes. Buen par, funcionamiento suave y bajo costo.</p>
+                        </div>
+                        
+                        <div class="classification-item">
+                            <h4>Híbridos</h4>
+                            <p>Combinación de VR y PM. Alto par, alta resolución, los más utilizados industrialmente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control y Electrónica -->
+                <div class="info-section">
+                    <h3>4. Sistemas de Control y Electrónica</h3>
+                    <p>La electrónica de control es fundamental para el funcionamiento preciso:</p>
+                    
+                    <div class="table-container">
+                        <table class="classification-table">
+                            <thead>
+                                <tr>
+                                    <th>Componente</th>
+                                    <th>Función</th>
+                                    <th>Características</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Drivers</strong></td>
+                                    <td>Control de corriente en las bobinas</td>
+                                    <td>Control de micro-pasos, regulación de corriente</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Controladores</strong></td>
+                                    <td>Generación de señales de paso</td>
+                                    <td>Control de velocidad, aceleración, posición</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Encoders</strong></td>
+                                    <td>Realimentación de posición</td>
+                                    <td>Incrementales, absolutos, alta resolución</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Amplificadores</strong></td>
+                                    <td>Suministro de potencia al motor</td>
+                                    <td>PWM, control de corriente, protección</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Aplicaciones en Robótica -->
+                <div class="info-section">
+                    <h3>5. Aplicaciones en Robótica y Control de Precisión</h3>
+                    <p>Estos motores son fundamentales en numerosas aplicaciones:</p>
+                    
+                    <div class="parameters-grid">
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🤖</div>
+                            <h4>Robótica Industrial</h4>
+                            <p>Brazos robotizados, soldadura, pintura, ensamblaje automatizado.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🖨️</div>
+                            <h4>Impresión 3D y CNC</h4>
+                            <p>Control de ejes, extrusoras, cabezales de impresión, fresado.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">📷</div>
+                            <h4>Sistemas de Visión</h4>
+                            <p>Cámaras de seguridad, seguimiento automático, enfoque preciso.</p>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="parameter-icon">🏥</div>
+                            <h4>Equipos Médicos</h4>
+                            <p>Bombas de infusión, scanners, equipos de diagnóstico, prótesis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Nota Importante -->
+                    <div class="important-note">
+                        <div class="note-icon">🔧</div>
+                        <div class="note-content">
+                            <h4>Nota de Selección</h4>
+                            <p>La selección entre servomotores y motores paso a paso depende de la aplicación específica. Los servomotores son ideales para aplicaciones dinámicas con cargas variables y retroalimentación constante, mientras que los motores paso a paso son perfectos para posicionamiento fijo con cargas constantes y control simple. Siempre considere factores como precisión requerida, dinámica de carga, costo y complejidad del sistema de control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box text-center">
+                <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const botonesMostrarMas = document.querySelectorAll('.mostrar-mas');
+        
+        botonesMostrarMas.forEach(boton => {
+          boton.addEventListener('click', function() {
+            const contenido = this.nextElementSibling;
+            
+            if (contenido && contenido.classList.contains('card-content')) {
+              contenido.classList.toggle('content-visible');
+              
+              if (contenido.classList.contains('content-visible')) {
+                this.textContent = 'Mostrar menos';
+              } else {
+                this.textContent = 'Mostrar más';
+              }
+            }
+          });
+        });
+        
+        // Cerrar el contenido cuando se hace clic fuera de él
+        document.addEventListener('click', function(event) {
+          if (!event.target.closest('.em-card')) {
+            const contenidosAbiertos = document.querySelectorAll('.card-content.content-visible');
+            contenidosAbiertos.forEach(contenido => {
+              contenido.classList.remove('content-visible');
+              const boton = contenido.previousElementSibling;
+              if (boton && boton.classList.contains('em-btn')) {
+                boton.textContent = 'Mostrar más';
+              }
+            });
+          }
+        });
+      });
+    </script>
+    
+    <!-- Magic Navigation Script -->
+    <script src="./JS/magic-nav.js"></script>
+</body>
+</html>

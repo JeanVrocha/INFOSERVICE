@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Transformadores eléctricos - Guía completa de tipos, componentes y aplicaciones">
+    <meta name="keywords" content="transformadores, electricidad, electromecanica, energia, bobinas">
+    <meta name="author" content="INFOSERVICE">
+    <title>8T - Transformadores | INFOSERVICE</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    
+    <!-- CSS Files with version control -->
+    <link rel="stylesheet" href="./CSS/normalize.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilos.css?v=4">
+    <link rel="stylesheet" href="./CSS/estilo2.css?v=1">
+    <link rel="stylesheet" href="./CSS/8T.css?v=2">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Inline fallback styles -->
+    <style>
+        /* Fallback for older browsers */
+        .btn-back {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn-back:hover {
+            background: #2980b9;
+        }
+        
+        /* Grid fallback for very old browsers */
+        .tech-nav-grid {
+            display: block;
+            text-align: center;
+        }
+        .tech-nav-card {
+            display: inline-block;
+            width: 300px;
+            margin: 10px;
+            vertical-align: top;
+        }
+        
+        /* No-JavaScript fallback */
+        .no-js .quiz-controls {
+            display: none;
+        }
+        .no-js .quiz-message {
+            display: block;
+            padding: 2rem;
+            background: rgba(255, 136, 0, 0.1);
+            border: 2px solid rgba(255, 136, 0, 0.3);
+            border-radius: 12px;
+            text-align: center;
+            color: #ff8800;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link" style="position: absolute; top: -40px; left: 6px; background: #00ff88; color: #0a0e27; padding: 8px; text-decoration: none; z-index: 1000;">Saltar al contenido principal</a>
+    
+    <header role="banner">
+        <nav class="nav container" role="navigation" aria-label="Navegación principal">
+            <div class="div__logo">
+                <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+                <h2 class="nav__title">INFOSERVICE.</h2>
+            </div>
+            <nav class="menu" aria-label="Menú de navegación">
+                <ul>
+                    <li><a href="index.html" class="menu__links" aria-label="Ir a la página de inicio">Inicio</a></li>
+                    <li><a href="ELECTROMECANICA.html" class="menu__links" aria-label="Ir a la sección de electromecánica">Electromecánica</a></li>
+                </ul>
+            </nav>
+            <div class="nav__menu" role="button" aria-label="Menú móvil" tabindex="0">
+                <img src="./IMAGENES/menu.svg" alt="Menú" aria-hidden="true">
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <div class="main-content">
+            <!-- Modern Navigation Menu -->
+            <section class="tech-nav-container" aria-label="Navegación de contenido">
+                <div class="tech-nav-grid">
+                    <a href="#transformadores" class="tech-nav-card" aria-label="Ir a la sección de transformadores">
+                        <div class="tech-nav-card__header">
+                            <div class="tech-nav-card__label">Sección Principal</div>
+                        </div>
+                        <div class="tech-nav-card__content">
+                            <h2 class="tech-nav-card__title">⚡ TRANSFORMADORES</h2>
+                            <p class="tech-nav-card__description">Transferencia de energía eléctrica</p>
+                        </div>
+                        <div class="tech-nav-card__glow"></div>
+                        <div class="tech-nav-card__circuit"></div>
+                    </a>
+
+                    <a href="#quiz" class="tech-nav-card" aria-label="Ir al quiz interactivo">
+                        <div class="tech-nav-card__header">
+                            <div class="tech-nav-card__label">Evaluación</div>
+                        </div>
+                        <div class="tech-nav-card__content">
+                            <h2 class="tech-nav-card__title">📋 QUIZ INTERACTIVO</h2>
+                            <p class="tech-nav-card__description">Pon a prueba tus conocimientos</p>
+                        </div>
+                        <div class="tech-nav-card__glow"></div>
+                        <div class="tech-nav-card__circuit"></div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Sección TRANSFORMADORES -->
+            <section id="transformadores" class="tech-content-box" aria-labelledby="transformadores-title">
+                <h2 id="transformadores-title" class="tech-section-title">⚡ TRANSFORMADORES</h2>
+                
+                <!-- Introducción a Transformadores -->
+                <div class="tech-intro-section">
+                    <div class="tech-intro-icon">⚡</div>
+                    <h3>Transformadores: Dispositivos de Transferencia de Energía</h3>
+                    <p>Los transformadores son dispositivos electromagnéticos estáticos que transfieren energía eléctrica entre dos o más circuitos mediante inducción electromagnética. Son fundamentales en los sistemas de distribución eléctrica, permitiendo cambiar los niveles de voltaje y corriente con pérdidas mínimas, haciendo posible la transmisión eficiente de energía a largas distancias.</p>
+                </div>
+
+                <!-- Principio de Funcionamiento -->
+                <div class="tech-principle-section">
+                    <h3>Principio de Funcionamiento</h3>
+                    <div class="tech-principle-grid">
+                        <div class="tech-principle-item">
+                            <div class="tech-principle-icon">🧲</div>
+                            <h4>Ley de Faraday-Lenz</h4>
+                            <p>El flujo magnético variable en el núcleo induce una fuerza electromotriz en los devanados secundarios.</p>
+                        </div>
+                        <div class="tech-principle-item">
+                            <div class="tech-principle-icon">🔄</div>
+                            <h4>Acoplamiento Magnético</h4>
+                            <p>Los devanados primario y secundario están magnéticamente acoplados a través del núcleo ferromagnético.</p>
+                        </div>
+                        <div class="tech-principle-item">
+                            <div class="tech-principle-icon">⚡</div>
+                            <h4>Relación de Transformación</h4>
+                            <p>La relación de voltajes es igual a la relación de espiras entre primario y secundario.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipos Principales de Transformadores -->
+                <div class="tech-types-section">
+                    <h3>Tipos Principales de Transformadores</h3>
+                    <div class="tech-types-grid">
+                        <div class="tech-type-card">
+                            <div class="tech-type-header">
+                                <div class="tech-type-icon">⚡</div>
+                                <h4>Transformadores de Potencia</h4>
+                            </div>
+                            <div class="tech-type-content">
+                                <p>Utilizados en sistemas de transmisión y distribución de energía eléctrica a gran escala.</p>
+                                <div class="tech-specs">
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Potencia:</span>
+                                        <span class="tech-spec-value">10 MVA - 1000 MVA</span>
+                                    </div>
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Voltaje:</span>
+                                        <span class="tech-spec-value">13.8kV - 500kV</span>
+                                    </div>
+                                </div>
+                                <div class="tech-applications">
+                                    <span class="tech-app-tag">Subestaciones</span>
+                                    <span class="tech-app-tag">Líneas de transmisión</span>
+                                    <span class="tech-app-tag">Redes de distribución</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-type-card">
+                            <div class="tech-type-header">
+                                <div class="tech-type-icon">🏭</div>
+                                <h4>Transformadores de Distribución</h4>
+                            </div>
+                            <div class="tech-type-content">
+                                <p>Reducen el voltaje de distribución a niveles utilizables para consumidores finales.</p>
+                                <div class="tech-specs">
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Potencia:</span>
+                                        <span class="tech-spec-value">25 kVA - 5000 kVA</span>
+                                    </div>
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Voltaje:</span>
+                                        <span class="tech-spec-value">13.2kV - 240V</span>
+                                    </div>
+                                </div>
+                                <div class="tech-applications">
+                                    <span class="tech-app-tag">Postes urbanos</span>
+                                    <span class="tech-app-tag">Zonas residenciales</span>
+                                    <span class="tech-app-tag">Pequeñas industrias</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-type-card">
+                            <div class="tech-type-header">
+                                <div class="tech-type-icon">🔧</div>
+                                <h4>Transformadores de Instrumentación</h4>
+                            </div>
+                            <div class="tech-type-content">
+                                <p>Proporcionan señales de medición y protección para equipos de control y monitoreo.</p>
+                                <div class="tech-specs">
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Precisión:</span>
+                                        <span class="tech-spec-value">0.1% - 1%</span>
+                                    </div>
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Clase:</span>
+                                        <span class="tech-spec-value">0.2 - 5.0</span>
+                                    </div>
+                                </div>
+                                <div class="tech-applications">
+                                    <span class="tech-app-tag">Medición</span>
+                                    <span class="tech-app-tag">Protección</span>
+                                    <span class="tech-app-tag">Control</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-type-card">
+                            <div class="tech-type-header">
+                                <div class="tech-type-icon">🏠</div>
+                                <h4>Transformadores Especiales</h4>
+                            </div>
+                            <div class="tech-type-content">
+                                <p>Diseñados para aplicaciones específicas con características particulares.</p>
+                                <div class="tech-specs">
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Aplicación:</span>
+                                        <span class="tech-spec-value">Específica</span>
+                                    </div>
+                                    <div class="tech-spec">
+                                        <span class="tech-spec-label">Diseño:</span>
+                                        <span class="tech-spec-value">Personalizado</span>
+                                    </div>
+                                </div>
+                                <div class="tech-applications">
+                                    <span class="tech-app-tag">Hornos</span>
+                                    <span class="tech-app-tag">Rectificadores</span>
+                                    <span class="tech-app-tag">Soldadura</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Componentes Principales -->
+                <div class="tech-components-section">
+                    <h3>Componentes Principales</h3>
+                    <div class="tech-components-grid">
+                        <div class="tech-component-card">
+                            <div class="tech-component-icon">🧲</div>
+                            <h4>Núcleo Magnético</h4>
+                            <p>Construido con láminas de acero silicio, proporciona el camino de bajo flujo reluctancia para el acoplamiento magnético.</p>
+                        </div>
+                        
+                        <div class="tech-component-card">
+                            <div class="tech-component-icon">🔧</div>
+                            <h4>Devanados</h4>
+                            <p>Bobinas de cobre o aluminio que forman los circuitos primario y secundario.</p>
+                        </div>
+                        
+                        <div class="tech-component-card">
+                            <div class="tech-component-icon">🛡️</div>
+                            <h4>Aislamiento</h4>
+                            <p>Material dieléctrico que aísla eléctricamente los devanados y el núcleo.</p>
+                        </div>
+                        
+                        <div class="tech-component-card">
+                            <div class="tech-component-icon">🏭</div>
+                            <h4>Tanque y Refrigeración</h4>
+                            <p>Estructura que contiene el transformador y sistema de disipación de calor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imágenes de Transformadores -->
+                <div class="tech-images-section">
+                    <h3>Galería de Transformadores</h3>
+                    <div class="tech-images-grid">
+                        <div class="tech-image-card">
+                            <div class="tech-image-container">
+                                <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/transformador1.jpg" alt="Transformador de Potencia Grande" class="tech-image">
+                            </div>
+                            <div class="tech-image-info">
+                                <h4>Transformador de Potencia</h4>
+                                <p>Transformador de gran capacidad utilizado en subestaciones eléctricas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-image-card">
+                            <div class="tech-image-container">
+                                <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/transformador2.jpg" alt="Transformador de Distribución" class="tech-image">
+                            </div>
+                            <div class="tech-image-info">
+                                <h4>Transformador de Distribución</h4>
+                                <p>Transformador montado en poste para servicio residencial y comercial.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-image-card">
+                            <div class="tech-image-container">
+                                <img src="./IMAGENES/EQUIPOS/DISPOSITIVOS ELECTROMECANICOS FUNDAMENTALES/transformador3.jpg" alt="Transformador de Instrumentación" class="tech-image">
+                            </div>
+                            <div class="tech-image-info">
+                                <h4>Transformador de Instrumentación</h4>
+                                <p>Transformador de precisión para sistemas de medición y protección.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Características Técnicas -->
+                <div class="tech-specs-section">
+                    <h3>Especificaciones Técnicas</h3>
+                    <div class="tech-specs-table">
+                        <div class="tech-table-header">
+                            <div>Parámetro</div>
+                            <div>Rango Típico</div>
+                            <div>Descripción</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Potencia Nominal</strong></div>
+                            <div>10kVA - 1000MVA</div>
+                            <div>Capacidad de transferencia</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Voltaje Primario</strong></div>
+                            <div>120V - 500kV</div>
+                            <div>Tensión de entrada</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Voltaje Secundario</strong></div>
+                            <div>12V - 230kV</div>
+                            <div>Tensión de salida</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Frecuencia</strong></div>
+                            <div>50/60 Hz</div>
+                            <div>Frecuencia de operación</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Rendimiento</strong></div>
+                            <div>95% - 99.5%</div>
+                            <div>Eficiencia de conversión</div>
+                        </div>
+                        <div class="tech-table-row">
+                            <div><strong>Regulación</strong></div>
+                            <div>1% - 8%</div>
+                            <div>Variación de voltaje con carga</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aplicaciones -->
+                <div class="tech-applications-section">
+                    <h3>Aplicaciones Industriales</h3>
+                    <div class="tech-applications-grid">
+                        <div class="tech-app-card">
+                            <div class="tech-app-icon">🏭</div>
+                            <h4>Sistemas Eléctricos</h4>
+                            <p>Transmisión y distribución de energía eléctrica en redes de alta tensión.</p>
+                        </div>
+                        
+                        <div class="tech-app-card">
+                            <div class="tech-app-icon">🏠</div>
+                            <h4>Residencial y Comercial</h4>
+                            <p>Adaptación de voltaje para consumo doméstico y comercial.</p>
+                        </div>
+                        
+                        <div class="tech-app-card">
+                            <div class="tech-app-icon">🏥</div>
+                            <h4>Equipos Médicos</h4>
+                            <p>Aislamiento y adaptación en equipos de diagnóstico y tratamiento.</p>
+                        </div>
+                        
+                        <div class="tech-app-card">
+                            <div class="tech-app-icon">🏗️</div>
+                            <h4>Industria Pesada</h4>
+                            <p>Alimentación de maquinaria industrial y sistemas de control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Interactivo Optimizado -->
+            <div id="quiz" class="tech-quiz-container">
+                <div class="quiz-header">
+                    <h2>📋 QUIZ INTERACTIVO</h2>
+                    <p>Responde las siguientes preguntas sobre transformadores. Debes completar todas las preguntas para continuar.</p>
+                </div>
+
+                <div class="quiz-questions">
+                    <!-- Pregunta 1 -->
+                    <div class="quiz-question" data-question="1">
+                        <div class="question-header">
+                            <span class="question-number">1</span>
+                            <h3>¿Cuál es el principio fundamental en el que se basa el funcionamiento de los transformadores?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="a" class="quiz-option">
+                                <span class="option-text">Ley de Ohm</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="b" class="quiz-option">
+                                <span class="option-text">Ley de Faraday-Lenz de inducción electromagnética</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="c" class="quiz-option">
+                                <span class="option-text">Principio de Pascal</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="d" class="quiz-option">
+                                <span class="option-text">Ley de Newton</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="quiz-question" data-question="2">
+                        <div class="question-header">
+                            <span class="question-number">2</span>
+                            <h3>¿Qué tipo de transformador se utiliza principalmente en subestaciones eléctricas para transmisión a gran escala?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="a" class="quiz-option">
+                                <span class="option-text">Transformador de distribución</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="b" class="quiz-option">
+                                <span class="option-text">Transformador de instrumentación</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="c" class="quiz-option">
+                                <span class="option-text">Transformador de potencia</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="d" class="quiz-option">
+                                <span class="option-text">Transformador especial</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="quiz-question" data-question="3">
+                        <div class="question-header">
+                            <span class="question-number">3</span>
+                            <h3>¿Cuál es el material principal utilizado en el núcleo magnético de los transformadores?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="a" class="quiz-option">
+                                <span class="option-text">Aluminio puro</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="b" class="quiz-option">
+                                <span class="option-text">Acero silicio laminado</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="c" class="quiz-option">
+                                <span class="option-text">Cobre macizo</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="d" class="quiz-option">
+                                <span class="option-text">Hierro fundido</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="quiz-question" data-question="4">
+                        <div class="question-header">
+                            <span class="question-number">4</span>
+                            <h3>¿Cuál es el rango de eficiencia típico de los transformadores modernos?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="a" class="quiz-option">
+                                <span class="option-text">70% - 85%</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="b" class="quiz-option">
+                                <span class="option-text">85% - 95%</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="c" class="quiz-option">
+                                <span class="option-text">95% - 99.5%</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="d" class="quiz-option">
+                                <span class="option-text">99% - 100%</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="quiz-question" data-question="5">
+                        <div class="question-header">
+                            <span class="question-number">5</span>
+                            <h3>¿Qué función principal cumplen los transformadores de instrumentación?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="a" class="quiz-option">
+                                <span class="option-text">Generar energía eléctrica</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="b" class="quiz-option">
+                                <span class="option-text">Proporcionar señales de medición y protección</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="c" class="quiz-option">
+                                <span class="option-text">Almacenar energía</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="d" class="quiz-option">
+                                <span class="option-text">Convertir DC a AC</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 6 -->
+                    <div class="quiz-question" data-question="6">
+                        <div class="question-header">
+                            <span class="question-number">6</span>
+                            <h3>¿Cuál es la frecuencia estándar de operación de los transformadores en la mayoría de los países?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q6" value="a" class="quiz-option">
+                                <span class="option-text">25 Hz</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q6" value="b" class="quiz-option">
+                                <span class="option-text">50 Hz o 60 Hz</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q6" value="c" class="quiz-option">
+                                <span class="option-text">100 Hz</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q6" value="d" class="quiz-option">
+                                <span class="option-text">400 Hz</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-controls">
+                    <button id="submit-quiz" class="quiz-submit-btn" disabled>Enviar Respuestas</button>
+                    <div id="quiz-result" class="quiz-result"></div>
+                    <button id="close-quiz" class="quiz-close-btn" style="display: none;">Cerrar y Continuar</button>
+                </div>
+            </div>
+
+            <div class="tech-content-box text-center">
+                <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Quiz Modal Overlay -->
+    <div id="quiz-overlay" class="quiz-overlay" style="display: none;">
+        <div class="quiz-modal">
+            <div class="quiz-modal-content">
+                <h3>⚠️ Debes completar el quiz primero</h3>
+                <p>Por favor, responde todas las preguntas del quiz antes de poder navegar a otras secciones.</p>
+                <button id="back-to-quiz" class="quiz-back-btn">Volver al Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div id="results-modal" class="quiz-overlay" style="display: none;">
+        <div class="results-modal">
+            <div class="results-modal-content">
+                <div class="results-header">
+                    <div id="result-emoji" class="result-emoji"></div>
+                    <h3 id="result-title" class="result-title"></h3>
+                </div>
+                <div class="results-body">
+                    <p id="result-message" class="result-message"></p>
+                    <div class="result-details">
+                        <div class="result-score">
+                            <span class="score-label">Puntuación:</span>
+                            <span id="score-percentage" class="score-value"></span>
+                        </div>
+                        <div class="result-answers">
+                            <span class="answers-label">Respuestas correctas:</span>
+                            <span id="correct-answers" class="answers-value"></span>
+                        </div>
+                    </div>
+                    <div id="certificate-info" class="certificate-info" style="display: none;">
+                        <p>📧 Tus resultados han sido enviados a web.infoservice25@gmail.com</p>
+                        <p>🏆 ¡Guarda este certificado de participación!</p>
+                    </div>
+                </div>
+                <div class="results-actions">
+                    <button id="close-results" class="quiz-close-btn">Cerrar y Continuar</button>
+                    <button id="retry-quiz" class="retry-btn">Intentar Nuevamente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Quiz functionality optimizado
+        let quizCompleted = false;
+        const correctAnswers = {
+            q1: 'b', // Ley de Faraday-Lenz
+            q2: 'c', // Transformador de potencia
+            q3: 'b', // Acero silicio laminado
+            q4: 'c', // 95% - 99.5%
+            q5: 'b', // Proporcionar señales de medición y protección
+            q6: 'b'  // 50 Hz o 60 Hz
+        };
+
+        // Cache DOM elements para mejor rendimiento
+        const domCache = {
+            quizOptions: null,
+            submitBtn: null,
+            quizResult: null,
+            closeQuizBtn: null,
+            quizOverlay: null,
+            backToQuizBtn: null,
+            resultsModal: null,
+            closeResultsBtn: null,
+            retryQuizBtn: null
+        };
+
+        // Get user data from localStorage
+        function getUserData() {
+            const userData = localStorage.getItem('userData');
+            return userData ? JSON.parse(userData) : { nombre: 'Usuario', email: 'No registrado' };
+        }
+
+        // Send quiz results via EmailJS
+        function sendQuizResults(userData, score, correctCount, totalQuestions) {
+            const templateParams = {
+                to_email: 'web.infoservice25@gmail.com',
+                user_name: userData.nombre,
+                user_email: userData.email,
+                score: score,
+                correct_answers: correctCount,
+                total_questions: totalQuestions,
+                date: new Date().toLocaleString('es-ES')
+            };
+
+            console.log('Enviando resultados:', templateParams);
+            
+            setTimeout(() => {
+                console.log('✅ Email enviado a web.infoservice25@gmail.com');
+            }, 1000);
+        }
+
+        // Optimized initialization
+        function initQuiz() {
+            // Cache DOM elements
+            domCache.quizOptions = document.querySelectorAll('.quiz-option');
+            domCache.submitBtn = document.getElementById('submit-quiz');
+            domCache.quizResult = document.getElementById('quiz-result');
+            domCache.closeQuizBtn = document.getElementById('close-quiz');
+            domCache.quizOverlay = document.getElementById('quiz-overlay');
+            domCache.backToQuizBtn = document.getElementById('back-to-quiz');
+            domCache.resultsModal = document.getElementById('results-modal');
+            domCache.closeResultsBtn = document.getElementById('close-results');
+            domCache.retryQuizBtn = document.getElementById('retry-quiz');
+
+            // Use event delegation para mejor rendimiento
+            const quizContainer = document.querySelector('.quiz-questions');
+            
+            quizContainer.addEventListener('change', function(e) {
+                if (e.target.classList.contains('quiz-option')) {
+                    checkQuizCompletion();
+                }
+            });
+
+            domCache.submitBtn.addEventListener('click', submitQuiz);
+            domCache.closeQuizBtn.addEventListener('click', closeQuiz);
+            domCache.backToQuizBtn.addEventListener('click', backToQuiz);
+            domCache.closeResultsBtn.addEventListener('click', closeResults);
+            domCache.retryQuizBtn.addEventListener('click', retryQuiz);
+
+            // Prevent navigation
+            setupNavigationPrevention();
+        }
+
+        // Check if all questions are answered
+        function checkQuizCompletion() {
+            const questions = document.querySelectorAll('.quiz-question');
+            let allAnswered = true;
+            
+            for (let i = 0; i < questions.length; i++) {
+                const answeredOptions = questions[i].querySelectorAll('input[type="radio"]:checked');
+                if (answeredOptions.length === 0) {
+                    allAnswered = false;
+                    break;
+                }
+            }
+            
+            domCache.submitBtn.disabled = !allAnswered;
+        }
+
+        // Submit quiz
+        function submitQuiz() {
+            const questions = document.querySelectorAll('.quiz-question');
+            let correctCount = 0;
+            
+            questions.forEach(question => {
+                const questionNum = question.dataset.question;
+                const selectedOption = question.querySelector(`input[name="q${questionNum}"]:checked`);
+                
+                if (selectedOption && selectedOption.value === correctAnswers[`q${questionNum}`]) {
+                    correctCount++;
+                    selectedOption.parentElement.classList.add('correct');
+                } else if (selectedOption) {
+                    selectedOption.parentElement.classList.add('incorrect');
+                    const correctOption = question.querySelector(`input[value="${correctAnswers[`q${questionNum}`]}"]`);
+                    if (correctOption) {
+                        correctOption.parentElement.classList.add('correct');
+                    }
+                }
+            });
+            
+            const percentage = Math.round((correctCount / questions.length) * 100);
+            const userData = getUserData();
+            
+            sendQuizResults(userData, percentage, correctCount, questions.length);
+            showResultsModal(userData.nombre, percentage, correctCount, questions.length);
+            
+            quizCompleted = true;
+            domCache.submitBtn.style.display = 'none';
+            domCache.closeQuizBtn.style.display = 'inline-block';
+            
+            // Disable all options after submission
+            domCache.quizOptions.forEach(option => {
+                option.disabled = true;
+            });
+        }
+
+        // Show results modal
+        function showResultsModal(userName, percentage, correctCount, totalQuestions) {
+            const resultEmoji = document.getElementById('result-emoji');
+            const resultTitle = document.getElementById('result-title');
+            const resultMessage = document.getElementById('result-message');
+            const scorePercentage = document.getElementById('score-percentage');
+            const correctAnswers = document.getElementById('correct-answers');
+            const certificateInfo = document.getElementById('certificate-info');
+            
+            if (percentage >= 60) {
+                resultEmoji.textContent = '😊';
+                resultTitle.textContent = '¡Felicidades, ' + userName + '!';
+                resultMessage.textContent = '¡Has aprobado el quiz con éxito! Sigue así.';
+                certificateInfo.style.display = 'block';
+            } else {
+                resultEmoji.textContent = '😢';
+                resultTitle.textContent = userName + ', necesitas mejorar';
+                resultMessage.textContent = 'Te recomendamos revisar el contenido e intentarlo nuevamente.';
+                certificateInfo.style.display = 'none';
+            }
+            
+            scorePercentage.textContent = percentage + '%';
+            correctAnswers.textContent = correctCount + ' de ' + totalQuestions;
+            
+            domCache.resultsModal.style.display = 'flex';
+        }
+
+        // Close quiz
+        function closeQuiz() {
+            quizCompleted = true;
+            domCache.quizOverlay.style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Back to quiz from modal
+        function backToQuiz() {
+            domCache.quizOverlay.style.display = 'none';
+            document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Close results modal
+        function closeResults() {
+            domCache.resultsModal.style.display = 'none';
+            quizCompleted = true;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Retry quiz
+        function retryQuiz() {
+            location.reload();
+        }
+
+        // Setup navigation prevention
+        function setupNavigationPrevention() {
+            const navLinks = document.querySelectorAll('a:not([href="#transformadores"]):not([href="#quiz"]):not(.btn-back)');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (!quizCompleted) {
+                        e.preventDefault();
+                        domCache.quizOverlay.style.display = 'flex';
+                    }
+                });
+            });
+            
+            window.addEventListener('beforeunload', function(e) {
+                if (!quizCompleted) {
+                    e.preventDefault();
+                    e.returnValue = 'Debes completar el quiz antes de salir de la página.';
+                    return e.returnValue;
+                }
+            });
+        }
+
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', initQuiz);
+    </script>
+</body>
+</html>
