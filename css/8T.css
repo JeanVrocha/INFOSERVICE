@@ -1352,6 +1352,7 @@ body::before {
 @supports (-webkit-backdrop-filter: blur(15px)) {
   .main-content {
     -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
   }
 }
 
