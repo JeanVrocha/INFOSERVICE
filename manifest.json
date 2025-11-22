@@ -1,0 +1,41 @@
+{
+  "name": "INFOSERVICE - Electromecánica Industrial",
+  "short_name": "INFOSERVICE",
+  "description": "Plataforma educativa sobre equipos electromecánicos industriales",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0a0e27",
+  "theme_color": "#3498db",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "categories": ["education", "utilities", "productivity"],
+  "icons": [
+    {
+      "src": "./IMAGENES/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./IMAGENES/favicon-32x32.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./IMAGENES/favicon-32x32.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./IMAGENES/EQUIPOS/EQUIPOS DE INSTALACIONES INDUSTRIALES/Q1MOTORES.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Página principal de electromecánica"
+    }
+  ]
+}

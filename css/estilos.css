@@ -1,9 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-/* v3 cache-bust */
+/* v4 cache-bust - Mobile optimized */
  
 :root {
     --padding-container: 60px 0;
-    --color-title: #001A49; 
+    --color-title: #001A49;
+    --mobile-padding: 20px;
+    --tablet-padding: 40px;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 480px) {
+  :root {
+    --padding-container: var(--mobile-padding) 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  :root {
+    --padding-container: var(--tablet-padding) 0;
+  }
 }
 
 /* Desktop: empujar el menú a la esquina superior derecha */
@@ -16,16 +31,31 @@
 @media (max-width: 480px) {
   .about .container { padding: 0 12px; }
   .about__grid { gap: 16px; }
+  
+  /* Better touch targets for mobile */
+  .btn, button, .menu__links {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
 
+/* Improved mobile viewport handling */
 body {
     font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 @media (max-width: 768px) {
   .contenedor {
     flex-direction: column;
     padding: 10px;
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  body {
+    overflow-x: hidden;
   }
 }
 
@@ -35,6 +65,15 @@ body {
     margin: 0 auto;
    /*overflow: hidden;*/
    padding: var(--padding-container);
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+  .nav__menu:hover,
+  .menu__links:hover,
+  .btn:hover {
+    transform: none;
+  }
 }
 
 .hero{
@@ -936,4 +975,16 @@ body {
 .em-btn:focus-visible {
   outline: 0;
   box-shadow: 0 0 0 3px rgba(167,139,250,0.35), 0 8px 18px rgba(106, 13, 173, 0.28);
+}
+
+/* Circular Gallery Styles */
+.circular-gallery {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.circular-gallery:active {
+  cursor: grabbing;
 }

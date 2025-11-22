@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Bombas - Guía completa de tipos de bombas, funcionamiento y aplicaciones industriales">
+    <meta name="keywords" content="bombas, hidráulica, centrifugas, desplazamiento positivo, aplicaciones industriales, electromecanica">
+    <meta name="author" content="INFOSERVICE">
+    <title>14B - Bombas | INFOSERVICE</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    
+    <!-- CSS Files matching 1EMM.html configuration -->
+    <link rel="stylesheet" href="./css/normalize.css?v=4" />
+    <link rel="stylesheet" href="./css/estilos.css?v=4" />
+    <link rel="stylesheet" href="./css/estilo2.css?v=1" />
+    <link rel="stylesheet" href="./css/14B.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .btn-back {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn-back:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <div class="div__logo">
+                <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+                <h2 class="nav__title">INFOSERVICE.</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="menu__links">Inicio</a></li>
+                    <li><a href="ELECTROMECANICA.html" class="menu__links">Electromecánica</a></li>
+                </ul>
+            </nav>
+            <div class="nav__menu">
+                <img src="./IMAGENES/menu.svg" alt="nav__img">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <!-- Modern Navigation Menu -->
+            <div class="magic-nav-container">
+                <div class="magic-nav-grid">
+                    <a href="#introduccion-bombas" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 1</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">💧 INTRODUCCIÓN A LAS BOMBAS</h2>
+                            <p class="magic-nav-card__description">Principios básicos y aplicaciones</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#tipos-bombas" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 2</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">⚙️ TIPOS DE BOMBAS</h2>
+                            <p class="magic-nav-card__description">Clasificación y características</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#componentes-bombas" class="magic-nav-card">
+                        <div class="magic-nav-card__header">
+                            <div class="magic-nav-card__label">Sección 3</div>
+                        </div>
+                        <div class="magic-nav-card__content">
+                            <h2 class="magic-nav-card__title">🔧 COMPONENTES PRINCIPALES</h2>
+                            <p class="magic-nav-card__description">Partes esenciales de una bomba</p>
+                        </div>
+                        <div class="magic-nav-card__glow"></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sección INTRODUCCIÓN A LAS BOMBAS -->
+            <div id="introduccion-bombas" class="content-box">
+                <h2>💧 INTRODUCCIÓN A LAS BOMBAS</h2>
+                
+                <div class="info-section">
+                    <div class="pulsador-grid">
+                        <div class="pulsador-text">
+                            <h3>¿Qué es una Bomba?</h3>
+                            <p>Una bomba es una máquina hidráulica que transforma energía mecánica en energía hidráulica, utilizada para mover fluidos (líquidos o gases) de un lugar a otro. Su función principal es aumentar la presión del fluido para vencer la resistencia del sistema y transportarlo a través de tuberías.</p>
+                            
+                            <h4>Principio de Funcionamiento</h4>
+                            <p>Las bombas operan según principios físicos que permiten transferir energía al fluido. El método más común es la conversión de energía rotacional de un motor en energía cinética y potencial del fluido, creando un diferencial de presión que impulsa el movimiento.</p>
+                            
+                            <h4>Importancia Industrial</h4>
+                            <p>Las bombas son equipos fundamentales en numerosas industrias: tratamiento de agua, procesos químicos, petroquímica, agricultura, HVAC, industria alimentaria, y muchas más aplicaciones donde es necesario mover fluidos de manera controlada y eficiente.</p>
+                        </div>
+                        <div class="pulsador-image">
+                            <div class="expandable-image-container">
+                                <img src="./IMAGENES/EQUIPOS/EQUIPOS DE MEDICION Y CONTROL/BOMBA1.png" alt="Bomba industrial moderna" class="expandable-image">
+                                <div class="image-overlay">
+                                    <p>🔍 Pasa el cursor para ampliar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Clasificación General</h3>
+                    <p>Las bombas se clasifican principalmente según su principio de funcionamiento en dos grandes categorías:</p>
+                    
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">🌀</div>
+                            <h4>Bombas Dinámicas</h4>
+                            <p>Utilizan velocidad rotacional para impartir energía cinética al fluido, que luego se convierte en presión. Incluyen bombas centrífugas y axiales.</p>
+                        </div>
+                        <div class="type-card">
+                            <div class="type-icon">⚡</div>
+                            <h4>Bombas de Desplazamiento Positivo</h4>
+                            <p>Desplazan volúmenes fijos de fluido mediante el movimiento mecánico de partes. Incluyen bombas de engranajes, pistón y diafragma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección TIPOS DE BOMBAS -->
+            <div id="tipos-bombas" class="content-box">
+                <h2>⚙️ TIPOS DE BOMBAS</h2>
+                
+                <div class="info-section">
+                    <h3>Bombas Centrífugas</h3>
+                    <p>Son las más utilizadas en aplicaciones industriales debido a su simplicidad, eficiencia y capacidad para manejar grandes caudales.</p>
+                    
+                    <div class="switches-grid">
+                        <div class="switch-item">
+                            <h4>Bomba Centrífuga Horizontal</h4>
+                            <p>El eje del impulsor está en posición horizontal. Ideal para aplicaciones con espacio limitado en altura y fácil acceso para mantenimiento.</p>
+                        </div>
+                        <div class="switch-item">
+                            <h4>Bomba Centrífuga Vertical</h4>
+                            <p>El eje del impulsor está en posición vertical. Utilizada cuando el espacio horizontal es limitado o cuando se necesita succión desde niveles bajos.</p>
+                        </div>
+                        <div class="switch-item">
+                            <h4>Bomba Multietapa</h4>
+                            <p>Contiene múltiples impulsores en serie para alcanzar altas presiones. Común en sistemas de suministro de agua y riego.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Bombas de Desplazamiento Positivo</h3>
+                    <p>Estas bombas son ideales para aplicaciones que requieren alta presión y control preciso del caudal.</p>
+                    
+                    <div class="switches-grid">
+                        <div class="switch-item">
+                            <h4>Bomba de Engranajes</h4>
+                            <p>Utiliza dos engranajes que atrapan y desplazan el fluido. Excelente para fluidos viscosos y aplicaciones de lubricación.</p>
+                        </div>
+                        <div class="switch-item">
+                            <h4>Bomba de Pistón</h4>
+                            <p>Emplea pistones que se mueven alternativamente para desplazar el fluido. Capaz de generar presiones muy altas.</p>
+                        </div>
+                        <div class="switch-item">
+                            <h4>Bomba de Diafragma</h4>
+                            <p>Utiliza un diafragma flexible para desplazar el fluido. Ideal para productos químicos agresivos y fluidos abrasivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección COMPONENTES PRINCIPALES -->
+            <div id="componentes-bombas" class="content-box">
+                <h2>🔧 COMPONENTES PRINCIPALES</h2>
+                
+                <div class="info-section">
+                    <div class="pulsador-grid">
+                        <div class="pulsador-text">
+                            <h3>Componentes Esenciales</h3>
+                            <p>Una bomba está compuesta por varios elementos críticos que trabajan en conjunto para lograr el movimiento eficiente del fluido:</p>
+                            
+                            <h4>Impulsor</h4>
+                            <p>Es el componente rotativo que transfiere energía al fluido. Su diseño (radial, mixto o axial) determina las características de operación de la bomba.</p>
+                            
+                            <h4>Carcasa o Voluta</h4>
+                            <p>Contiene al impulsor y guía el fluido desde la entrada hasta la salida, convirtiendo la energía cinética en energía de presión.</p>
+                            
+                            <h4>Eje y Cojinetes</h4>
+                            <p>Transmiten la potencia del motor al impulsor. Los cojinetes soportan el eje y permiten su rotación suave y precisa.</p>
+                            
+                            <h4>Sellos Mecánicos</h4>
+                            <p>Evitan fugas de fluido en el punto donde el eje sale de la carcasa. Son críticos para la seguridad y eficiencia operativa.</p>
+                        </div>
+                        <div class="pulsador-image">
+                            <div class="expandable-image-container">
+                                <img src="./IMAGENES/EQUIPOS/EQUIPOS DE MEDICION Y CONTROL/BOMBA2.png" alt="Componentes principales de una bomba" class="expandable-image">
+                                <div class="image-overlay">
+                                    <p>🔍 Pasa el cursor para ampliar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Sistemas Auxiliares</h3>
+                    <div class="parameters-grid">
+                        <div class="parameter-item">
+                            <h4>Motor Eléctrico</h4>
+                            <p>Proporciona la energía mecánica necesaria para accionar la bomba. Puede ser de diferentes tipos según la aplicación.</p>
+                        </div>
+                        <div class="parameter-item">
+                            <h4>Acoplamiento</h4>
+                            <p>Conecta el motor con el eje de la bomba, transmitiendo torque de manera eficiente.</p>
+                        </div>
+                        <div class="parameter-item">
+                            <h4>Sistema de Enfriamiento</h4>
+                            <p>Mantiene la temperatura adecuada de los cojinetes y sellos para garantizar vida útil extendida.</p>
+                        </div>
+                        <div class="parameter-item">
+                            <h4>Instrumentación</h4>
+                            <p>Manómetros, sensores de flujo y temperatura para monitorear y controlar la operación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="content-box">
+                <h2>🎥 DEMOSTRACIÓN DE FUNCIONAMIENTO</h2>
+                <div class="video-preview">
+                    <div class="video-thumbnail" onclick="openVideoModal()">
+                        <img src="./IMAGENES/EQUIPOS/EQUIPOS DE INSTALACIONES INDUSTRIALES/BOMBAS.jpg" alt="Funcionamiento de bombas industriales">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-overlay">
+                            <h3>Funcionamiento de Bombas Industriales</h3>
+                            <p>Observa el principio de operación y componentes en acción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Interactivo -->
+            <div id="quiz" class="tech-quiz-container">
+                <div class="quiz-header">
+                    <h2>📋 QUIZ INTERACTIVO</h2>
+                    <p>Responde las siguientes preguntas sobre bombas. Debes completar todas las preguntas para continuar.</p>
+                </div>
+
+                <div class="quiz-questions">
+                    <!-- Pregunta 1 -->
+                    <div class="quiz-question" data-question="1">
+                        <div class="question-header">
+                            <span class="question-number">1</span>
+                            <h3>¿Cuál es la función principal de una bomba?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="a" class="quiz-option">
+                                <span class="option-text">Generar electricidad</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="b" class="quiz-option">
+                                <span class="option-text">Transformar energía mecánica en energía hidráulica</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="c" class="quiz-option">
+                                <span class="option-text">Medir el flujo de fluidos</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="d" class="quiz-option">
+                                <span class="option-text">Filtrar impurezas del agua</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="quiz-question" data-question="2">
+                        <div class="question-header">
+                            <span class="question-number">2</span>
+                            <h3>¿Qué tipo de bomba es la más utilizada en aplicaciones industriales?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="a" class="quiz-option">
+                                <span class="option-text">Bomba de pistón</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="b" class="quiz-option">
+                                <span class="option-text">Bomba centrífuga</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="c" class="quiz-option">
+                                <span class="option-text">Bomba de engranajes</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="d" class="quiz-option">
+                                <span class="option-text">Bomba de diafragma</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="quiz-question" data-question="3">
+                        <div class="question-header">
+                            <span class="question-number">3</span>
+                            <h3>¿Qué componente de la bomba transfiere energía directamente al fluido?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="a" class="quiz-option">
+                                <span class="option-text">El impulsor</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="b" class="quiz-option">
+                                <span class="option-text">La carcasa</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="c" class="quiz-option">
+                                <span class="option-text">Los sellos mecánicos</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="d" class="quiz-option">
+                                <span class="option-text">El eje</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="quiz-question" data-question="4">
+                        <div class="question-header">
+                            <span class="question-number">4</span>
+                            <h3>¿Qué tipo de bomba es ideal para fluidos viscosos?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="a" class="quiz-option">
+                                <span class="option-text">Bomba centrífuga</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="b" class="quiz-option">
+                                <span class="option-text">Bomba de engranajes</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="c" class="quiz-option">
+                                <span class="option-text">Bomba axial</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="d" class="quiz-option">
+                                <span class="option-text">Bomba multietapa</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="quiz-question" data-question="5">
+                        <div class="question-header">
+                            <span class="question-number">5</span>
+                            <h3>¿Cuál es la función de los sellos mecánicos en una bomba?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="a" class="quiz-option">
+                                <span class="option-text">Evitar fugas de fluido</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="b" class="quiz-option">
+                                <span class="option-text">Aumentar la presión del fluido</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="c" class="quiz-option">
+                                <span class="option-text">Reducir la velocidad del flujo</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="d" class="quiz-option">
+                                <span class="option-text">Filtrar partículas sólidas</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-actions">
+                    <button id="submit-quiz" class="quiz-submit-btn" onclick="submitQuiz()">
+                        <i class="fas fa-check"></i> Enviar Respuestas
+                    </button>
+                    <button id="reset-quiz" class="quiz-reset-btn" onclick="resetQuiz()">
+                        <i class="fas fa-redo"></i> Reiniciar Quiz
+                    </button>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="ELECTROMECANICA.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Volver a Electromecánica
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <div class="modal-content">
+            <span class="close-video" onclick="closeVideoModal()">&times;</span>
+            <div class="video-container">
+                <video id="local-video" controls autoplay style="width: 100%; height: 100%; border-radius: 12px;">
+                    <source src="./IMAGENES/EQUIPOS/EQUIPOS DE INSTALACIONES INDUSTRIALES/BOMBAS.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Result Modal -->
+    <div id="quiz-result-modal" class="quiz-modal">
+        <div class="quiz-modal-content">
+            <div class="quiz-modal-header">
+                <h2 id="result-title">Resultado del Quiz</h2>
+                <span class="close-quiz" onclick="closeQuizResult()">&times;</span>
+            </div>
+            <div class="quiz-modal-body">
+                <div class="result-icon">
+                    <i id="result-icon" class="fas fa-check-circle"></i>
+                </div>
+                <h3 id="result-message">¡Excelente trabajo!</h3>
+                <p id="result-score">Tu puntuación: 0/5</p>
+                <div id="result-details"></div>
+            </div>
+            <div class="quiz-modal-footer">
+                <button onclick="closeQuizResult()" class="quiz-modal-btn">Cerrar</button>
+                <button onclick="resetQuiz()" class="quiz-modal-btn quiz-modal-btn-primary">Intentar de nuevo</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Quiz functionality
+        const correctAnswers = {
+            q1: 'b',
+            q2: 'b', 
+            q3: 'a',
+            q4: 'b',
+            q5: 'a'
+        };
+
+        function submitQuiz() {
+            const questions = document.querySelectorAll('.quiz-question');
+            let score = 0;
+            let allAnswered = true;
+            const results = [];
+
+            questions.forEach((question, index) => {
+                const selectedOption = question.querySelector('input[type="radio"]:checked');
+                const questionNum = index + 1;
+                
+                if (!selectedOption) {
+                    allAnswered = false;
+                    question.classList.add('unanswered');
+                } else {
+                    question.classList.remove('unanswered');
+                    const isCorrect = selectedOption.value === correctAnswers[`q${questionNum}`];
+                    if (isCorrect) {
+                        score++;
+                        question.classList.add('correct');
+                        question.classList.remove('incorrect');
+                    } else {
+                        question.classList.add('incorrect');
+                        question.classList.remove('correct');
+                    }
+                    results.push({
+                        question: questionNum,
+                        correct: isCorrect,
+                        selected: selectedOption.value,
+                        correctAnswer: correctAnswers[`q${questionNum}`]
+                    });
+                }
+            });
+
+            if (!allAnswered) {
+                alert('Por favor responde todas las preguntas antes de enviar.');
+                return;
+            }
+
+            showQuizResult(score, results);
+        }
+
+        function showQuizResult(score, results) {
+            const modal = document.getElementById('quiz-result-modal');
+            const title = document.getElementById('result-title');
+            const message = document.getElementById('result-message');
+            const scoreText = document.getElementById('result-score');
+            const icon = document.getElementById('result-icon');
+            const details = document.getElementById('result-details');
+
+            scoreText.textContent = `Tu puntuación: ${score}/5`;
+
+            if (score === 5) {
+                title.textContent = '¡Perfecto!';
+                message.textContent = 'Has respondido todas las preguntas correctamente.';
+                icon.className = 'fas fa-trophy';
+                icon.style.color = '#27ae60';
+            } else if (score >= 3) {
+                title.textContent = '¡Buen trabajo!';
+                message.textContent = 'Has respondido la mayoría de las preguntas correctamente.';
+                icon.className = 'fas fa-thumbs-up';
+                icon.style.color = '#3498db';
+            } else {
+                title.textContent = 'Sigue practicando';
+                message.textContent = 'Te recomendamos revisar el material nuevamente.';
+                icon.className = 'fas fa-book';
+                icon.style.color = '#e74c3c';
+            }
+
+            // Show details
+            details.innerHTML = '<h4>Detalles de respuestas:</h4>';
+            results.forEach(result => {
+                const statusIcon = result.correct ? '✅' : '❌';
+                const statusText = result.correct ? 'Correcto' : 'Incorrecto';
+                details.innerHTML += `
+                    <p>${statusIcon} Pregunta ${result.question}: ${statusText}</p>
+                `;
+            });
+
+            modal.style.display = 'block';
+        }
+
+        function closeQuizResult() {
+            document.getElementById('quiz-result-modal').style.display = 'none';
+        }
+
+        function resetQuiz() {
+            const questions = document.querySelectorAll('.quiz-question');
+            questions.forEach(question => {
+                question.classList.remove('correct', 'incorrect', 'unanswered');
+                const selectedOption = question.querySelector('input[type="radio"]:checked');
+                if (selectedOption) {
+                    selectedOption.checked = false;
+                }
+            });
+            closeQuizResult();
+        }
+
+        // Video modal functionality
+        function openVideoModal() {
+            const modal = document.getElementById('video-modal');
+            const video = document.getElementById('local-video');
+            modal.style.display = 'block';
+            video.play();
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('video-modal');
+            const video = document.getElementById('local-video');
+            video.pause();
+            video.currentTime = 0;
+            modal.style.display = 'none';
+        }
+
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+            const videoModal = document.getElementById('video-modal');
+            const quizModal = document.getElementById('quiz-result-modal');
+            
+            if (event.target === videoModal) {
+                closeVideoModal();
+            }
+            if (event.target === quizModal) {
+                closeQuizResult();
+            }
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

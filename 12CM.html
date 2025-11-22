@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calibrador (Vernier) y Micrómetro | INFOSERVICE</title>
+  <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/normalize.css?v=4" />
+  <link rel="stylesheet" href="./css/estilos.css?v=4" />
+  <link rel="stylesheet" href="./css/estilo2.css?v=1" />
+  <link rel="stylesheet" href="./css/12CM.css" />
+  <style>
+    .main-content {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .content-box {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .btn-back {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+    .btn-back:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav container">
+      <div class="div__logo">
+        <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+        <h2 class="nav__title">INFOSERVICE.</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" class="menu__links">Inicio</a></li>
+          <li><a href="ELECTROMECANICA.html" class="menu__links">Electromecánica</a></li>
+        </ul>
+      </nav>
+    </nav>
+  </header>
+
+  <!-- Modern Navigation Menu -->
+  <div class="magic-nav-container">
+    <div class="magic-nav-grid">
+      <a href="#calibrador-introduccion" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 1</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">📏 Introducción al Calibrador Vernier</h2>
+          <p class="magic-nav-card__description">Historia y principios básicos</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#calibrador-componentes" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 2</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">⚙️ Componentes del Calibrador</h2>
+          <p class="magic-nav-card__description">Partes fundamentales del pie de rey</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#micrometro-introduccion" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 3</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">🔩 Introducción al Micrómetro</h2>
+          <p class="magic-nav-card__description">Historia y principios básicos</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#micrometro-componentes" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 4</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">🔧 Componentes del Micrómetro</h2>
+          <p class="magic-nav-card__description">Partes fundamentales del palmer</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#quiz" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Evaluación</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">📋 QUIZ INTERACTIVO</h2>
+          <p class="magic-nav-card__description">Pon a prueba tus conocimientos</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <!-- Sección CALIBRADOR VERNIER - INTRODUCCIÓN -->
+    <div id="calibrador-introduccion" class="content-box">
+      <h2>📏 INTRODUCCIÓN AL CALIBRADOR VERNIER</h2>
+      
+      <!-- Historia del Calibrador Vernier -->
+      <div class="info-section">
+        <h3>Historia del Calibrador Vernier</h3>
+        <div class="pulsador-grid">
+          <div class="pulsador-text">
+            <ul class="elemento-lista">
+              <li>El calibrador Vernier fue inventado por Pierre Vernier, un matemático francés, en 1631, revolucionando la medición de precisión.</li>
+              <li>Conocido comúnmente como "pie de rey", este instrumento permite mediciones con precisión de hasta 0.02 mm.</li>
+              <li>El principio de Vernier se basa en la escala nonius que permite leer fracciones de división con mayor precisión.</li>
+              <li>La tecnología ha evolucionado desde modelos puramente mecánicos hasta digitales con pantalla LCD y transferencia de datos.</li>
+            </ul>
+          </div>
+          <div class="pulsador-image">
+            <div class="expandable-image-container">
+              <img src="./IMAGENES/EQUIPOS/EQUIPOS DE MEDICION Y CONTROL/VERNMODER.png" alt="Calibrador vernier moderno" class="expandable-image">
+              <div class="image-overlay">
+                <p>🔍 Pasa el cursor para ampliar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Principios Básicos -->
+      <div class="info-section">
+        <h3>Principios Básicos del Calibrador Vernier</h3>
+        <div class="types-grid">
+          <div class="type-card">
+            <div class="type-icon">📏</div>
+            <h4>Escala Principal</h4>
+            <p>Escala fija con divisiones de 1 mm para mediciones básicas.</p>
+            <div class="example-tag">Precisión: 1 mm</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">🔍</div>
+            <h4>Escala Vernier</h4>
+            <p>Escala móvil que permite leer fracciones de milímetro con alta precisión.</p>
+            <div class="example-tag">Precisión: 0.02 mm</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">📊</div>
+            <h4>Medición Dual</h4>
+            <p>Permite mediciones externas, internas y de profundidad con un solo instrumento.</p>
+            <div class="example-tag">Versatilidad completa</div>
+          </div>
+        </div>
+        
+        <div class="video-container">
+          <h4>Demostración del funcionamiento básico</h4>
+          <!-- Espacio para video -->
+          <div class="video-wrapper">
+            <div class="video-preview" onclick="playVideo(this, '4YvA5J1VdMY')">
+              <img src="https://img.youtube.com/vi/4YvA5J1VdMY/maxresdefault.jpg" alt="Calibrador Vernier Tutorial" class="video-thumbnail">
+              <div class="play-button">
+                <svg viewBox="0 0 68 48" width="68" height="48">
+                  <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24 S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+                  <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                </svg>
+              </div>
+              <div class="video-title">Cómo leer un calibrador o pie de rey - Tutorial completo</div>
+            </div>
+          </div>
+          <p class="video-instruction">🔍 CLIC EN LA IMAGEN PARA REPRODUCIR</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección CALIBRADOR VERNIER - COMPONENTES -->
+    <div id="calibrador-componentes" class="content-box">
+      <h2>⚙️ COMPONENTES DEL CALIBRADOR VERNIER</h2>
+      
+      <!-- Regla Fija -->
+      <div class="info-section">
+        <h3>Regla Fija</h3>
+        <p>La regla fija contiene la escala principal con divisiones de 1 mm y sirve como base para todas las mediciones. Fabricada en acero inoxidable de alta precisión.</p>
+        
+        <div class="functioning-image">
+          <div class="expandable-image-container">
+            <img src="./IMAGENES/EQUIPOS/EQUIPOS DE MEDICION Y CONTROL/VERNIER.png" alt="Detalle de la regla fija y escala principal del vernier" class="expandable-image">
+            <div class="image-overlay">
+              <p>🔍 Pasa el cursor para ampliar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mordazas -->
+      <div class="info-section">
+        <h3>Mordazas de Medición</h3>
+        <p>Las mordazas son las superficies de contacto que tocan el objeto a medir. Existen mordazas externas, internas y de profundidad.</p>
+        
+        <div class="switches-grid">
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>📏 Mordazas Externas</h4>
+              <p>Miden dimensiones exteriores como diámetros, longitudes y espesores.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Medición de diámetros, espesores.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>🔍 Mordazas Internas</h4>
+              <p>Miden dimensiones interiores como diámetros internos y distancias entre superficies.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Medición de agujeros, ranuras.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>📏 Vara de Profundidad</h4>
+              <p>Mide la profundidad de agujeros, ranuras y cavidades mediante una vara extensible.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Medición de profundidades.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sistema de Deslizamiento -->
+      <div class="info-section">
+        <h3>Sistema de Deslizamiento</h3>
+        <p>El sistema de deslizamiento permite el movimiento suave y preciso del cursor sobre la regla fija.</p>
+        
+        <div class="parameters-grid">
+          <div class="parameter-card">
+            <div class="parameter-icon">🎯</div>
+            <h4>Cursor</h4>
+            <p>Parte móvil que contiene la escala Vernier y las mordazas móviles.</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">🔒</div>
+            <h4>Tornillo de Fijación</h4>
+            <p>Permite bloquear el cursor en una posición específica para lectura.</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">⚙️</div>
+            <h4>Guías de Deslizamiento</h4>
+            <p>Aseguran movimiento paralelo y sin holgura del cursor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección MICRÓMETRO - INTRODUCCIÓN -->
+    <div id="micrometro-introduccion" class="content-box">
+      <h2>🔩 INTRODUCCIÓN AL MICRÓMETRO</h2>
+      
+      <!-- Historia del Micrómetro -->
+      <div class="info-section">
+        <h3>Historia del Micrómetro</h3>
+        <div class="pulsador-grid">
+          <div class="pulsador-text">
+            <ul class="elemento-lista">
+              <li>El micrómetro fue inventado por William Gascoigne en el siglo XVII para medir distancias angulares en telescopios.</li>
+              <li>Jean-Louis Palmer lo adaptó en 1848 para mediciones lineales, por lo que también se conoce como "palmer".</li>
+              <li>La precisión del micrómetro se basa en el principio del tornillo micrométrico con paso de 0.5 mm.</li>
+              <li>Los micrómetros modernos alcanzan precisiones de hasta 0.001 mm (1 micra) con sistemas digitales avanzados.</li>
+            </ul>
+          </div>
+          <div class="pulsador-image">
+            <div class="expandable-image-container">
+              <img src="./IMAGENES/EQUIPOS/EQUIPOS DE MEDICION Y CONTROL/MICROMODER.PNG" alt="Micrómetro moderno" class="expandable-image">
+              <div class="image-overlay">
+                <p>🔍 Pasa el cursor para ampliar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Principios Básicos -->
+      <div class="info-section">
+        <h3>Principios Básicos del Micrómetro</h3>
+        <div class="types-grid">
+          <div class="type-card">
+            <div class="type-icon">🔩</div>
+            <h4>Tornillo Micrométrico</h4>
+            <p>Utiliza un tornillo de paso preciso para convertir rotación en movimiento lineal.</p>
+            <div class="example-tag">Paso: 0.5 mm</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">📊</div>
+            <h4>Escala Tambor</h4>
+            <p>Escala circular que permite leer fracciones de vuelta del tornillo.</p>
+            <div class="example-tag">50 divisiones = 0.01 mm</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">🎯</div>
+            <h4>Alta Precisión</h4>
+            <p>Permite mediciones exteriores con precisión de hasta 1 micra.</p>
+            <div class="example-tag">Precisión: 0.001 mm</div>
+          </div>
+        </div>
+
+        <!-- Video Demostrativo -->
+        <div class="video-container">
+          <h4>📹 Demostración del Micrómetro</h4>
+          <div class="video-wrapper">
+            <div class="video-preview" onclick="playVideo(this, 'K6pO1p_z7yA')">
+              <img src="https://img.youtube.com/vi/K6pO1p_z7yA/maxresdefault.jpg" alt="Micrometer Tutorial" class="video-thumbnail">
+              <div class="play-button">
+                <svg viewBox="0 0 68 48" width="68" height="48">
+                  <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24 S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+                  <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                </svg>
+              </div>
+              <div class="video-title">Cómo usar y leer un micrómetro - Tutorial completo</div>
+            </div>
+          </div>
+          <p class="video-instruction">🔍 CLIC EN LA IMAGEN PARA REPRODUCIR</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección MICRÓMETRO - COMPONENTES -->
+    <div id="micrometro-componentes" class="content-box">
+      <h2>🔧 COMPONENTES DEL MICRÓMETRO</h2>
+      
+      <!-- Partes Principales del Micrómetro -->
+      <div class="info-section">
+        <h3>Partes principales del micrómetro</h3>
+        <div class="pulsador-grid">
+          <div class="pulsador-text">
+            <ul class="elemento-lista">
+              <li><strong>Armazón (cuerpo):</strong> soporte rígido que mantiene alineados los elementos.</li>
+              <li><strong>Yunque:</strong> superficie fija contra la que se apoya la pieza.</li>
+              <li><strong>Husillo:</strong> parte móvil que se desplaza al girar el tambor.</li>
+              <li><strong>Tambor graduado:</strong> escala circular para la lectura de medidas.</li>
+              <li><strong>Nonio (vernier):</strong> permite lecturas más precisas.</li>
+              <li><strong>Ratchet o freno:</strong> asegura presión constante y evita errores por exceso de fuerza.</li>
+              <li><strong>Tornillo micrométrico:</strong> convierte el giro en desplazamiento lineal del husillo.</li>
+            </ul>
+          </div>
+          <div class="pulsador-image">
+            <div class="expandable-image-container">
+              <img src="./IMAGENES/EQUIPOS/EQUIPOS DE MEDICION Y CONTROL/PARTESM.png" alt="Partes principales del micrómetro" class="expandable-image">
+              <div class="image-overlay">
+                <p>🔍 Pasa el cursor para ampliar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sistema de Medición -->
+      <div class="info-section">
+        <h3>Sistema de Medición</h3>
+        <p>El sistema de medición convierte el movimiento rotatorio del tambor en desplazamiento lineal preciso.</p>
+        
+        <div class="switches-grid">
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>📏 Husillo</h4>
+              <p>Tornillo de precisión con paso de 0.5 mm que avanza con cada rotación completa.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Movimiento lineal preciso.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>🔩 Tambor Graduado</h4>
+              <p>Cilindro graduado con 50 divisiones para lectura de 0.01 mm por división.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Lectura de precisión.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>📊 Nonio (Vernier)</h4>
+              <p>Escala auxiliar que permite lecturas hasta 0.001 mm en micrómetros de precisión.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Lectura de milésimas.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sistema de Fijación y Control -->
+      <div class="info-section">
+        <h3>Sistema de Fijación y Control</h3>
+        <p>Los sistemas de fijación y control aseguran mediciones consistentes y protegen el instrumento.</p>
+        
+        <div class="parameters-grid">
+          <div class="parameter-card">
+            <div class="parameter-icon">🎯</div>
+            <h4>Yunque Fijo</h4>
+            <p>Superficie de referencia contra la que se mide el objeto con máxima precisión.</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">🔍</div>
+            <h4>Ratchet o Freno</h4>
+            <p>Mecanismo que aplica presión constante evitando errores por exceso de fuerza.</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">🔒</div>
+            <h4>Tornillo de Bloqueo</h4>
+            <p>Fija la posición del husillo para evitar cambios durante la lectura.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección QUIZ -->
+    <div id="quiz" class="content-box">
+      <h2>📋 QUIZ INTERACTIVO - CALIBRADOR Y MICRÓMETRO</h2>
+      
+      <div class="quiz-intro">
+        <p>Evalúa tus conocimientos sobre calibradores y micrómetros respondiendo las siguientes preguntas:</p>
+      </div>
+
+      <div class="quiz-questions">
+        <!-- Pregunta 1 -->
+        <div class="quiz-question" data-question="1">
+          <div class="question-header">
+            <span class="question-number">1</span>
+            <h3>¿Quién inventó el calibrador Vernier y en qué año?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q1" value="a" class="quiz-option">
+              <span class="option-text">Pierre Vernier en 1631</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="b" class="quiz-option">
+              <span class="option-text">Jean-Louis Palmer en 1848</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="c" class="quiz-option">
+              <span class="option-text">William Gascoigne en 1638</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="d" class="quiz-option">
+              <span class="option-text">Leonardo da Vinci en 1500</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="quiz-question" data-question="2">
+          <div class="question-header">
+            <span class="question-number">2</span>
+            <h3>¿Cuál es la precisión típica de un calibrador Vernier estándar?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q2" value="a" class="quiz-option">
+              <span class="option-text">0.1 mm</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="b" class="quiz-option">
+              <span class="option-text">0.02 mm</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="c" class="quiz-option">
+              <span class="option-text">0.001 mm</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="d" class="quiz-option">
+              <span class="option-text">0.5 mm</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="quiz-question" data-question="3">
+          <div class="question-header">
+            <span class="question-number">3</span>
+            <h3>¿Cuál es el paso del tornillo en un micrómetro estándar?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q3" value="a" class="quiz-option">
+              <span class="option-text">0.1 mm</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="b" class="quiz-option">
+              <span class="option-text">0.5 mm</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="c" class="quiz-option">
+              <span class="option-text">1.0 mm</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="d" class="quiz-option">
+              <span class="option-text">0.25 mm</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="quiz-question" data-question="4">
+          <div class="question-header">
+            <span class="question-number">4</span>
+            <h3>¿Cuántas divisiones tiene el tambor de un micrómetro estándar?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q4" value="a" class="quiz-option">
+              <span class="option-text">25 divisiones</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="b" class="quiz-option">
+              <span class="option-text">100 divisiones</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="c" class="quiz-option">
+              <span class="option-text">50 divisiones</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="d" class="quiz-option">
+              <span class="option-text">10 divisiones</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="quiz-question" data-question="5">
+          <div class="question-header">
+            <span class="question-number">5</span>
+            <h3>¿Qué otro nombre recibe comúnmente el micrómetro?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q5" value="a" class="quiz-option">
+              <span class="option-text">Pie de rey</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="b" class="quiz-option">
+              <span class="option-text">Calibrador</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="c" class="quiz-option">
+              <span class="option-text">Palmer</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="d" class="quiz-option">
+              <span class="option-text">Nonius</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-controls">
+        <button id="submit-quiz" class="quiz-submit-btn" disabled>Enviar Respuestas</button>
+        <div id="quiz-result" class="quiz-result"></div>
+        <button id="close-quiz" class="quiz-close-btn" style="display: none;">Cerrar y Continuar</button>
+      </div>
+    </div>
+
+    <div class="content-box text-center">
+      <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
+    </div>
+  </div>
+
+  <!-- Quiz Modal Overlay -->
+  <div id="quiz-overlay" class="quiz-overlay" style="display: none;">
+    <div class="quiz-modal">
+      <div class="quiz-modal-content">
+        <h3>⚠️ Debes completar el quiz primero</h3>
+        <p>Por favor, responde todas las preguntas del quiz antes de poder navegar a otras secciones.</p>
+        <button id="back-to-quiz" class="quiz-back-btn">Volver al Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Modal -->
+  <div id="results-modal" class="quiz-overlay" style="display: none;">
+    <div class="results-modal">
+      <div class="results-modal-content">
+        <div class="results-header">
+          <div id="result-emoji" class="result-emoji"></div>
+          <h3 id="result-title" class="result-title"></h3>
+        </div>
+        <div class="results-body">
+          <p id="result-message" class="result-message"></p>
+          <div class="result-details">
+            <div class="result-score">
+              <span class="score-label">Puntuación:</span>
+              <span id="score-percentage" class="score-value"></span>
+            </div>
+            <div class="result-answers">
+              <span class="answers-label">Respuestas correctas:</span>
+              <span id="correct-answers" class="answers-value"></span>
+            </div>
+          </div>
+          <div id="certificate-info" class="certificate-info" style="display: none;">
+            <p>📧 Tus resultados han sido enviados a web.infoservice25@gmail.com</p>
+            <p>🏆 ¡Guarda este certificado de participación!</p>
+          </div>
+        </div>
+        <div class="results-actions">
+          <button id="close-results" class="quiz-close-btn">Cerrar y Continuar</button>
+          <button id="retry-quiz" class="retry-btn">Intentar Nuevamente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="video-modal" style="display: none;">
+    <div class="video-modal-content">
+      <div class="video-modal-header">
+        <h3 id="video-modal-title">Video Player</h3>
+        <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
+      </div>
+      <div class="video-modal-body">
+        <div class="video-iframe-container">
+          <iframe id="video-iframe" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Video Player Functionality
+    function playVideo(element, videoId) {
+      const modal = document.getElementById('video-modal');
+      const iframe = document.getElementById('video-iframe');
+      const title = document.getElementById('video-modal-title');
+      
+      // Set video title
+      const videoTitle = element.querySelector('.video-title').textContent;
+      title.textContent = videoTitle;
+      
+      // Set iframe src with autoplay
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&controls=1&showinfo=0`;
+      
+      // Show modal
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeVideoModal() {
+      const modal = document.getElementById('video-modal');
+      const iframe = document.getElementById('video-iframe');
+      
+      // Hide modal
+      modal.style.display = 'none';
+      
+      // Stop video by clearing src
+      iframe.src = '';
+      
+      // Restore body scroll
+      document.body.style.overflow = 'auto';
+    }
+    
+    // Close modal when clicking outside
+    document.getElementById('video-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeVideoModal();
+      }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeVideoModal();
+      }
+    });
+
+    // Quiz functionality
+    let quizCompleted = false;
+    const correctAnswers = {
+      q1: 'a', // Pierre Vernier en 1631
+      q2: 'b', // 0.02 mm
+      q3: 'b', // 0.5 mm
+      q4: 'c', // 50 divisiones
+      q5: 'c'  // Palmer
+    };
+
+    // Get user data from localStorage (assuming it's stored from login)
+    function getUserData() {
+      const userData = localStorage.getItem('userData');
+      return userData ? JSON.parse(userData) : { nombre: 'Usuario', email: 'No registrado' };
+    }
+
+    // Check if all questions are answered
+    function checkQuizCompletion() {
+      const questions = document.querySelectorAll('.quiz-question');
+      let allAnswered = true;
+      
+      questions.forEach(question => {
+        const questionName = question.querySelector('input[type="radio"]').name;
+        const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+        if (!selectedOption) {
+          allAnswered = false;
+        }
+      });
+      
+      const submitBtn = document.getElementById('submit-quiz');
+      submitBtn.disabled = !allAnswered;
+    }
+
+    // Calculate quiz score
+    function calculateScore() {
+      let correctCount = 0;
+      const totalQuestions = Object.keys(correctAnswers).length;
+      
+      for (let question in correctAnswers) {
+        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+        if (selectedOption && selectedOption.value === correctAnswers[question]) {
+          correctCount++;
+          // Mark correct answer
+          selectedOption.parentElement.classList.add('correct');
+        } else if (selectedOption) {
+          // Mark incorrect answer
+          selectedOption.parentElement.classList.add('incorrect');
+          // Show correct answer
+          const correctOption = document.querySelector(`input[name="${question}"][value="${correctAnswers[question]}"]`);
+          if (correctOption) {
+            correctOption.parentElement.classList.add('correct');
+          }
+        }
+      }
+      
+      return { correctCount, totalQuestions };
+    }
+
+    // Show results modal
+    function showResults(score, correctCount, totalQuestions) {
+      const modal = document.getElementById('results-modal');
+      const emoji = document.getElementById('result-emoji');
+      const title = document.getElementById('result-title');
+      const message = document.getElementById('result-message');
+      const scorePercentage = document.getElementById('score-percentage');
+      const correctAnswersSpan = document.getElementById('correct-answers');
+      const certificateInfo = document.getElementById('certificate-info');
+      
+      if (score >= 80) {
+        emoji.textContent = '🏆';
+        title.textContent = '¡Excelente!';
+        message.textContent = 'Has demostrado un excelente conocimiento sobre calibradores y micrómetros.';
+        certificateInfo.style.display = 'block';
+      } else if (score >= 60) {
+        emoji.textContent = '👍';
+        title.textContent = '¡Buen trabajo!';
+        message.textContent = 'Tienes un buen conocimiento de los conceptos básicos.';
+        certificateInfo.style.display = 'none';
+      } else {
+        emoji.textContent = '📚';
+        title.textContent = 'Sigue aprendiendo';
+        message.textContent = 'Te recomendamos repasar los conceptos fundamentales de los instrumentos de medición.';
+        certificateInfo.style.display = 'none';
+      }
+      
+      scorePercentage.textContent = `${score}%`;
+      correctAnswersSpan.textContent = `${correctCount}/${totalQuestions}`;
+      
+      modal.style.display = 'flex';
+      
+      // Send results via EmailJS (you'll need to configure this)
+      const userData = getUserData();
+      // sendQuizResults(userData, score, correctCount, totalQuestions);
+    }
+
+    // Initialize quiz
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add event listeners to quiz options
+      const quizOptions = document.querySelectorAll('.quiz-option');
+      quizOptions.forEach(option => {
+        option.addEventListener('change', checkQuizCompletion);
+      });
+      
+      // Submit quiz button
+      document.getElementById('submit-quiz').addEventListener('click', function() {
+        if (!quizCompleted) {
+          const { correctCount, totalQuestions } = calculateScore();
+          const score = Math.round((correctCount / totalQuestions) * 100);
+          
+          // Show results in the quiz result div
+          const resultDiv = document.getElementById('quiz-result');
+          resultDiv.innerHTML = `
+            <div class="result-content">
+              <h3>Resultados del Quiz</h3>
+              <p class="${score >= 60 ? 'success-message' : 'warning-message'}">
+                Has obtenido ${score}% de aciertos (${correctCount} de ${totalQuestions} respuestas correctas)
+              </p>
+            </div>
+          `;
+          
+          // Show results modal
+          showResults(score, correctCount, totalQuestions);
+          
+          // Disable all options
+          quizOptions.forEach(option => {
+            option.disabled = true;
+          });
+          
+          // Show close button
+          document.getElementById('close-quiz').style.display = 'inline-block';
+          this.style.display = 'none';
+          
+          quizCompleted = true;
+        }
+      });
+      
+      // Close quiz button
+      document.getElementById('close-quiz').addEventListener('click', function() {
+        document.getElementById('quiz-result').innerHTML = '';
+        this.style.display = 'none';
+      });
+      
+      // Back to quiz button (from modal)
+      document.getElementById('back-to-quiz').addEventListener('click', function() {
+        document.getElementById('quiz-overlay').style.display = 'none';
+      });
+      
+      // Close results button
+      document.getElementById('close-results').addEventListener('click', function() {
+        document.getElementById('results-modal').style.display = 'none';
+      });
+      
+      // Retry quiz button
+      document.getElementById('retry-quiz').addEventListener('click', function() {
+        // Reset quiz
+        quizCompleted = false;
+        const quizOptions = document.querySelectorAll('.quiz-option');
+        quizOptions.forEach(option => {
+          option.checked = false;
+          option.disabled = false;
+          option.parentElement.classList.remove('correct', 'incorrect');
+        });
+        
+        // Reset UI
+        document.getElementById('quiz-result').innerHTML = '';
+        document.getElementById('submit-quiz').style.display = 'inline-block';
+        document.getElementById('close-quiz').style.display = 'none';
+        document.getElementById('results-modal').style.display = 'none';
+        document.getElementById('submit-quiz').disabled = true;
+      });
+    });
+  </script>
+</body>
+</html>

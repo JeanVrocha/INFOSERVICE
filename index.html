@@ -2,11 +2,25 @@
 <html lang="es">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="INFOSERVICE - Plataforma educativa sobre equipos electromecánicos industriales">
+    <meta name="keywords" content="electromecanica, industria, educacion, equipos, control, automatizacion">
+    <meta name="author" content="INFOSERVICE">
+    <meta name="theme-color" content="#3498db">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="INFOSERVICE">
     <title>INFOSERVICE</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="./css/normalize.css?v=4">
     <link rel="stylesheet" href="./css/estilos.css?v=4">
 </head>
@@ -37,6 +51,16 @@
             <a href="#" class="btn-hamburguesa">Comienza ahora</a>
         </div>
     </section>
+
+    <!-- Carrusel de Imágenes -->
+    <section class="carousel-section">
+        <div class="container">
+            <div style="height: 400px; position: relative; max-width: 1200px; margin: 0 auto;">
+                <div class="circular-gallery" id="circular-gallery"></div>
+            </div>
+        </div>
+    </section>
+
     <section id="vision-mision" class="about">
         <div class="container">
             <h2 class="about__title">Misión y Visión</h2>
@@ -89,29 +113,17 @@
     <div id="modal-acerca-de" class="modal hidden">
         <div class="modal__overlay"></div>
         <div class="modal__content modal__acerca-de">
-            <div class="electric-border" data-speed="1.2" data-chaos="0.8" style="--electric-border-color:#8b5cf6; --eb-border-width:2px; border-radius:16px;">
-                <svg class="eb-svg" aria-hidden="true"></svg>
-                <div class="eb-layers">
-                    <div class="eb-background-glow"></div>
-                    <div class="eb-glow-2"></div>
-                    <div class="eb-glow-1"></div>
-                    <div class="eb-stroke"></div>
-                </div>
-                <div class="eb-content">
-                    <h3 class="modal__title">Acerca de INFOSERVICE</h3>
-                    <div class="acerca-de-content">
-                        <p>Si eres un joven y estas buscando ingresar al extenso mundo de la ingeniería, estas visitando la página web correcta. Los temas presentados en esta web serán una guía de las bases que necesitas dominar en el ámbito industrial para poder familiarizarte con tu entorno en desarrollo, este será tu primer paso para aprender a comprender sobre los equipos comúnmente utilizados en los sistemas electromecánicos que se implementan en las distintas industrias que nos rodean.</p>
-                        <p>La página web presentada a continuación, también pretende realizar una demostración ilustrativa de los equipos eléctricos comúnmente utilizados en el área de la ingeniería electromecánica, para ello será necesario recaudar la información de fuentes confiables, que permita a los estudiantes adquirir las competencias necesarias para comprender y conocer más a fondo la estructura de los equipos facilitando su instalación y mantenimiento.</p>
-                        <div class="video-container">
-                            <video autoplay muted loop playsinline>
-                                <source src="./IMAGENES/EQUIPOS/presentacion.mp4" type="video/mp4">
-                                Tu navegador no soporta el elemento de video.
-                            </video>
-                        </div>
-                    </div>
-                    <button type="button" class="back__btn close-acerca-de">Cerrar</button>
+            <h3 class="modal__title">Acerca de INFOSERVICE</h3>
+            <div class="acerca-de-content">
+                <p>La página web presentada a continuación, también pretende realizar una demostración ilustrativa de los equipos eléctricos comúnmente utilizados en el área de la ingeniería electromecánica, para ello será necesario recaudar la información de fuentes confiables, que permita a los estudiantes adquirir las competencias necesarias para comprender y conocer más a fondo la estructura de los equipos facilitando su instalación y mantenimiento.</p>
+                <div class="video-container">
+                    <video autoplay muted loop playsinline>
+                        <source src="./IMAGENES/EQUIPOS/presentacion.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
                 </div>
             </div>
+            <button type="button" class="back__btn close-acerca-de">Cerrar</button>
             <button type="button" class="modal__close close-acerca-de" aria-label="Cerrar">×</button>
         </div>
     </div>
@@ -331,6 +343,588 @@
     <script>
       // Initialize splash cursor overlay (performance-tuned for wide compatibility)
       try { window.initSplashCursor && window.initSplashCursor({ TRANSPARENT: true, DYE_RESOLUTION: 720, COLOR_UPDATE_SPEED: 8, SPLAT_FORCE: 5500 }); } catch(e) {}
+    </script>
+
+    <!-- Circular Gallery Scripts -->
+    <script type="module">
+      document.addEventListener('DOMContentLoaded', function() {
+        const galleryContainer = document.getElementById('circular-gallery');
+        if (!galleryContainer) return;
+
+        // Images from CARRUSEL folder
+        const images = [
+          { image: './IMAGENES/CARRUSEL/W1.jpg', text: 'Equipo 1' },
+          { image: './IMAGENES/CARRUSEL/W2.jpg', text: 'Equipo 2' },
+          { image: './IMAGENES/CARRUSEL/W3.jpg', text: 'Equipo 3' },
+          { image: './IMAGENES/CARRUSEL/W4.jpg', text: 'Equipo 4' },
+          { image: './IMAGENES/CARRUSEL/W5.jpg', text: 'Equipo 5' },
+          { image: './IMAGENES/CARRUSEL/W6.jpg', text: 'Equipo 6' },
+          { image: './IMAGENES/CARRUSEL/W7.jpg', text: 'Equipo 7' },
+          { image: './IMAGENES/CARRUSEL/W8.jpg', text: 'Equipo 8' },
+          { image: './IMAGENES/CARRUSEL/W9.jpg', text: 'Equipo 9' },
+          { image: './IMAGENES/CARRUSEL/W10.jpg', text: 'Equipo 10' },
+          { image: './IMAGENES/CARRUSEL/W11.jpg', text: 'Equipo 11' },
+          { image: './IMAGENES/CARRUSEL/W12.webp', text: 'Equipo 12' },
+          { image: './IMAGENES/CARRUSEL/W13.jpg', text: 'Equipo 13' }
+        ];
+
+        // Create 3D carousel
+        let currentIndex = 0;
+        const angleStep = 360 / images.length;
+        let isAutoPlaying = true;
+        let autoPlayInterval;
+
+        const galleryHTML = `
+          <div class="carousel-3d">
+            <div class="carousel-container">
+              <div class="carousel-track-3d">
+                ${images.map((img, index) => `
+                  <div class="carousel-card-3d" data-index="${index}" style="--rotation: ${index * angleStep}deg;">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="${img.image}" alt="${img.text}" />
+                        <div class="card-overlay">
+                          <h3>${img.text}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-btn-3d prev" onclick="rotateCarousel(-1)">‹</button>
+              <button class="carousel-btn-3d next" onclick="rotateCarousel(1)">›</button>
+            </div>
+            <div class="carousel-dots-3d">
+              ${images.map((_, index) => `
+                <span class="dot-3d ${index === 0 ? 'active' : ''}" onclick="goToCard(${index})"></span>
+              `).join('')}
+            </div>
+          </div>
+        `;
+
+        galleryContainer.innerHTML = galleryHTML;
+
+        // Carousel functions
+        window.rotateCarousel = function(direction) {
+          currentIndex = (currentIndex + direction + images.length) % images.length;
+          updateCarousel();
+          resetAutoPlay();
+        };
+
+        window.goToCard = function(index) {
+          currentIndex = index;
+          updateCarousel();
+          resetAutoPlay();
+        };
+
+        function updateCarousel() {
+          const cards = document.querySelectorAll('.carousel-card-3d');
+          const dots = document.querySelectorAll('.dot-3d');
+          
+          cards.forEach((card, index) => {
+            const offset = index - currentIndex;
+            const rotation = offset * angleStep;
+            
+            card.style.setProperty('--rotation', `${rotation}deg`);
+            
+            // Add active class to center card
+            if (offset === 0) {
+              card.classList.add('active');
+            } else {
+              card.classList.remove('active');
+            }
+          });
+          
+          // Update dots
+          dots.forEach((dot, index) => {
+            if (index === currentIndex) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        }
+
+        function autoPlay() {
+          if (isAutoPlaying) {
+            rotateCarousel(1);
+          }
+        }
+
+        function resetAutoPlay() {
+          clearInterval(autoPlayInterval);
+          autoPlayInterval = setInterval(autoPlay, 4000);
+        }
+
+        // Mouse interaction
+        const carousel = document.querySelector('.carousel-track-3d');
+        let isMouseDown = false;
+        let startX = 0;
+        let currentRotation = 0;
+
+        carousel.addEventListener('mousedown', (e) => {
+          isMouseDown = true;
+          startX = e.clientX;
+          carousel.style.cursor = 'grabbing';
+          isAutoPlaying = false;
+        });
+
+        carousel.addEventListener('mousemove', (e) => {
+          if (!isMouseDown) return;
+          
+          const deltaX = e.clientX - startX;
+          const rotationDelta = deltaX * 0.5;
+          
+          const cards = document.querySelectorAll('.carousel-card-3d');
+          cards.forEach((card, index) => {
+            const baseRotation = (index - currentIndex) * angleStep;
+            const newRotation = baseRotation + rotationDelta;
+            card.style.setProperty('--rotation', `${newRotation}deg`);
+          });
+        });
+
+        carousel.addEventListener('mouseup', (e) => {
+          if (!isMouseDown) return;
+          isMouseDown = false;
+          carousel.style.cursor = 'grab';
+          
+          const deltaX = e.clientX - startX;
+          if (Math.abs(deltaX) > 50) {
+            rotateCarousel(deltaX > 0 ? -1 : 1);
+          } else {
+            updateCarousel();
+          }
+          
+          setTimeout(() => {
+            isAutoPlaying = true;
+          }, 2000);
+        });
+
+        carousel.addEventListener('mouseleave', () => {
+          if (isMouseDown) {
+            isMouseDown = false;
+            carousel.style.cursor = 'grab';
+            updateCarousel();
+            setTimeout(() => {
+              isAutoPlaying = true;
+            }, 2000);
+          }
+        });
+
+        // Touch support
+        carousel.addEventListener('touchstart', (e) => {
+          startX = e.touches[0].clientX;
+          isAutoPlaying = false;
+        });
+
+        carousel.addEventListener('touchmove', (e) => {
+          const deltaX = e.touches[0].clientX - startX;
+          const rotationDelta = deltaX * 0.5;
+          
+          const cards = document.querySelectorAll('.carousel-card-3d');
+          cards.forEach((card, index) => {
+            const baseRotation = (index - currentIndex) * angleStep;
+            const newRotation = baseRotation + rotationDelta;
+            card.style.setProperty('--rotation', `${newRotation}deg`);
+          });
+        });
+
+        carousel.addEventListener('touchend', (e) => {
+          const deltaX = e.changedTouches[0].clientX - startX;
+          if (Math.abs(deltaX) > 50) {
+            rotateCarousel(deltaX > 0 ? -1 : 1);
+          } else {
+            updateCarousel();
+          }
+          
+          setTimeout(() => {
+            isAutoPlaying = true;
+          }, 2000);
+        });
+
+        // Start auto-play
+        resetAutoPlay();
+        updateCarousel();
+      });
+    </script>
+
+    <style>
+      /* 3D Carousel Styles */
+      .carousel-section {
+        background: linear-gradient(135deg, #f8f6ff 0%, #f0eaff 50%, #e8e2ff 100%);
+        padding: 40px 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .carousel-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+          radial-gradient(circle at 20% 50%, rgba(106, 13, 173, 0.08) 0%, transparent 50%),
+          radial-gradient(circle at 80% 50%, rgba(75, 0, 130, 0.06) 0%, transparent 50%),
+          radial-gradient(circle at 50% 100%, rgba(106, 13, 173, 0.04) 0%, transparent 50%);
+        pointer-events: none;
+      }
+
+      .carousel-3d {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        perspective: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+      }
+
+      .carousel-container {
+        position: relative;
+        width: 100%;
+        height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 
+          0 20px 40px rgba(106, 13, 173, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+      }
+
+      .carousel-track-3d {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: grab;
+      }
+
+      .carousel-track-3d:active {
+        cursor: grabbing;
+      }
+
+      .carousel-card-3d {
+        position: absolute;
+        width: 220px;
+        height: 280px;
+        left: 50%;
+        top: 50%;
+        margin-left: -110px;
+        margin-top: -140px;
+        transform-style: preserve-3d;
+        transform: rotateY(var(--rotation)) translateZ(300px);
+        transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 12px;
+        overflow: hidden;
+        opacity: 0.4;
+        filter: blur(1.5px);
+        scale: 0.85;
+      }
+
+      .carousel-card-3d.active {
+        transform: rotateY(var(--rotation)) translateZ(400px) scale(1.15);
+        z-index: 10;
+        opacity: 1;
+        filter: blur(0);
+        scale: 1.15;
+      }
+
+      .carousel-card-3d:nth-child(1).active,
+      .carousel-card-3d:nth-child(2).active,
+      .carousel-card-3d:nth-child(13).active {
+        transform: rotateY(var(--rotation)) translateZ(400px) scale(1.2);
+      }
+
+      .carousel-card-3d:not(.active):hover {
+        opacity: 0.6;
+        filter: blur(1px);
+        scale: 0.9;
+      }
+
+      .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.3s ease;
+      }
+
+      .carousel-card-3d:hover .card-inner {
+        transform: rotateY(5deg) scale(1.02);
+      }
+
+      .carousel-card-3d.active:hover .card-inner {
+        transform: rotateY(8deg) scale(1.05);
+      }
+
+      .card-front {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+      }
+
+      .carousel-card-3d:hover .card-front {
+        box-shadow: 0 20px 40px rgba(106, 13, 173, 0.3);
+        border-color: rgba(106, 13, 173, 0.6);
+      }
+
+      .card-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .carousel-card-3d:hover .card-front img {
+        transform: scale(1.1);
+      }
+
+      .card-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(75, 0, 130, 0.9));
+        color: white;
+        padding: 20px 15px 15px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+      }
+
+      .carousel-card-3d:hover .card-overlay {
+        transform: translateY(0);
+      }
+
+      .card-overlay h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      }
+
+      .carousel-controls {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        pointer-events: none;
+        z-index: 20;
+      }
+
+      .carousel-btn-3d {
+        background: linear-gradient(135deg, #6A0DAD, #4B0082);
+        color: white;
+        border: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        pointer-events: all;
+        backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 20px rgba(106, 13, 173, 0.3);
+      }
+
+      .carousel-btn-3d:hover {
+        background: linear-gradient(135deg, #8b3ff7, #6A0DAD);
+        transform: scale(1.1);
+        box-shadow: 0 12px 25px rgba(106, 13, 173, 0.4);
+      }
+
+      .carousel-dots-3d {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 20;
+      }
+
+      .dot-3d {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(106, 13, 173, 0.4);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(106, 13, 173, 0.6);
+      }
+
+      .dot-3d.active {
+        background: linear-gradient(135deg, #6A0DAD, #4B0082);
+        transform: scale(1.3);
+        box-shadow: 0 0 15px rgba(106, 13, 173, 0.8);
+        border-color: #6A0DAD;
+      }
+
+      .dot-3d:hover {
+        background: rgba(106, 13, 173, 0.7);
+        transform: scale(1.2);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .carousel-section {
+          padding: 30px 0;
+        }
+
+        .carousel-container {
+          height: 280px;
+          border-radius: 16px;
+        }
+
+        .carousel-card-3d {
+          width: 180px;
+          height: 240px;
+          margin-left: -90px;
+          margin-top: -120px;
+          transform: rotateY(var(--rotation)) translateZ(250px);
+          opacity: 0.4;
+          filter: blur(1.5px);
+          scale: 0.85;
+        }
+
+        .carousel-card-3d.active {
+          transform: rotateY(var(--rotation)) translateZ(320px) scale(1.15);
+          opacity: 1;
+          filter: blur(0);
+          scale: 1.15;
+        }
+
+        .card-overlay h3 {
+          font-size: 14px;
+        }
+
+        .carousel-btn-3d {
+          width: 40px;
+          height: 40px;
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .carousel-section {
+          padding: 20px 0;
+        }
+
+        .carousel-container {
+          height: 240px;
+          border-radius: 12px;
+        }
+
+        .carousel-card-3d {
+          width: 140px;
+          height: 200px;
+          margin-left: -70px;
+          margin-top: -100px;
+          transform: rotateY(var(--rotation)) translateZ(200px);
+          opacity: 0.4;
+          filter: blur(1.5px);
+          scale: 0.85;
+        }
+
+        .carousel-card-3d.active {
+          transform: rotateY(var(--rotation)) translateZ(260px) scale(1.15);
+          opacity: 1;
+          filter: blur(0);
+          scale: 1.15;
+        }
+
+        .card-overlay {
+          padding: 15px 10px 10px;
+        }
+
+        .card-overlay h3 {
+          font-size: 12px;
+        }
+
+        .carousel-btn-3d {
+          width: 35px;
+          height: 35px;
+          font-size: 16px;
+        }
+
+        .dot-3d {
+          width: 8px;
+          height: 8px;
+        }
+      }
+
+      /* Animation for entrance */
+      @keyframes carouselEntrance {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .carousel-3d {
+        animation: carouselEntrance 1s ease-out;
+      }
+
+      /* Floating animation for background */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+
+      .carousel-section::after {
+        content: '';
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 80px;
+        height: 80px;
+        background: radial-gradient(circle, rgba(106, 13, 173, 0.1) 0%, transparent 70%);
+        border-radius: 50%;
+        animation: float 6s ease-in-out infinite;
+        pointer-events: none;
+      }
+    </style>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('./sw.js')
+            .then(function(registration) {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
     </script>
   </body>
 </html>

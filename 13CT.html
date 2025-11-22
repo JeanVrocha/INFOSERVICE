@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cámaras Termográficas | INFOSERVICE</title>
+  <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/normalize.css?v=4" />
+  <link rel="stylesheet" href="./css/estilos.css?v=4" />
+  <link rel="stylesheet" href="./css/estilo2.css?v=1" />
+  <link rel="stylesheet" href="./css/13CT.css" />
+  <style>
+    .main-content {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .content-box {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .btn-back {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+    .btn-back:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav container">
+      <div class="div__logo">
+        <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+        <h2 class="nav__title">INFOSERVICE.</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" class="menu__links">Inicio</a></li>
+          <li><a href="ELECTROMECANICA.html" class="menu__links">Electromecánica</a></li>
+        </ul>
+      </nav>
+    </nav>
+  </header>
+
+  <!-- Modern Navigation Menu -->
+  <div class="magic-nav-container">
+    <div class="magic-nav-grid">
+      <a href="#introduccion" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 1</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">🌡️ Introducción a Cámaras Termográficas</h2>
+          <p class="magic-nav-card__description">Historia y principios básicos</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#principios" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 2</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">🔥 Principios de Termografía</h2>
+          <p class="magic-nav-card__description">Radiación infrarroja y emisión</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#componentes" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 3</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">📷 Componentes Principales</h2>
+          <p class="magic-nav-card__description">Partes fundamentales de la cámara</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#aplicaciones" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 4</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">🏭 Aplicaciones</h2>
+          <p class="magic-nav-card__description">Usos industriales y de mantenimiento</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#quiz" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Evaluación</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">📋 QUIZ INTERACTIVO</h2>
+          <p class="magic-nav-card__description">Pon a prueba tus conocimientos</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <!-- Sección INTRODUCCIÓN A CÁMARAS TERMOGRÁFICAS -->
+    <div id="introduccion" class="content-box">
+      <h2>🌡️ INTRODUCCIÓN A CÁMARAS TERMOGRÁFICAS</h2>
+      
+      <!-- Historia de las Cámaras Termográficas -->
+      <div class="info-section">
+        <h3>Historia de las Cámaras Termográficas</h3>
+        <div class="pulsador-grid">
+          <div class="pulsador-text">
+            <ul class="elemento-lista">
+              <li>La termografía infrarroja se basa en el descubrimiento de la radiación infrarroja por Sir William Herschel en 1800.</li>
+              <li>Las primeras cámaras termográficas militares se desarrollaron durante la Segunda Guerra Mundial para detección nocturna.</li>
+              <li>En la década de 1960, las cámaras termográficas comenzaron a usarse en aplicaciones industriales y médicas.</li>
+              <li>La tecnología moderna ha evolucionado desde sistemas de enfriamiento criogénico hasta detectores microbolómetros no enfriados.</li>
+            </ul>
+          </div>
+          <div class="pulsador-image">
+            <!-- Espacio para imagen de cámara termográfica -->
+            <div class="image-placeholder">
+              <p>📷 Imagen de cámara termográfica moderna</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Principios Básicos -->
+      <div class="info-section">
+        <h3>Principios Básicos de la Termografía</h3>
+        <div class="types-grid">
+          <div class="type-card">
+            <div class="type-icon">🌡️</div>
+            <h4>Radiación Infrarroja</h4>
+            <p>Todo objeto con temperatura superior al cero absoluto emite radiación infrarroja.</p>
+            <div class="example-tag">Espectro: 0.7-1000 μm</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">🔥</div>
+            <h4>Ley de Stefan-Boltzmann</h4>
+            <p>La energía radiada es proporcional a la cuarta potencia de la temperatura absoluta.</p>
+            <div class="example-tag">E = σT⁴</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">📊</div>
+            <h4>Imágenes Térmicas</h4>
+            <p>Convierten la radiación infrarroja en imágenes visibles con mapas de temperatura.</p>
+            <div class="example-tag">Paletas de color</div>
+          </div>
+        </div>
+        
+        <div class="video-container">
+          <h4>Demostración del funcionamiento básico</h4>
+          <!-- Espacio para video -->
+          <div class="video-wrapper">
+            <div class="video-preview" onclick="playVideo(this, 'qGzO8n7mZ8o')">
+              <img src="https://img.youtube.com/vi/qGzO8n7mZ8o/maxresdefault.jpg" alt="Thermal Camera Tutorial" class="video-thumbnail">
+              <div class="play-button">
+                <svg viewBox="0 0 68 48" width="68" height="48">
+                  <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24 S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+                  <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                </svg>
+              </div>
+              <div class="video-title">Cómo funcionan las cámaras térmicas - Principios básicos</div>
+            </div>
+          </div>
+          <p class="video-instruction">🔍 CLIC EN LA IMAGEN PARA REPRODUCIR</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección PRINCIPIOS DE TERMOGRAFÍA -->
+    <div id="principios" class="content-box">
+      <h2>🔥 PRINCIPIOS DE TERMOGRAFÍA</h2>
+      
+      <!-- Radiación Infrarroja -->
+      <div class="info-section">
+        <h3>Radiación Infrarroja y Emisividad</h3>
+        <p>La radiación infrarroja es una forma de radiación electromagnética invisible al ojo humano que todos los objetos emiten según su temperatura.</p>
+        
+        <div class="functioning-image">
+          <!-- Espacio para imagen del espectro infrarrojo -->
+          <div class="image-placeholder">
+            <p>📷 Espectro de radiación infrarroja y longitudes de onda</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tipos de Detectores -->
+      <div class="info-section">
+        <h3>Tipos de Detectores Infrarrojos</h3>
+        <p>Existen diferentes tecnologías para detectar la radiación infrarroja, cada una con ventajas específicas.</p>
+        
+        <div class="switches-grid">
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>🧊 Detectores Enfriados</h4>
+              <p>Mayor sensibilidad y resolución, requieren enfriamiento criogénico.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Militar, investigación científica.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>🔥 Microbolómetros</h4>
+              <p>No requieren enfriamiento, menor costo y portátiles.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Mantenimiento industrial, edificios.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>⚡ Detectores de Fotones</h4>
+              <p>Alta velocidad de respuesta, para aplicaciones dinámicas.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Investigación, desarrollo.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parámetros de Medición -->
+      <div class="info-section">
+        <h3>Parámetros de Medición Térmica</h3>
+        <p>La precisión de las mediciones termográficas depende de múltiples factores.</p>
+        
+        <div class="parameters-grid">
+          <div class="parameter-card">
+            <div class="parameter-icon">🌡️</div>
+            <h4>Emisividad</h4>
+            <p>Capacidad de un material para emitir radiación infrarroja (0-1).</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">🎯</div>
+            <h4>Resolución Térmica</h4>
+            <p>Mínima diferencia de temperatura detectable (NETD).</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">📏</div>
+            <h4>Resolución Espacial</h4>
+            <p>Número de píxeles del detector (ej: 320×240, 640×480).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección COMPONENTES PRINCIPALES -->
+    <div id="componentes" class="content-box">
+      <h2>📷 COMPONENTES PRINCIPALES</h2>
+      
+      <!-- Sistema Óptico -->
+      <div class="info-section">
+        <h3>Sistema Óptico</h3>
+        <p>El sistema óptico de las cámaras termográficas está diseñado específicamente para la radiación infrarroja.</p>
+        
+        <div class="functioning-image">
+          <!-- Espacio para imagen del sistema óptico -->
+          <div class="image-placeholder">
+            <p>📷 Sistema óptico y lentes de cámara termográfica</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detector y Sensor -->
+      <div class="info-section">
+        <h3>Detector y Sensor</h3>
+        <p>El detector es el corazón de la cámara termográfica, convirtiendo la radiación infrarroja en señales eléctricas.</p>
+        
+        <div class="switches-grid">
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>🔥 Microbolómetro</h4>
+              <p>Material que cambia su resistencia eléctrica con la temperatura.</p>
+              <div class="application-tag">
+                <strong>Material:</strong> Vanadio óxido (VOx), silicio amorfo.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>📊 Matriz de Detectores</h4>
+              <p>Arreglo bidimensional de elementos sensores.</p>
+              <div class="application-tag">
+                <strong>Resolución:</strong> 160×120 a 1024×768 píxeles.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>⚙️ Sistema de Enfriamiento</h4>
+              <p>En cámaras de alta gama para reducir ruido térmico.</p>
+              <div class="application-tag">
+                <strong>Tipo:</strong> Stirling, termoeléctrico.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Procesamiento y Visualización -->
+      <div class="info-section">
+        <h3>Procesamiento y Visualización</h3>
+        <p>Los sistemas modernos incluyen potentes procesadores para análisis en tiempo real.</p>
+        
+        <div class="parameters-grid">
+          <div class="parameter-card">
+            <div class="parameter-icon">🖥️</div>
+            <h4>Procesador de Imagen</h4>
+            <p>Realiza correcciones y calibraciones automáticas.</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">📱</div>
+            <h4>Pantalla LCD</h4>
+            <p>Muestra imágenes térmicas con paletas de color ajustables.</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">💾</div>
+            <h4>Almacenamiento</h4>
+            <p>Guarda imágenes y videos con datos térmicos completos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección APLICACIONES -->
+    <div id="aplicaciones" class="content-box">
+      <h2>🏭 APLICACIONES</h2>
+      
+      <!-- Mantenimiento Industrial -->
+      <div class="info-section">
+        <h3>Mantenimiento Industrial</h3>
+        <p>La termografía es fundamental en programas de mantenimiento predictivo y preventivo.</p>
+        
+        <div class="table-container">
+          <table class="classification-table">
+            <thead>
+              <tr>
+                <th>Aplicación</th>
+                <th>Detección</th>
+                <th>Beneficio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Paneles Eléctricos</td>
+                <td>Conexiones sobrecalentadas</td>
+                <td>Prevención de incendios</td>
+              </tr>
+              <tr>
+                <td>Motores y Bombas</td>
+                <td>Fricción excesiva</td>
+                <td>Optimización de mantenimiento</td>
+              </tr>
+              <tr>
+                <td>Equipos HVAC</td>
+                <td>Fallas en intercambiadores</td>
+                <td>Ahorro energético</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Aplicaciones Especializadas -->
+      <div class="info-section">
+        <h3>Aplicaciones Especializadas</h3>
+        <p>Las cámaras termográficas tienen aplicaciones en diversos campos industriales y científicos.</p>
+        
+        <div class="switches-grid">
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>🏗️ Inspección de Edificios</h4>
+              <p>Detección de pérdidas de calor, humedad y deficiencias de aislamiento.</p>
+              <div class="application-tag">
+                <strong>Uso:</strong> Auditorías energéticas, construcción.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>🔬 Investigación y Desarrollo</h4>
+              <p>Análisis de transferencia de calor y pruebas de materiales.</p>
+              <div class="application-tag">
+                <strong>Uso:</strong> Laboratorios, industria aeroespacial.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>⚡ Procesos Industriales</h4>
+              <p>Monitoreo de hornos, secadores y procesos de manufactura.</p>
+              <div class="application-tag">
+                <strong>Uso:</strong> Control de calidad, optimización.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ventajas y Limitaciones -->
+      <div class="info-section">
+        <h3>Ventajas y Limitaciones</h3>
+        
+        <div class="types-grid">
+          <div class="type-card">
+            <div class="type-icon">✅</div>
+            <h4>Ventajas</h4>
+            <ul>
+              <li>Detección no invasiva</li>
+              <li>Medición a distancia segura</li>
+              <li>Inspección en tiempo real</li>
+              <li>Detección temprana de fallas</li>
+              <li>Reducción de tiempos de parada</li>
+            </ul>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">⚠️</div>
+            <h4>Limitaciones</h4>
+            <ul>
+              <li>Costo elevado del equipo</li>
+              <li>Requiere personal capacitado</li>
+              <li>Influencia de condiciones ambientales</li>
+              <li>Calibración periódica necesaria</li>
+              <li>Interpretación compleja de imágenes</li>
+            </ul>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">🔧</div>
+            <h4>Mantenimiento</h4>
+            <ul>
+              <li>Calibración anual recomendada</li>
+              <li>Limpieza de lentes y filtros</li>
+              <li>Actualización de firmware</li>
+              <li>Verificación de baterías</li>
+              <li>Almacenamiento en ambiente controlado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección QUIZ -->
+    <div id="quiz" class="content-box">
+      <h2>📋 QUIZ INTERACTIVO - CÁMARAS TERMOGRÁFICAS</h2>
+      
+      <div class="quiz-intro">
+        <p>Evalúa tus conocimientos sobre cámaras termográficas respondiendo las siguientes preguntas:</p>
+      </div>
+
+      <div class="quiz-questions">
+        <!-- Pregunta 1 -->
+        <div class="quiz-question" data-question="1">
+          <div class="question-header">
+            <span class="question-number">1</span>
+            <h3>¿Quién descubrió la radiación infrarroja y en qué año?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q1" value="a" class="quiz-option">
+              <span class="option-text">Sir William Herschel en 1800</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="b" class="quiz-option">
+              <span class="option-text">James Clerk Maxwell en 1865</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="c" class="quiz-option">
+              <span class="option-text">Albert Einstein en 1905</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="d" class="quiz-option">
+              <span class="option-text">Isaac Newton en 1704</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="quiz-question" data-question="2">
+          <div class="question-header">
+            <span class="question-number">2</span>
+            <h3>¿Cuál es el rango del espectro infrarrojo?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q2" value="a" class="quiz-option">
+              <span class="option-text">0.7 - 1000 μm</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="b" class="quiz-option">
+              <span class="option-text">400 - 700 nm</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="c" class="quiz-option">
+              <span class="option-text">1 - 100 mm</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="d" class="quiz-option">
+              <span class="option-text">10 - 1000 μm</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="quiz-question" data-question="3">
+          <div class="question-header">
+            <span class="question-number">3</span>
+            <h3>¿Qué ley describe la relación entre temperatura y radiación emitida?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q3" value="a" class="quiz-option">
+              <span class="option-text">Ley de Stefan-Boltzmann</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="b" class="quiz-option">
+              <span class="option-text">Ley de Ohm</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="c" class="quiz-option">
+              <span class="option-text">Ley de Newton</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="d" class="quiz-option">
+              <span class="option-text">Ley de Hooke</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="quiz-question" data-question="4">
+          <div class="question-header">
+            <span class="question-number">4</span>
+            <h3>¿Cuál es el tipo de detector más común en cámaras termográficas modernas?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q4" value="a" class="quiz-option">
+              <span class="option-text">Microbolómetro</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="b" class="quiz-option">
+              <span class="option-text">Fotomultiplicador</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="c" class="quiz-option">
+              <span class="option-text">Tubo fotocatódico</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="d" class="quiz-option">
+              <span class="option-text">CCD convencional</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="quiz-question" data-question="5">
+          <div class="question-header">
+            <span class="question-number">5</span>
+            <h3>¿Qué parámetro indica la capacidad de un material para emitir radiación infrarroja?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q5" value="a" class="quiz-option">
+              <span class="option-text">Emisividad</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="b" class="quiz-option">
+              <span class="option-text">Conductividad</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="c" class="quiz-option">
+              <span class="option-text">Reflectividad</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="d" class="quiz-option">
+              <span class="option-text">Transmisividad</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-controls">
+        <button id="submit-quiz" class="quiz-submit-btn" disabled>Enviar Respuestas</button>
+        <div id="quiz-result" class="quiz-result"></div>
+        <button id="close-quiz" class="quiz-close-btn" style="display: none;">Cerrar y Continuar</button>
+      </div>
+    </div>
+
+    <div class="content-box text-center">
+      <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
+    </div>
+  </div>
+
+  <!-- Quiz Modal Overlay -->
+  <div id="quiz-overlay" class="quiz-overlay" style="display: none;">
+    <div class="quiz-modal">
+      <div class="quiz-modal-content">
+        <h3>⚠️ Debes completar el quiz primero</h3>
+        <p>Por favor, responde todas las preguntas del quiz antes de poder navegar a otras secciones.</p>
+        <button id="back-to-quiz" class="quiz-back-btn">Volver al Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Modal -->
+  <div id="results-modal" class="quiz-overlay" style="display: none;">
+    <div class="results-modal">
+      <div class="results-modal-content">
+        <div class="results-header">
+          <div id="result-emoji" class="result-emoji"></div>
+          <h3 id="result-title" class="result-title"></h3>
+        </div>
+        <div class="results-body">
+          <p id="result-message" class="result-message"></p>
+          <div class="result-details">
+            <div class="result-score">
+              <span class="score-label">Puntuación:</span>
+              <span id="score-percentage" class="score-value"></span>
+            </div>
+            <div class="result-answers">
+              <span class="answers-label">Respuestas correctas:</span>
+              <span id="correct-answers" class="answers-value"></span>
+            </div>
+          </div>
+          <div id="certificate-info" class="certificate-info" style="display: none;">
+            <p>📧 Tus resultados han sido enviados a web.infoservice25@gmail.com</p>
+            <p>🏆 ¡Guarda este certificado de participación!</p>
+          </div>
+        </div>
+        <div class="results-actions">
+          <button id="close-results" class="quiz-close-btn">Cerrar y Continuar</button>
+          <button id="retry-quiz" class="retry-btn">Intentar Nuevamente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="video-modal" style="display: none;">
+    <div class="video-modal-content">
+      <div class="video-modal-header">
+        <h3 id="video-modal-title">Video Player</h3>
+        <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
+      </div>
+      <div class="video-modal-body">
+        <div class="video-iframe-container">
+          <iframe id="video-iframe" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Video Player Functionality
+    function playVideo(element, videoId) {
+      const modal = document.getElementById('video-modal');
+      const iframe = document.getElementById('video-iframe');
+      const title = document.getElementById('video-modal-title');
+      
+      // Set video title
+      const videoTitle = element.querySelector('.video-title').textContent;
+      title.textContent = videoTitle;
+      
+      // Set iframe src with autoplay
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&controls=1&showinfo=0`;
+      
+      // Show modal
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeVideoModal() {
+      const modal = document.getElementById('video-modal');
+      const iframe = document.getElementById('video-iframe');
+      
+      // Hide modal
+      modal.style.display = 'none';
+      
+      // Stop video by clearing src
+      iframe.src = '';
+      
+      // Restore body scroll
+      document.body.style.overflow = 'auto';
+    }
+    
+    // Close modal when clicking outside
+    document.getElementById('video-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeVideoModal();
+      }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeVideoModal();
+      }
+    });
+
+    // Quiz functionality
+    let quizCompleted = false;
+    const correctAnswers = {
+      q1: 'a', // Sir William Herschel en 1800
+      q2: 'a', // 0.7 - 1000 μm
+      q3: 'a', // Ley de Stefan-Boltzmann
+      q4: 'a', // Microbolómetro
+      q5: 'a'  // Emisividad
+    };
+
+    // Get user data from localStorage (assuming it's stored from login)
+    function getUserData() {
+      const userData = localStorage.getItem('userData');
+      return userData ? JSON.parse(userData) : { nombre: 'Usuario', email: 'No registrado' };
+    }
+
+    // Check if all questions are answered
+    function checkQuizCompletion() {
+      const questions = document.querySelectorAll('.quiz-question');
+      let allAnswered = true;
+      
+      questions.forEach(question => {
+        const questionName = question.querySelector('input[type="radio"]').name;
+        const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+        if (!selectedOption) {
+          allAnswered = false;
+        }
+      });
+      
+      const submitBtn = document.getElementById('submit-quiz');
+      submitBtn.disabled = !allAnswered;
+    }
+
+    // Calculate quiz score
+    function calculateScore() {
+      let correctCount = 0;
+      const totalQuestions = Object.keys(correctAnswers).length;
+      
+      for (let question in correctAnswers) {
+        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+        if (selectedOption && selectedOption.value === correctAnswers[question]) {
+          correctCount++;
+          // Mark correct answer
+          selectedOption.parentElement.classList.add('correct');
+        } else if (selectedOption) {
+          // Mark incorrect answer
+          selectedOption.parentElement.classList.add('incorrect');
+          // Show correct answer
+          const correctOption = document.querySelector(`input[name="${question}"][value="${correctAnswers[question]}"]`);
+          if (correctOption) {
+            correctOption.parentElement.classList.add('correct');
+          }
+        }
+      }
+      
+      return { correctCount, totalQuestions };
+    }
+
+    // Show results modal
+    function showResults(score, correctCount, totalQuestions) {
+      const modal = document.getElementById('results-modal');
+      const emoji = document.getElementById('result-emoji');
+      const title = document.getElementById('result-title');
+      const message = document.getElementById('result-message');
+      const scorePercentage = document.getElementById('score-percentage');
+      const correctAnswersSpan = document.getElementById('correct-answers');
+      const certificateInfo = document.getElementById('certificate-info');
+      
+      if (score >= 80) {
+        emoji.textContent = '🏆';
+        title.textContent = '¡Excelente!';
+        message.textContent = 'Has demostrado un excelente conocimiento sobre cámaras termográficas.';
+        certificateInfo.style.display = 'block';
+      } else if (score >= 60) {
+        emoji.textContent = '👍';
+        title.textContent = '¡Buen trabajo!';
+        message.textContent = 'Tienes un buen conocimiento de los conceptos básicos.';
+        certificateInfo.style.display = 'none';
+      } else {
+        emoji.textContent = '📚';
+        title.textContent = 'Sigue aprendiendo';
+        message.textContent = 'Te recomendamos repasar los conceptos fundamentales de la termografía.';
+        certificateInfo.style.display = 'none';
+      }
+      
+      scorePercentage.textContent = `${score}%`;
+      correctAnswersSpan.textContent = `${correctCount}/${totalQuestions}`;
+      
+      modal.style.display = 'flex';
+      
+      // Send results via EmailJS (you'll need to configure this)
+      const userData = getUserData();
+      // sendQuizResults(userData, score, correctCount, totalQuestions);
+    }
+
+    // Initialize quiz
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add event listeners to quiz options
+      const quizOptions = document.querySelectorAll('.quiz-option');
+      quizOptions.forEach(option => {
+        option.addEventListener('change', checkQuizCompletion);
+      });
+      
+      // Submit quiz button
+      document.getElementById('submit-quiz').addEventListener('click', function() {
+        if (!quizCompleted) {
+          const { correctCount, totalQuestions } = calculateScore();
+          const score = Math.round((correctCount / totalQuestions) * 100);
+          
+          // Show results in the quiz result div
+          const resultDiv = document.getElementById('quiz-result');
+          resultDiv.innerHTML = `
+            <div class="result-content">
+              <h3>Resultados del Quiz</h3>
+              <p class="${score >= 60 ? 'success-message' : 'warning-message'}">
+                Has obtenido ${score}% de aciertos (${correctCount} de ${totalQuestions} respuestas correctas)
+              </p>
+            </div>
+          `;
+          
+          // Show results modal
+          showResults(score, correctCount, totalQuestions);
+          
+          // Disable all options
+          quizOptions.forEach(option => {
+            option.disabled = true;
+          });
+          
+          // Show close button
+          document.getElementById('close-quiz').style.display = 'inline-block';
+          this.style.display = 'none';
+          
+          quizCompleted = true;
+        }
+      });
+      
+      // Close quiz button
+      document.getElementById('close-quiz').addEventListener('click', function() {
+        document.getElementById('quiz-result').innerHTML = '';
+        this.style.display = 'none';
+      });
+      
+      // Back to quiz button (from modal)
+      document.getElementById('back-to-quiz').addEventListener('click', function() {
+        document.getElementById('quiz-overlay').style.display = 'none';
+      });
+      
+      // Close results button
+      document.getElementById('close-results').addEventListener('click', function() {
+        document.getElementById('results-modal').style.display = 'none';
+      });
+      
+      // Retry quiz button
+      document.getElementById('retry-quiz').addEventListener('click', function() {
+        // Reset quiz
+        quizCompleted = false;
+        const quizOptions = document.querySelectorAll('.quiz-option');
+        quizOptions.forEach(option => {
+          option.checked = false;
+          option.disabled = false;
+          option.parentElement.classList.remove('correct', 'incorrect');
+        });
+        
+        // Reset UI
+        document.getElementById('quiz-result').innerHTML = '';
+        document.getElementById('submit-quiz').style.display = 'inline-block';
+        document.getElementById('close-quiz').style.display = 'none';
+        document.getElementById('results-modal').style.display = 'none';
+        document.getElementById('submit-quiz').disabled = true;
+      });
+    });
+  </script>
+</body>
+</html>

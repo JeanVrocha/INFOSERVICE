@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Variadores de Frecuencia (VFD) y Arrancadores Suaves - Guía completa de principios, tipos y aplicaciones industriales">
+    <meta name="keywords" content="variadores, frecuencia, VFD, arrancadores, suaves, electromecanica, industria, automatización, control de velocidad">
+    <meta name="author" content="INFOSERVICE">
+    <title>17VFA - Variadores de Frecuencia (VFD) y Arrancadores Suaves | INFOSERVICE</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+    
+    <!-- CSS Files matching 1EMM.html configuration -->
+    <link rel="stylesheet" href="./css/normalize.css?v=4" />
+    <link rel="stylesheet" href="./css/estilos.css?v=4" />
+    <link rel="stylesheet" href="./css/estilo2.css?v=1" />
+    <link rel="stylesheet" href="./css/17VFA.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Inline fallback styles -->
+    <style>
+        /* Fallback for older browsers */
+        .btn-back {
+            display: inline-block;
+            background: #9b59b6;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn-back:hover {
+            background: #8e44ad;
+        }
+        
+        /* Grid fallback for very old browsers */
+        .tech-nav-grid {
+            display: block;
+            text-align: center;
+        }
+        .tech-nav-card {
+            display: inline-block;
+            width: 300px;
+            margin: 10px;
+            vertical-align: top;
+        }
+        
+        /* No-JavaScript fallback */
+        .no-js .quiz-controls {
+            display: none;
+        }
+        .no-js .quiz-message {
+            display: block;
+            padding: 2rem;
+            background: rgba(155, 89, 182, 0.1);
+            border: 2px solid rgba(155, 89, 182, 0.3);
+            border-radius: 12px;
+            text-align: center;
+            color: #9b59b6;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link" style="position: absolute; top: -40px; left: 6px; background: #9b59b6; color: white; padding: 8px; text-decoration: none; z-index: 1000;">Saltar al contenido principal</a>
+    
+    <header role="banner">
+        <nav class="nav container" role="navigation" aria-label="Navegación principal">
+            <div class="div__logo">
+                <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+                <h2 class="nav__title">INFOSERVICE.</h2>
+            </div>
+            <nav class="menu" aria-label="Menú de navegación">
+                <ul>
+                    <li><a href="index.html" class="menu__links" aria-label="Ir a la página de inicio">Inicio</a></li>
+                    <li><a href="ELECTROMECANICA.html" class="menu__links" aria-label="Ir a la sección de electromecánica">Electromecánica</a></li>
+                </ul>
+            </nav>
+            <div class="nav__menu" role="button" aria-label="Menú móvil" tabindex="0">
+                <img src="./IMAGENES/menu.svg" alt="Menú" aria-hidden="true">
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <div class="main-content">
+            <!-- Modern Navigation Menu -->
+            <section class="tech-nav-container" aria-label="Navegación de contenido">
+                <div class="tech-nav-grid">
+                    <a href="#introduccion-vfd" class="tech-nav-card" aria-label="Ir a la sección de introducción a VFD">
+                        <div class="tech-nav-card__header">
+                            <div class="tech-nav-card__label">Sección 1</div>
+                        </div>
+                        <div class="tech-nav-card__content">
+                            <h2 class="tech-nav-card__title">⚡ INTRODUCCIÓN A VFD Y ARRANCADORES</h2>
+                            <p class="tech-nav-card__description">Control de velocidad y arranque suave</p>
+                        </div>
+                        <div class="tech-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#tipos-vfd" class="tech-nav-card" aria-label="Ir a la sección de tipos de VFD">
+                        <div class="tech-nav-card__header">
+                            <div class="tech-nav-card__label">Sección 2</div>
+                        </div>
+                        <div class="tech-nav-card__content">
+                            <h2 class="tech-nav-card__title">🏭 TIPOS DE VFD Y ARRANCADORES</h2>
+                            <p class="tech-nav-card__description">Clasificación y tecnologías</p>
+                        </div>
+                        <div class="tech-nav-card__glow"></div>
+                    </a>
+
+                    <a href="#componentes-vfd" class="tech-nav-card" aria-label="Ir a la sección de componentes de VFD">
+                        <div class="tech-nav-card__header">
+                            <div class="tech-nav-card__label">Sección 3</div>
+                        </div>
+                        <div class="tech-nav-card__content">
+                            <h2 class="tech-nav-card__title">🔧 COMPONENTES PRINCIPALES</h2>
+                            <p class="tech-nav-card__description">Elementos esenciales y sistemas</p>
+                        </div>
+                        <div class="tech-nav-card__glow"></div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Sección INTRODUCCIÓN A VFD Y ARRANCADORES -->
+            <section id="introduccion-vfd" class="tech-section" aria-labelledby="intro-title">
+                <h2 id="intro-title" class="tech-section__title">⚡ INTRODUCCIÓN A VFD Y ARRANCADORES SUAVES</h2>
+                
+                <div class="tech-content">
+                    <div class="tech-grid">
+                        <div class="tech-text">
+                            <h3>¿Qué son los Variadores de Frecuencia (VFD)?</h3>
+                            <p>Los Variadores de Frecuencia (VFD) son dispositivos electrónicos que controlan la velocidad de los motores eléctricos de CA variando la frecuencia y voltaje de alimentación. Permiten un control preciso y eficiente de la velocidad del motor según las necesidades de la aplicación.</p>
+                            
+                            <h4>Principio de Funcionamiento</h4>
+                            <p>Los VFD convierten la corriente CA de frecuencia fija en corriente CC, luego la convierten nuevamente en CA con frecuencia y voltaje variables. Este proceso se realiza mediante rectificación, filtrado e inversión, permitiendo controlar la velocidad del motor de manera suave y precisa.</p>
+                            
+                            <h4>¿Qué son los Arrancadores Suaves?</h4>
+                            <p>Los Arrancadores Suaves son dispositivos que reducen la corriente de arranque de los motores eléctricos, limitando el par de torsión durante el inicio. A diferencia de los VFD, no controlan la velocidad continua, solo mejoran el proceso de arranque y parada.</p>
+                        </div>
+                        <div class="tech-image">
+                            <div class="tech-image-container">
+                                <img src="./IMAGENES/EQUIPOS/EQUIPOS DE INSTALACIONES INDUSTRIALES/VFD1.png" alt="Variador de Frecuencia moderno" class="tech-img">
+                                <div class="tech-image-overlay">
+                                    <p>🔍 Pasa el cursor para ampliar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-content">
+                    <h3>Importancia Industrial</h3>
+                    <p>Los VFD y Arrancadores Suaves son fundamentales en aplicaciones industriales modernas:</p>
+                    
+                    <div class="tech-types-grid">
+                        <div class="tech-type-card">
+                            <div class="tech-type-icon">⚡</div>
+                            <h4>Ahorro Energético</h4>
+                            <p>Reducción significativa del consumo energético al ajustar la velocidad a la demanda real.</p>
+                        </div>
+                        <div class="tech-type-card">
+                            <div class="tech-type-icon">🛡️</div>
+                            <h4>Protección del Equipo</h4>
+                            <p>Reducción del estrés mecánico y eléctrico durante el arranque y operación.</p>
+                        </div>
+                        <div class="tech-type-card">
+                            <div class="tech-type-icon">📊</div>
+                            <h4>Control Preciso</h4>
+                            <p>Regulación exacta de la velocidad y par para procesos optimizados.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección TIPOS DE VFD Y ARRANCADORES -->
+            <section id="tipos-vfd" class="tech-section" aria-labelledby="tipos-title">
+                <h2 id="tipos-title" class="tech-section__title">🏭 TIPOS DE VFD Y ARRANCADORES</h2>
+                
+                <div class="tech-content">
+                    <h3>Tipos de Variadores de Frecuencia</h3>
+                    <p>Los VFD se clasifican según su topología y tecnología de control:</p>
+                    
+                    <div class="tech-switches-grid">
+                        <div class="tech-switch-item">
+                            <h4>VFD de Fuente de Voltaje (VSI)</h4>
+                            <p>Los más comunes, utilizan un bus de CC de voltaje constante. Ideales para aplicaciones generales y bombas.</p>
+                        </div>
+                        <div class="tech-switch-item">
+                            <h4>VFD de Fuente de Corriente (CSI)</h4>
+                            <p>Utilizan un bus de CC de corriente constante. Adecuados para aplicaciones de alta potencia.</p>
+                        </div>
+                        <div class="tech-switch-item">
+                            <h4>VFD Controlados por Corriente</h4>
+                            <p>Control directo de la corriente del motor. Excelentes para aplicaciones de alto par.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-content">
+                    <h3>Tipos de Arrancadores Suaves</h3>
+                    <div class="tech-switches-grid">
+                        <div class="tech-switch-item">
+                            <h4>Arrancadores Suaves por Voltaje</h4>
+                            <p>Controlan el voltaje aplicado durante el arranque. Simples y económicos.</p>
+                        </div>
+                        <div class="tech-switch-item">
+                            <h4>Arrancadores Suaves por Corriente</h4>
+                            <p>Limitan la corriente de arranque a un valor predefinido. Más precisos.</p>
+                        </div>
+                        <div class="tech-switch-item">
+                            <h4>Arrancadores Suaves con Bypass</h4>
+                            <p>Incluyen contacto para operación directa después del arranque. Reducen pérdidas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección COMPONENTES PRINCIPALES -->
+            <section id="componentes-vfd" class="tech-section" aria-labelledby="componentes-title">
+                <h2 id="componentes-title" class="tech-section__title">🔧 COMPONENTES PRINCIPALES</h2>
+                
+                <div class="tech-content">
+                    <div class="tech-grid">
+                        <div class="tech-text">
+                            <h3>Componentes de un VFD</h3>
+                            <p>Un Variador de Frecuencia está compuesto por varios elementos críticos:</p>
+                            
+                            <h4>Rectificador</h4>
+                            <p>Convierte la CA de entrada en CC. Puede ser de 6, 12 o 24 pulsos según la calidad requerida.</p>
+                            
+                            <h4>Bus de CC</h4>
+                            <p>Almacena energía y filtra la ondulación. Compuesto por capacitores y a veces inductores.</p>
+                            
+                            <h4>Inversor</h4>
+                            <p>Convierte el CC en CA variable. Utiliza IGBTs o MOSFETs para conmutación rápida.</p>
+                            
+                            <h4>Controlador</h4>
+                            <p>Procesador que ejecuta algoritmos de control (PWM, vectorial, DTC). Gestiona todas las funciones.</p>
+                        </div>
+                        <div class="tech-image">
+                            <div class="tech-image-container">
+                                <img src="./IMAGENES/EQUIPOS/EQUIPOS DE INSTALACIONES INDUSTRIALES/VFD2.png" alt="Componentes internos de un VFD" class="tech-img">
+                                <div class="tech-image-overlay">
+                                    <p>🔍 Pasa el cursor para ampliar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-content">
+                    <h3>Componentes de Arrancadores Suaves</h3>
+                    <div class="tech-parameters-grid">
+                        <div class="tech-parameter-item">
+                            <h4>Tiristores (SCRs)</h4>
+                            <p>Dispositivos semiconductores que controlan el voltaje aplicado al motor durante el arranque.</p>
+                        </div>
+                        <div class="tech-parameter-item">
+                            <h4>Placa de Control</h4>
+                            <p>Gestiona el disparo de los tiristores y los parámetros de arranque.</p>
+                        </div>
+                        <div class="tech-parameter-item">
+                            <h4>Protecciones</h4>
+                            <p>Sobrecorriente, sobrecalentamiento, falla de fase, subtensión y sobretensión.</p>
+                        </div>
+                        <div class="tech-parameter-item">
+                            <h4>Interfaz HMI</h4>
+                            <p>Panel de control para configuración y monitoreo de parámetros de operación.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="tech-section" aria-labelledby="video-title">
+                <h2 id="video-title" class="tech-section__title">🎥 DEMOSTRACIÓN DE FUNCIONAMIENTO</h2>
+                <div class="tech-video-preview">
+                    <div class="tech-video-thumbnail" onclick="openVideoModal()">
+                        <img src="./IMAGENES/EQUIPOS/EQUIPOS DE INSTALACIONES INDUSTRIALES/VFD.jpg" alt="Funcionamiento de Variadores de Frecuencia y Arrancadores Suaves">
+                        <div class="tech-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="tech-video-overlay">
+                            <h3>Funcionamiento de VFD y Arrancadores Suaves</h3>
+                            <p>Observa el principio de operación y componentes en acción</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quiz Interactivo -->
+            <section class="tech-quiz-container" aria-labelledby="quiz-title">
+                <h2 id="quiz-title" class="tech-quiz-header">📋 QUIZ INTERACTIVO</h2>
+                <p class="tech-quiz-description">Responde las siguientes preguntas sobre Variadores de Frecuencia y Arrancadores Suaves. Debes completar todas las preguntas para continuar.</p>
+
+                <div class="quiz-questions">
+                    <!-- Pregunta 1 -->
+                    <div class="quiz-question" data-question="1">
+                        <div class="question-header">
+                            <span class="question-number">1</span>
+                            <h3>¿Cuál es la función principal de un Variador de Frecuencia (VFD)?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="a" class="quiz-option">
+                                <span class="option-text">Generar electricidad</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="b" class="quiz-option">
+                                <span class="option-text">Controlar la velocidad de motores eléctricos variando frecuencia y voltaje</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="c" class="quiz-option">
+                                <span class="option-text">Transformar voltaje</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="d" class="quiz-option">
+                                <span class="option-text">Almacenar energía</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="quiz-question" data-question="2">
+                        <div class="question-header">
+                            <span class="question-number">2</span>
+                            <h3>¿Qué función cumplen los Arrancadores Suaves?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="a" class="quiz-option">
+                                <span class="option-text">Controlar la velocidad continua del motor</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="b" class="quiz-option">
+                                <span class="option-text">Reducir la corriente de arranque y el estrés mecánico</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="c" class="quiz-option">
+                                <span class="option-text">Generar energía para el motor</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="d" class="quiz-option">
+                                <span class="option-text">Transformar CA a CC</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="quiz-question" data-question="3">
+                        <div class="question-header">
+                            <span class="question-number">3</span>
+                            <h3>¿Qué componente convierte la CA de entrada en CC en un VFD?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="a" class="quiz-option">
+                                <span class="option-text">El inversor</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="b" class="quiz-option">
+                                <span class="option-text">El rectificador</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="c" class="quiz-option">
+                                <span class="option-text">El bus de CC</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="d" class="quiz-option">
+                                <span class="option-text">El controlador</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="quiz-question" data-question="4">
+                        <div class="question-header">
+                            <span class="question-number">4</span>
+                            <h3>¿Cuál es el tipo de VFD más común para aplicaciones generales?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="a" class="quiz-option">
+                                <span class="option-text">VFD de Fuente de Voltaje (VSI)</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="b" class="quiz-option">
+                                <span class="option-text">VFD de Fuente de Corriente (CSI)</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="c" class="quiz-option">
+                                <span class="option-text">VFD Controlados por Corriente</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="d" class="quiz-option">
+                                <span class="option-text">VFD de Modulación Vectorial</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="quiz-question" data-question="5">
+                        <div class="question-header">
+                            <span class="question-number">5</span>
+                            <h3>¿Qué dispositivos semiconductores utilizan principalmente los Arrancadores Suaves?</h3>
+                        </div>
+                        <div class="question-options">
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="a" class="quiz-option">
+                                <span class="option-text">IGBTs o MOSFETs</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="b" class="quiz-option">
+                                <span class="option-text">Transistores BJT</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="c" class="quiz-option">
+                                <span class="option-text">Tiristores (SCRs)</span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="q5" value="d" class="quiz-option">
+                                <span class="option-text">Diodos de potencia</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-controls">
+                    <button id="submit-quiz" class="quiz-submit-btn" onclick="submitQuiz()">
+                        <i class="fas fa-check"></i> Enviar Respuestas
+                    </button>
+                    <button id="reset-quiz" class="quiz-reset-btn" onclick="resetQuiz()">
+                        <i class="fas fa-redo"></i> Reiniciar Quiz
+                    </button>
+                </div>
+            </section>
+
+            <!-- Back Button -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="ELECTROMECANICA.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Volver a Electromecánica
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="tech-video-modal">
+        <div class="tech-modal-content">
+            <span class="tech-close-video" onclick="closeVideoModal()">&times;</span>
+            <div class="tech-video-container">
+                <video id="local-video" controls autoplay style="width: 100%; height: 100%; border-radius: 12px;">
+                    <source src="./IMAGENES/EQUIPOS/EQUIPOS DE INSTALACIONES INDUSTRIALES/VFD.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Result Modal -->
+    <div id="quiz-result-modal" class="tech-quiz-modal">
+        <div class="tech-quiz-modal-content">
+            <div class="tech-quiz-modal-header">
+                <h2 id="result-title">Resultado del Quiz</h2>
+                <span class="tech-close-quiz" onclick="closeQuizResult()">&times;</span>
+            </div>
+            <div class="tech-quiz-modal-body">
+                <div class="result-icon">
+                    <i id="result-icon" class="fas fa-check-circle"></i>
+                </div>
+                <h3 id="result-message">¡Excelente trabajo!</h3>
+                <p id="result-score">Tu puntuación: 0/5</p>
+                <div id="result-details"></div>
+            </div>
+            <div class="tech-quiz-modal-footer">
+                <button onclick="closeQuizResult()" class="tech-quiz-modal-btn">Cerrar</button>
+                <button onclick="resetQuiz()" class="tech-quiz-modal-btn tech-quiz-modal-btn-primary">Intentar de nuevo</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Quiz functionality
+        const correctAnswers = {
+            q1: 'b',
+            q2: 'b', 
+            q3: 'b',
+            q4: 'a',
+            q5: 'c'
+        };
+
+        function submitQuiz() {
+            const questions = document.querySelectorAll('.quiz-question');
+            let score = 0;
+            let allAnswered = true;
+            const results = [];
+
+            questions.forEach((question, index) => {
+                const selectedOption = question.querySelector('input[type="radio"]:checked');
+                const questionNum = index + 1;
+                
+                if (!selectedOption) {
+                    allAnswered = false;
+                    question.classList.add('unanswered');
+                } else {
+                    question.classList.remove('unanswered');
+                    const isCorrect = selectedOption.value === correctAnswers[`q${questionNum}`];
+                    if (isCorrect) {
+                        score++;
+                        question.classList.add('correct');
+                        question.classList.remove('incorrect');
+                    } else {
+                        question.classList.add('incorrect');
+                        question.classList.remove('correct');
+                    }
+                    results.push({
+                        question: questionNum,
+                        correct: isCorrect,
+                        selected: selectedOption.value,
+                        correctAnswer: correctAnswers[`q${questionNum}`]
+                    });
+                }
+            });
+
+            if (!allAnswered) {
+                alert('Por favor responde todas las preguntas antes de enviar.');
+                return;
+            }
+
+            showQuizResult(score, results);
+        }
+
+        function showQuizResult(score, results) {
+            const modal = document.getElementById('quiz-result-modal');
+            const title = document.getElementById('result-title');
+            const message = document.getElementById('result-message');
+            const scoreText = document.getElementById('result-score');
+            const icon = document.getElementById('result-icon');
+            const details = document.getElementById('result-details');
+
+            scoreText.textContent = `Tu puntuación: ${score}/5`;
+
+            if (score === 5) {
+                title.textContent = '¡Perfecto!';
+                message.textContent = 'Has respondido todas las preguntas correctamente.';
+                icon.className = 'fas fa-trophy';
+                icon.style.color = '#27ae60';
+            } else if (score >= 3) {
+                title.textContent = '¡Buen trabajo!';
+                message.textContent = 'Has respondido la mayoría de las preguntas correctamente.';
+                icon.className = 'fas fa-thumbs-up';
+                icon.style.color = '#9b59b6';
+            } else {
+                title.textContent = 'Sigue practicando';
+                message.textContent = 'Te recomendamos revisar el material nuevamente.';
+                icon.className = 'fas fa-book';
+                icon.style.color = '#e74c3c';
+            }
+
+            // Show details
+            details.innerHTML = '<h4>Detalles de respuestas:</h4>';
+            results.forEach(result => {
+                const statusIcon = result.correct ? '✅' : '❌';
+                const statusText = result.correct ? 'Correcto' : 'Incorrecto';
+                details.innerHTML += `
+                    <p>${statusIcon} Pregunta ${result.question}: ${statusText}</p>
+                `;
+            });
+
+            modal.style.display = 'block';
+        }
+
+        function closeQuizResult() {
+            document.getElementById('quiz-result-modal').style.display = 'none';
+        }
+
+        function resetQuiz() {
+            const questions = document.querySelectorAll('.quiz-question');
+            questions.forEach(question => {
+                question.classList.remove('correct', 'incorrect', 'unanswered');
+                const selectedOption = question.querySelector('input[type="radio"]:checked');
+                if (selectedOption) {
+                    selectedOption.checked = false;
+                }
+            });
+            closeQuizResult();
+        }
+
+        // Video modal functionality
+        function openVideoModal() {
+            const modal = document.getElementById('video-modal');
+            const video = document.getElementById('local-video');
+            modal.style.display = 'block';
+            video.play();
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('video-modal');
+            const video = document.getElementById('local-video');
+            video.pause();
+            video.currentTime = 0;
+            modal.style.display = 'none';
+        }
+
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+            const videoModal = document.getElementById('video-modal');
+            const quizModal = document.getElementById('quiz-result-modal');
+            
+            if (event.target === videoModal) {
+                closeVideoModal();
+            }
+            if (event.target === quizModal) {
+                closeQuizResult();
+            }
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

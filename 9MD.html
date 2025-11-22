@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multímetro Digital | INFOSERVICE</title>
+  <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/normalize.css?v=4" />
+  <link rel="stylesheet" href="./css/estilos.css?v=4" />
+  <link rel="stylesheet" href="./css/estilo2.css?v=1" />
+  <link rel="stylesheet" href="./css/9MD.css" />
+  <style>
+    .main-content {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .content-box {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .btn-back {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+    .btn-back:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav container">
+      <div class="div__logo">
+        <img class="logo-img" src="./IMAGENES/infoservicelogo.png" alt="INFOSERVICE logo">
+        <h2 class="nav__title">INFOSERVICE.</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" class="menu__links">Inicio</a></li>
+          <li><a href="ELECTROMECANICA.html" class="menu__links">Electromecánica</a></li>
+        </ul>
+      </nav>
+    </nav>
+  </header>
+
+  <!-- Modern Navigation Menu -->
+  <div class="magic-nav-container">
+    <div class="magic-nav-grid">
+      <a href="#introduccion" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 1</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">📡 Introducción a Multímetros</h2>
+          <p class="magic-nav-card__description">Historia y principios básicos</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#componentes" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 2</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">⚡ Componentes Principales</h2>
+          <p class="magic-nav-card__description">Partes fundamentales del multímetro</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#funcionamiento" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 3</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">🔧 Funcionamiento</h2>
+          <p class="magic-nav-card__description">Mediciones y procedimientos</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#aplicaciones" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Sección 4</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">🔬 Aplicaciones</h2>
+          <p class="magic-nav-card__description">Usos eléctricos y electrónicos</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+
+      <a href="#quiz" class="magic-nav-card">
+        <div class="magic-nav-card__header">
+          <div class="magic-nav-card__label">Evaluación</div>
+        </div>
+        <div class="magic-nav-card__content">
+          <h2 class="magic-nav-card__title">📋 QUIZ INTERACTIVO</h2>
+          <p class="magic-nav-card__description">Pon a prueba tus conocimientos</p>
+        </div>
+        <div class="magic-nav-card__glow"></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <!-- Sección INTRODUCCIÓN A MULTÍMETROS DIGITALES -->
+    <div id="introduccion" class="content-box">
+      <h2>📡 INTRODUCCIÓN A MULTÍMETROS DIGITALES</h2>
+      
+      <!-- Historia del Multímetro -->
+      <div class="info-section">
+        <h3>Historia del Multímetro</h3>
+        <div class="pulsador-grid">
+          <div class="pulsador-text">
+            <ul class="elemento-lista">
+              <li>El multímetro digital fue desarrollado en la década de 1950, revolucionando la medición eléctrica con displays digitales.</li>
+              <li>Antes de los multímetros digitales, se utilizaban medidores analógicos de aguja que eran menos precisos y más difíciles de leer.</li>
+              <li>El primer multímetro digital comercial fue introducido por Fluke en 1977, estableciendo el estándar de la industria.</li>
+              <li>La tecnología ha evolucionado desde displays LED hasta LCD de alta resolución con funciones avanzadas.</li>
+            </ul>
+          </div>
+          <div class="pulsador-image">
+            <!-- Espacio para imagen de multímetro digital -->
+            <div class="image-placeholder">
+              <p>📷 Imagen de multímetro digital moderno</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Principios Básicos -->
+      <div class="info-section">
+        <h3>Principios Básicos del Multímetro Digital</h3>
+        <div class="types-grid">
+          <div class="type-card">
+            <div class="type-icon">⚡</div>
+            <h4>Conversión A/D</h4>
+            <p>Convierte señales analógicas en valores digitales mediante convertidores analógico-digitales.</p>
+            <div class="example-tag">Resolución: 3.5 a 6.5 dígitos</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">🔍</div>
+            <h4>Medición Directa</h4>
+            <p>Mide voltaje, corriente y resistencia directamente sin cálculos manuales.</p>
+            <div class="example-tag">Alta precisión</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">📊</div>
+            <h4>Display Digital</h4>
+            <p>Muestra valores numéricos exactos en pantalla LCD o LED.</p>
+            <div class="example-tag">Fácil lectura</div>
+          </div>
+        </div>
+        
+        <div class="video-container">
+          <h4>Demostración del funcionamiento básico</h4>
+          <!-- Video de YouTube con previsualización personalizada -->
+          <div class="video-wrapper">
+            <div class="video-preview" onclick="playVideo(this, '5Q0S-mhvhXc')">
+              <img src="https://img.youtube.com/vi/5Q0S-mhvhXc/maxresdefault.jpg" alt="Tutorial de Multímetro Digital" class="video-thumbnail">
+              <div class="play-button">
+                <svg viewBox="0 0 68 48" width="68" height="48">
+                  <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24 S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+                  <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                </svg>
+              </div>
+              <div class="video-title">Tutorial de Multímetro Digital - Cómo usarlo y sus funciones básicas</div>
+            </div>
+          </div>
+          <p class="video-instruction">🔍 CLIC EN LA IMAGEN PARA REPRODUCIR</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección COMPONENTES PRINCIPALES -->
+    <div id="componentes" class="content-box">
+      <h2>⚡ COMPONENTES PRINCIPALES</h2>
+      
+      <!-- Display Digital -->
+      <div class="info-section">
+        <h3>Display Digital</h3>
+        <p>El display es la interfaz visual que muestra los valores medidos. Los multímetros modernos utilizan pantallas LCD de alta contraste con retroiluminación para facilitar la lectura en diferentes condiciones de iluminación.</p>
+        
+        <div class="functioning-image">
+          <!-- Espacio para imagen del display -->
+          <div class="image-placeholder">
+            <p>📷 Detalle del display digital de multímetro</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Selector de Funciones -->
+      <div class="info-section">
+        <h3>Selector de Funciones</h3>
+        <p>El selector permite elegir entre diferentes modos de medición y rangos. Los multímetros digitales modernos tienen selector giratorio o botones táctiles para seleccionar voltaje AC/DC, corriente AC/DC, resistencia y otras funciones.</p>
+        
+        <div class="switches-grid">
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>⚡ Voltímetro</h4>
+              <p>Mide voltaje en corriente alterna (VAC) y continua (VDC) con alta precisión.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Mediciones en circuitos eléctricos y electrónicos.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>📊 Amperímetro</h4>
+              <p>Mide corriente eléctrica en amperios, tanto AC como DC, en diferentes rangos.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Medición de consumo de corriente en circuitos.
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-card">
+            <div class="switch-content">
+              <h4>🔍 Óhmetro</h4>
+              <p>Mide resistencia eléctrica en ohmios (Ω) para verificar continuidad y componentes.</p>
+              <div class="application-tag">
+                <strong>Aplicación:</strong> Prueba de resistencias, cables y componentes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terminales de Conexión -->
+      <div class="info-section">
+        <h3>Terminales de Conexión</h3>
+        <p>Los terminales permiten conectar las puntas de prueba al multímetro. Generalmente incluyen tres terminales: COM (común), VΩmA (voltaje/resistencia/corriente baja) y 10A o 20A (corriente alta).</p>
+        
+        <div class="parameters-grid">
+          <div class="parameter-card">
+            <div class="parameter-icon">🔌</div>
+            <h4>Terminal COM</h4>
+            <p>Terminal común o tierra, siempre se conecta al polo negativo o neutro del circuito.</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">⚡</div>
+            <h4>Terminal VΩmA</h4>
+            <p>Para mediciones de voltaje, resistencia y corriente baja (generalmente hasta 200mA o 500mA).</p>
+          </div>
+          
+          <div class="parameter-card">
+            <div class="parameter-icon">📊</div>
+            <h4>Terminal 10A/20A</h4>
+            <p>Exclusivo para mediciones de corriente alta, protegido con fusible de alta capacidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección FUNCIONAMIENTO -->
+    <div id="funcionamiento" class="content-box">
+      <h2>🔧 FUNCIONAMIENTO</h2>
+      
+      <!-- Proceso de Medición -->
+      <div class="info-section">
+        <h3>Proceso de Medición Digital</h3>
+        <p>El multímetro digital opera mediante un proceso de conversión analógica-digital que transforma las señales eléctricas en valores numéricos precisos.</p>
+        
+        <div class="types-grid">
+          <div class="type-card">
+            <div class="type-icon">1️⃣</div>
+            <h4>Detección de Señal</h4>
+            <p>Las puntas de prueba captan la señal eléctrica del circuito bajo prueba.</p>
+            <div class="example-tag">Entrada de señal</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">2️⃣</div>
+            <h4>Acondicionamiento</h4>
+            <p>La señal es amplificada o atenuada según el rango seleccionado.</p>
+            <div class="example-tag">Procesamiento inicial</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">3️⃣</div>
+            <h4>Conversión A/D</h4>
+            <p>El convertidor analógico-digital transforma la señal en valor numérico.</p>
+            <div class="example-tag">Digitalización</div>
+          </div>
+          
+          <div class="type-card">
+            <div class="type-icon">4️⃣</div>
+            <h4>Visualización</h4>
+            <p>El valor digital se muestra en la pantalla con la unidad correspondiente.</p>
+            <div class="example-tag">Resultado final</div>
+          </div>
+        </div>
+
+        <!-- Video Demostrativo -->
+        <div class="video-container">
+          <h4>📹 Animación del Proceso de Medición</h4>
+          <div class="video-wrapper">
+            <div class="video-preview" onclick="playVideo(this, '7tqK3KQXVhc')">
+              <img src="https://img.youtube.com/vi/7tqK3KQXVhc/maxresdefault.jpg" alt="How Digital Multimeter Works" class="video-thumbnail">
+              <div class="play-button">
+                <svg viewBox="0 0 68 48" width="68" height="48">
+                  <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24 S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+                  <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                </svg>
+              </div>
+              <div class="video-title">How Digital Multimeter Works - Working Principle and Circuit Diagram</div>
+            </div>
+          </div>
+          <p class="video-instruction">🔍 CLIC EN LA IMAGEN PARA REPRODUCIR</p>
+        </div>
+      </div>
+
+      <!-- Tipos de Mediciones -->
+      <div class="info-section">
+        <h3>Tipos de Mediciones Básicas</h3>
+        <p>El multímetro digital puede realizar diferentes tipos de mediciones eléctricas fundamentales:</p>
+        
+        <div class="classification-grid">
+          <div class="classification-item">
+            <h4>Medición de Voltaje</h4>
+            <p>Se mide en paralelo al circuito. El multímetro tiene alta impedancia de entrada para no afectar el circuito bajo prueba.</p>
+          </div>
+          
+          <div class="classification-item">
+            <h4>Medición de Corriente</h4>
+            <p>Se mide en serie con el circuito. Requiere abrir el circuito para intercalar el multímetro.</p>
+          </div>
+          
+          <div class="classification-item">
+            <h4>Medición de Resistencia</h4>
+            <p>El multímetro aplica una pequeña corriente conocida y mide la caída de voltaje para calcular la resistencia.</p>
+          </div>
+        </div>
+              </div>
+            </div>
+
+            <div class="switch-card">
+              <div class="switch-content">
+                <h4>🔧 Instalaciones Eléctricas</h4>
+                <p>Verificación de instalaciones eléctricas comerciales e industriales, mediciones de seguridad y cumplimiento normativo.</p>
+                <div class="application-tag">
+                  <strong>Uso:</strong> Tableros eléctricos, sistemas de distribución.
+                </div>
+              </div>
+            </div>
+
+            <div class="switch-card">
+              <div class="switch-content">
+                <h4>🏭 Control de Procesos</h4>
+                <p>Monitoreo y calibración de instrumentos de control industrial, sensores y sistemas automatizados.</p>
+                <div class="application-tag">
+                  <strong>Uso:</strong> PLCs, sistemas SCADA, instrumentación.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ventajas y Desventajas -->
+        <div class="info-section">
+          <h3>Características y Consideraciones del Multímetro Digital</h3>
+          
+          <div class="types-grid">
+            <div class="type-card">
+              <div class="type-icon">✅</div>
+              <h4>Ventajas</h4>
+              <ul>
+                <li>Alta precisión en mediciones</li>
+                <li>Fácil lectura de valores</li>
+                <li>Múltiples funciones en un dispositivo</li>
+                <li>Alta impedancia de entrada</li>
+                <li>Funciones de seguridad integradas</li>
+                <li>Flexibilidad en la medición de diferentes magnitudes</li>
+              </ul>
+            </div>
+
+            <div class="type-card">
+              <div class="type-icon">⚠️</div>
+              <h4>Desventajas</h4>
+              <ul>
+                <li>Mayor costo en comparación con multímetros analógicos</li>
+                <li>Dependencia de la batería o fuente de alimentación</li>
+                <li>Potencial de daño por sobretensión o sobrecorriente</li>
+                <li>Necesidad de calibración periódica</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-questions">
+        <!-- Pregunta 1 -->
+        <div class="quiz-question" data-question="1">
+          <div class="question-header">
+            <span class="question-number">1</span>
+            <h3>¿Qué empresa introdujo el primer multímetro digital comercial en 1977?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q1" value="a" class="quiz-option">
+              <span class="option-text">Fluke</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="b" class="quiz-option">
+              <span class="option-text">Tektronix</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="c" class="quiz-option">
+              <span class="option-text">Agilent</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="d" class="quiz-option">
+              <span class="option-text">Keysight</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="quiz-question" data-question="2">
+          <div class="question-header">
+            <span class="question-number">2</span>
+            <h3>¿Cuál es la resolución típica de un multímetro digital básico?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q2" value="a" class="quiz-option">
+              <span class="option-text">2.5 dígitos</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="b" class="quiz-option">
+              <span class="option-text">3.5 dígitos</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="c" class="quiz-option">
+              <span class="option-text">5.5 dígitos</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="d" class="quiz-option">
+              <span class="option-text">7.5 dígitos</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="quiz-question" data-question="3">
+          <div class="question-header">
+            <span class="question-number">3</span>
+            <h3>¿Cómo se conecta un multímetro para medir voltaje?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q3" value="a" class="quiz-option">
+              <span class="option-text">En serie con el circuito</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="b" class="quiz-option">
+              <span class="option-text">En paralelo con el circuito</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="c" class="quiz-option">
+              <span class="option-text">Directamente a tierra</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="d" class="quiz-option">
+              <span class="option-text">Solo al positivo</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="quiz-question" data-question="4">
+          <div class="question-header">
+            <span class="question-number">4</span>
+            <h3>¿Qué terminal se utiliza para mediciones de corriente alta?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q4" value="a" class="quiz-option">
+              <span class="option-text">COM</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="b" class="quiz-option">
+              <span class="option-text">VΩmA</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="c" class="quiz-option">
+              <span class="option-text">10A o 20A</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="d" class="quiz-option">
+              <span class="option-text">TEMP</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="quiz-question" data-question="5">
+          <div class="question-header">
+            <span class="question-number">5</span>
+            <h3>¿Qué tipo de tecnología utilizan los displays de los multímetros modernos?</h3>
+          </div>
+          <div class="question-options">
+            <label class="option-label">
+              <input type="radio" name="q5" value="a" class="quiz-option">
+              <span class="option-text">LED de 7 segmentos</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="b" class="quiz-option">
+              <span class="option-text">LCD con retroiluminación</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="c" class="quiz-option">
+              <span class="option-text">Tubos de vacío</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q5" value="d" class="quiz-option">
+              <span class="option-text">OLED</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-controls">
+        <button id="submit-quiz" class="quiz-submit-btn" disabled>Enviar Respuestas</button>
+        <div id="quiz-result" class="quiz-result"></div>
+        <button id="close-quiz" class="quiz-close-btn" style="display: none;">Cerrar y Continuar</button>
+      </div>
+    </div>
+
+    <div class="content-box text-center">
+      <a href="ELECTROMECANICA.html" class="btn-back">Volver a Electromecánica</a>
+    </div>
+  </div>
+
+  <!-- Quiz Modal Overlay -->
+  <div id="quiz-overlay" class="quiz-overlay" style="display: none;">
+    <div class="quiz-modal">
+      <div class="quiz-modal-content">
+        <h3>⚠️ Debes completar el quiz primero</h3>
+        <p>Por favor, responde todas las preguntas del quiz antes de poder navegar a otras secciones.</p>
+        <button id="back-to-quiz" class="quiz-back-btn">Volver al Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Modal -->
+  <div id="results-modal" class="quiz-overlay" style="display: none;">
+    <div class="results-modal">
+      <div class="results-modal-content">
+        <div class="results-header">
+          <div id="result-emoji" class="result-emoji"></div>
+          <h3 id="result-title" class="result-title"></h3>
+        </div>
+        <div class="results-body">
+          <p id="result-message" class="result-message"></p>
+          <div class="result-details">
+            <div class="result-score">
+              <span class="score-label">Puntuación:</span>
+              <span id="score-percentage" class="score-value"></span>
+            </div>
+            <div class="result-answers">
+              <span class="answers-label">Respuestas correctas:</span>
+              <span id="correct-answers" class="answers-value"></span>
+            </div>
+          </div>
+          <div id="certificate-info" class="certificate-info" style="display: none;">
+            <p>📧 Tus resultados han sido enviados a web.infoservice25@gmail.com</p>
+            <p>🏆 ¡Guarda este certificado de participación!</p>
+          </div>
+        </div>
+        <div class="results-actions">
+          <button id="close-results" class="quiz-close-btn">Cerrar y Continuar</button>
+          <button id="retry-quiz" class="retry-btn">Intentar Nuevamente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="video-modal" style="display: none;">
+    <div class="video-modal-content">
+      <div class="video-modal-header">
+        <h3 id="video-modal-title">Video Player</h3>
+        <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
+      </div>
+      <div class="video-modal-body">
+        <div class="video-iframe-container">
+          <iframe id="video-iframe" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Video Player Functionality
+    function playVideo(element, videoId) {
+      const modal = document.getElementById('video-modal');
+      const iframe = document.getElementById('video-iframe');
+      const title = document.getElementById('video-modal-title');
+      
+      // Set video title
+      const videoTitle = element.querySelector('.video-title').textContent;
+      title.textContent = videoTitle;
+      
+      // Set iframe src with autoplay
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&controls=1&showinfo=0`;
+      
+      // Show modal
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeVideoModal() {
+      const modal = document.getElementById('video-modal');
+      const iframe = document.getElementById('video-iframe');
+      
+      // Hide modal
+      modal.style.display = 'none';
+      
+      // Stop video by clearing src
+      iframe.src = '';
+      
+      // Restore body scroll
+      document.body.style.overflow = 'auto';
+    }
+    
+    // Close modal when clicking outside
+    document.getElementById('video-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeVideoModal();
+      }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeVideoModal();
+      }
+    });
+
+    // Quiz functionality
+    let quizCompleted = false;
+    const correctAnswers = {
+      q1: 'a', // Fluke
+      q2: 'b', // 3.5 dígitos
+      q3: 'b', // En paralelo con el circuito
+      q4: 'c', // 10A o 20A
+      q5: 'b'  // LCD con retroiluminación
+    };
+
+    // Get user data from localStorage (assuming it's stored from login)
+    function getUserData() {
+      const userData = localStorage.getItem('userData');
+      return userData ? JSON.parse(userData) : { nombre: 'Usuario', email: 'No registrado' };
+    }
+
+    // Check if all questions are answered
+    function checkQuizCompletion() {
+      const questions = document.querySelectorAll('.quiz-question');
+      let allAnswered = true;
+      
+      questions.forEach(question => {
+        const questionName = question.querySelector('input[type="radio"]').name;
+        const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+        if (!selectedOption) {
+          allAnswered = false;
+        }
+      });
+      
+      const submitBtn = document.getElementById('submit-quiz');
+      submitBtn.disabled = !allAnswered;
+    }
+
+    // Calculate quiz score
+    function calculateScore() {
+      let correctCount = 0;
+      const totalQuestions = Object.keys(correctAnswers).length;
+      
+      for (let question in correctAnswers) {
+        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+        if (selectedOption && selectedOption.value === correctAnswers[question]) {
+          correctCount++;
+          // Mark correct answer
+          selectedOption.parentElement.classList.add('correct');
+        } else if (selectedOption) {
+          // Mark incorrect answer
+          selectedOption.parentElement.classList.add('incorrect');
+          // Show correct answer
+          const correctOption = document.querySelector(`input[name="${question}"][value="${correctAnswers[question]}"]`);
+          if (correctOption) {
+            correctOption.parentElement.classList.add('correct');
+          }
+        }
+      }
+      
+      return { correctCount, totalQuestions };
+    }
+
+    // Show results modal
+    function showResults(score, correctCount, totalQuestions) {
+      const modal = document.getElementById('results-modal');
+      const emoji = document.getElementById('result-emoji');
+      const title = document.getElementById('result-title');
+      const message = document.getElementById('result-message');
+      const scorePercentage = document.getElementById('score-percentage');
+      const correctAnswersSpan = document.getElementById('correct-answers');
+      const certificateInfo = document.getElementById('certificate-info');
+      
+      if (score >= 80) {
+        emoji.textContent = '🏆';
+        title.textContent = '¡Excelente!';
+        message.textContent = 'Has demostrado un excelente conocimiento sobre multímetros digitales.';
+        certificateInfo.style.display = 'block';
+      } else if (score >= 60) {
+        emoji.textContent = '👍';
+        title.textContent = '¡Buen trabajo!';
+        message.textContent = 'Tienes un buen conocimiento de los conceptos básicos.';
+        certificateInfo.style.display = 'none';
+      } else {
+        emoji.textContent = '📚';
+        title.textContent = 'Sigue aprendiendo';
+        message.textContent = 'Te recomendamos repasar los conceptos fundamentales de los multímetros digitales.';
+        certificateInfo.style.display = 'none';
+      }
+      
+      scorePercentage.textContent = `${score}%`;
+      correctAnswersSpan.textContent = `${correctCount}/${totalQuestions}`;
+      
+      modal.style.display = 'flex';
+      
+      // Send results via EmailJS (you'll need to configure this)
+      const userData = getUserData();
+      // sendQuizResults(userData, score, correctCount, totalQuestions);
+    }
+
+    // Initialize quiz
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add event listeners to quiz options
+      const quizOptions = document.querySelectorAll('.quiz-option');
+      quizOptions.forEach(option => {
+        option.addEventListener('change', checkQuizCompletion);
+      });
+      
+      // Submit quiz button
+      document.getElementById('submit-quiz').addEventListener('click', function() {
+        if (!quizCompleted) {
+          const { correctCount, totalQuestions } = calculateScore();
+          const score = Math.round((correctCount / totalQuestions) * 100);
+          
+          // Show results in the quiz result div
+          const resultDiv = document.getElementById('quiz-result');
+          resultDiv.innerHTML = `
+            <div class="result-content">
+              <h3>Resultados del Quiz</h3>
+              <p class="${score >= 60 ? 'success-message' : 'warning-message'}">
+                Has obtenido ${score}% de aciertos (${correctCount} de ${totalQuestions} respuestas correctas)
+              </p>
+            </div>
+          `;
+          
+          // Show results modal
+          showResults(score, correctCount, totalQuestions);
+          
+          // Disable all options
+          quizOptions.forEach(option => {
+            option.disabled = true;
+          });
+          
+          // Show close button
+          document.getElementById('close-quiz').style.display = 'inline-block';
+          this.style.display = 'none';
+          
+          quizCompleted = true;
+        }
+      });
+      
+      // Close quiz button
+      document.getElementById('close-quiz').addEventListener('click', function() {
+        document.getElementById('quiz-result').innerHTML = '';
+        this.style.display = 'none';
+      });
+      
+      // Back to quiz button (from modal)
+      document.getElementById('back-to-quiz').addEventListener('click', function() {
+        document.getElementById('quiz-overlay').style.display = 'none';
+      });
+      
+      // Close results button
+      document.getElementById('close-results').addEventListener('click', function() {
+        document.getElementById('results-modal').style.display = 'none';
+      });
+      
+      // Retry quiz button
+      document.getElementById('retry-quiz').addEventListener('click', function() {
+        // Reset quiz
+        location.reload();
+      });
+    });
+  </script>
+  
+  <!-- Magic Navigation Script -->
+  <script src="./JS/magic-nav.js"></script>
+</body>
+</html>
